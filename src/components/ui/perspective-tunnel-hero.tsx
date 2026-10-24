@@ -116,9 +116,8 @@ function TunnelCard({ card, progress, pointer, total, stage }: TunnelCardProps) 
   });
 
   return (
-    <motion.a
-      href="#clientes"
-      aria-label={`Explorar trabalhos da MARQA: ${card.item.title}`}
+    <motion.div
+      aria-hidden="true"
       className="tunnel-card"
       style={{
         width: cardWidth,
@@ -141,7 +140,7 @@ function TunnelCard({ card, progress, pointer, total, stage }: TunnelCardProps) 
           <strong>{card.item.title}</strong>
         </div>
       </div>
-    </motion.a>
+    </motion.div>
   );
 }
 
