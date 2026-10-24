@@ -9,6 +9,7 @@ Os experimentos do portfólio são preservados separadamente para não sobrescre
 - `lab06-hero-texto/index.html`: texto e composição editorial do hero.
 - `lab11-hero-4k/index.html`: registro histórico da versão 4K anterior, cujo autoplay poderia iniciar atrás do loader.
 - `lab12-hero-autoplay/index.html`: correção de timing. Abertura MARQA (~1,85–1,92 s) primeiro; então reprodução de fundo a partir de 0s, sem áudio e em loop; botão apenas pausa/retoma. Rever abertura pausa e reinicia a sequência.
+- `lab13-hero-autoplay-nativo/index.html`: correção validada em Chromium: `<video autoplay muted playsinline loop>` começa já durante o loader, sem pausá-lo; ao concluir a animação, reinicia do quadro zero. O controle é oculto durante o loader e indica carregamento até o vídeo realmente iniciar. A prévia HTML em sandbox/iframe pode impedir autoplay por política do host, portanto validar o comportamento final na hospedagem HTTPS.
 - `assets/marqa-hero-4k.mp4` e `assets/marqa-hero-poster.jpg` são necessários ao lado do HTML, mas **não estão incluídos no GitHub**, por tamanho. O arquivo 4K original foi preservado no Drive (abaixo); os pacotes ZIP completos são entregues no projeto ChatGPT.
 
 ## Fonte audiovisual (versão original)
