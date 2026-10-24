@@ -1,5 +1,16 @@
 /* PORTFÓLIO MARQA — Experimento de abertura tridimensional.
-   Estilos isolados para não afetar a navegação nem as outras seções. */
+   Seções internas isoladas; navegação com identidade escura consistente. */
+
+/* Navegação uniforme com a abertura cinematográfica. */
+.site-header {
+  background: rgba(9, 9, 11, .96);
+  color: #f7f7f7;
+  border-bottom-color: rgba(255, 255, 255, .10);
+}
+.site-header .nav-links { color: #b6b6b9; }
+.site-header .brand-dot { color: #8d8d90; }
+.site-header .nav-action { border-bottom: 1px solid rgba(255, 255, 255, .4); padding-bottom: 7px; }
+
 .tunnel-section {
   --tunnel-nav-height: 74px;
   position: relative;
@@ -108,7 +119,7 @@
   left: 50%;
   top: 50%;
   aspect-ratio: 4 / 5;
-  pointer-events: auto;
+  pointer-events: none;
   color: #fff;
   text-decoration: none;
   user-select: none;
