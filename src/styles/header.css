@@ -1,0 +1,65 @@
+/* LAB 05 — Header MARQA. A abertura LAB 04 e seus keyframes não foram alterados. */
+:root{--nav-height:80px;--menu-ease:cubic-bezier(.22,1,.36,1)}
+.header{position:sticky;top:0;z-index:80;height:var(--nav-height);display:grid;grid-template-columns:minmax(160px,1fr) auto minmax(280px,1fr);align-items:center;gap:24px;padding-inline:var(--page-gutter, clamp(22px, 5.6vw, 84px));background:rgba(11,11,13,.975);border-bottom:1px solid rgba(255,255,255,.12);backdrop-filter:blur(16px)}
+.header .brand{width:max-content;font-family:Inter,system-ui,sans-serif;font-weight:850;font-size:clamp(24px,2.35vw,31px);letter-spacing:-.09em;color:#f5f3ef}
+.header .brand sup{font-size:9px;margin-left:2px;letter-spacing:0}
+.header .nav{display:flex;align-items:center;justify-content:center;gap:clamp(28px,3.2vw,51px);font-size:12px;letter-spacing:.015em;text-transform:none;color:#b5b2af;font-weight:560}
+.header .nav a{position:relative;display:inline-flex;align-items:center;min-height:42px;transition:color .25s ease}
+.header .nav a::after{content:'';height:1px;position:absolute;left:0;right:100%;bottom:4px;background:#f2f0ed;transition:right .28s var(--menu-ease)}
+.header .nav a:hover,.header .nav a:focus-visible{color:#fff}
+.header .nav a:hover::after,.header .nav a:focus-visible::after{right:0}
+.header-controls{justify-content:flex-end;min-width:0}
+.header-cta{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:45px;padding:0 18px 0 22px;border:1px solid #f5f3f0;border-radius:100px;background:#f5f3f0;color:#141416;font-size:12px;font-weight:670;letter-spacing:-.006em;white-space:nowrap;transition:background .25s ease,transform .25s var(--menu-ease),color .25s ease,box-shadow .25s ease}
+.header-cta:hover{transform:translateY(-2px);box-shadow:0 5px 22px rgba(255,255,255,.1);background:#d9d7d2;border-color:#d9d7d2}
+.header-cta .cta-arrow{display:inline-flex;align-items:center;justify-content:center;width:19px;height:19px;font-size:17px;line-height:1;font-weight:400;transition:transform .25s var(--menu-ease)}
+.header-cta:hover .cta-arrow{transform:translate(2px,-2px)}
+.menu-trigger,.mobile-nav-panel,.menu-scrim{display:none}
+/* As rotas temporárias existem para permitir o teste de navegação. */
+.expertise-preview{background:#151518;color:#f4f1ea;padding:clamp(75px,8vw,130px) var(--page-gutter, clamp(22px, 5.6vw, 84px)) 110px}
+.section-kicker{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.16);padding-bottom:20px;font-size:10px;letter-spacing:.15em;color:#a4a19b;font-weight:670}
+.expertise-preview h2{font-size:clamp(43px,6.6vw,92px);letter-spacing:-.07em;line-height:.99;max-width:1000px;margin:70px 0 62px}
+.expertise-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.expertise-item{border-top:1px solid #535156;padding:22px 16px 0 0;min-height:185px;display:flex;flex-direction:column;gap:35px}
+.expertise-item .number{font-size:11px;color:#88858b}.expertise-item h3{font-size:clamp(23px,3vw,35px);letter-spacing:-.04em;margin:0 0 9px}.expertise-item p{font-size:13px;line-height:1.55;color:#b1ada8;max-width:280px}
+.contact-preview{background:#ece9e2;color:#141416;padding:clamp(65px,7vw,110px) var(--page-gutter, clamp(22px, 5.6vw, 84px)) 90px}
+.contact-preview .section-kicker{color:#575457;border-color:#bbb5ae}
+.contact-preview h2{font-size:clamp(49px,7.7vw,110px);letter-spacing:-.071em;line-height:.99;max-width:1120px;margin:60px 0 32px}
+.contact-foot{display:flex;justify-content:space-between;align-items:center;gap:35px;flex-wrap:wrap}
+.contact-foot p{color:#5e5a56;max-width:475px;font-size:17px;line-height:1.5}
+.contact-note{border:1px solid #aaa6a0;border-radius:99px;padding:15px 21px;white-space:normal;text-align:center;font-size:12px;color:#4d4b49}
+.footer{background:#0d0d0f;color:#a8a49d;gap:20px;align-items:center;flex-wrap:wrap}
+.footer small{font-size:10px;letter-spacing:.1em}
+.replay{font-size:10px;letter-spacing:.08em;border-color:#48474b;text-transform:none;padding:11px 16px}
+.lab-note{display:none}
+/* Somente na prévia: menu modal fino para telas pequenas. */
+@media(max-width:1040px){
+ :root{--nav-height:72px}
+ .header{grid-template-columns:1fr auto;gap:16px}
+ .header .nav,.header-cta{display:none}
+ .menu-trigger{display:inline-flex;align-items:center;justify-content:center;gap:12px;height:41px;padding:0 15px;background:transparent;border:1px solid #555358;color:#eeeae6;border-radius:30px;cursor:pointer;font-size:12px;letter-spacing:.02em;font-weight:600}
+ .menu-trigger .menu-glyph{display:flex;flex-direction:column;gap:5px}
+ .menu-trigger .menu-glyph i{display:block;height:1px;width:17px;background:#eeeae6;transition:transform .22s ease}
+ .menu-trigger[aria-expanded=true] .menu-glyph i:first-child{transform:translateY(3px) rotate(45deg)}
+ .menu-trigger[aria-expanded=true] .menu-glyph i:last-child{transform:translateY(-3px) rotate(-45deg)}
+ .menu-scrim{display:block;position:fixed;inset:var(--nav-height) 0 0;background:rgba(0,0,0,.61);opacity:0;visibility:hidden;pointer-events:none;z-index:70;transition:opacity .35s ease,visibility .35s}
+ .mobile-nav-panel{display:flex;position:fixed;z-index:79;left:0;right:0;top:var(--nav-height);background:#131316;border-bottom:1px solid #39393e;padding:37px var(--page-gutter, clamp(22px, 5.6vw, 84px)) 44px;flex-direction:column;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-14px);transition:transform .35s var(--menu-ease),opacity .24s ease,visibility .35s}
+ .menu-open .menu-scrim{opacity:1;visibility:visible;pointer-events:auto}
+ .menu-open .mobile-nav-panel{transform:translateY(0);opacity:1;visibility:visible;pointer-events:auto}
+ .menu-label{font-size:10px;letter-spacing:.18em;color:#8d8a85;text-transform:uppercase;margin-bottom:20px}
+ .mobile-nav-panel>a:not(.mobile-cta){display:flex;align-items:center;justify-content:space-between;padding:17px 0 22px;border-bottom:1px solid #343337;color:#f1eeea;font-size:clamp(29px,6vw,42px);letter-spacing:-.035em;font-weight:500}
+ .mobile-nav-panel>a:not(.mobile-cta) span{font-size:23px;font-weight:400;color:#807e7a}
+ .mobile-cta{display:flex;justify-content:space-between;align-items:center;margin-top:35px;background:#f5f3f0;color:#161617;border-radius:999px;padding:20px 22px;font-size:clamp(12px,2.7vw,15px);font-weight:670;gap:10px}
+ .menu-open{overflow:hidden}
+}
+@media(max-width:750px){
+ :root{--nav-height:68px}
+ .header{height:68px}
+ .header .brand{font-size:27px}
+ .expertise-grid{grid-template-columns:1fr;gap:15px}
+ .expertise-item{min-height:unset;gap:25px;padding-bottom:15px}
+ .expertise-preview h2{margin:48px 0}
+ .contact-foot p{font-size:15px}
+ .footer{justify-content:space-between}
+}
+@media(prefers-reduced-motion:reduce){.mobile-nav-panel,.menu-scrim,.header-cta,.header-cta .cta-arrow{transition:none}}
+

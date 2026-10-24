@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#09090b">
+<meta name="description" content="MARQA LAB 05 — Header premium com Projetos, Expertise e Inicie seu projeto com a MARQA; abertura LAB 04 preservada.">
+<title>MARQA — LAB 05 | Header e Intro Aprovada</title>
+<style>
+:root{
+ --black:#0b0b0d;--light:#efede8;--secondary:#aeaaa4;--gutter:clamp(22px,5.6vw,84px);
+ --duration:1850ms;--flight-x:-560px;--flight-y:-380px;
+ --ease:cubic-bezier(.19,1,.22,1)
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:80px}
+body{margin:0;background:var(--black);color:var(--light);font-family:Inter,system-ui,-apple-system,'Segoe UI',Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+a{color:inherit;text-decoration:none}button{font:inherit}a:focus-visible,button:focus-visible{outline:2px solid white;outline-offset:5px}
+.sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip-path:inset(50%)}
+.header{height:80px;padding:0 var(--gutter);position:relative;z-index:10;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid rgba(255,255,255,.11);background:#0b0b0d}
+.brand{font-size:clamp(23px,2.4vw,30px);font-weight:850;line-height:1;letter-spacing:-.086em;display:inline-flex;align-items:flex-start;gap:4px}
+.brand sup{font-size:10px;font-weight:600;line-height:1.2;letter-spacing:0}
+.nav{display:flex;gap:34px;align-items:center;font-size:11px;text-transform:uppercase;letter-spacing:.15em;font-weight:650;color:#bebbb6}
+.nav a:hover{color:white}.replay{cursor:pointer;border:1px solid #525153;border-radius:100px;padding:12px 18px;background:none;color:#e8e5e0;font-size:10px;letter-spacing:.14em;text-transform:uppercase;font-weight:700;white-space:nowrap;transition:background .2s}
+.replay:hover{background:#232326}
+.header-controls{display:flex;gap:12px;align-items:center}
+.eyebrow{font-size:10px;font-weight:700;letter-spacing:.24em;color:#aaa6a0;text-transform:uppercase}
+.hero{min-height:calc(100svh - 80px);padding:50px var(--gutter) clamp(54px,8vh,90px);display:flex;flex-direction:column;justify-content:space-between;overflow:hidden;position:relative;isolation:isolate;background:#0d0d10}
+.hero::before{content:"";position:absolute;z-index:-1;inset:0;opacity:.35;pointer-events:none;background:linear-gradient(90deg,transparent 49.93%,rgba(255,255,255,.035) 50%,transparent 50.07%),linear-gradient(90deg,transparent 24.93%,rgba(255,255,255,.035) 25%,transparent 25.07%),linear-gradient(90deg,transparent 74.93%,rgba(255,255,255,.035) 75%,transparent 75.07%)}
+.hero-top,.hero-bottom{display:flex;align-items:center;justify-content:space-between;gap:24px;letter-spacing:.18em;font-weight:650;font-size:10px;color:#918e8b;text-transform:uppercase}
+.hero-content{margin:auto 0;max-width:1090px;padding:55px 0}
+.hero h1{font-size:clamp(55px,8vw,118px);font-weight:750;letter-spacing:-.075em;line-height:.98;margin:24px 0 42px;max-width:1100px}
+.hero h1 em{font-style:normal;color:#777579}
+.hero-foot{display:flex;align-items:end;gap:48px;justify-content:space-between;max-width:865px}
+.hero-foot p{font-size:clamp(15px,1.5vw,20px);line-height:1.55;font-weight:430;color:#b3afaa;max-width:445px;margin:0}
+.hero-foot a{border-bottom:1px solid #ddd7cc;padding-bottom:9px;white-space:nowrap;font-size:11px;letter-spacing:.16em;font-weight:700;text-transform:uppercase}
+.work{padding:clamp(70px,9vw,130px) var(--gutter);background:#e8e5de;color:#181818;min-height:560px}
+.work-top{border-bottom:1px solid #98938c;display:flex;justify-content:space-between;gap:24px;padding-bottom:22px;font-size:11px;letter-spacing:.16em;font-weight:700}
+.work h2{font-size:clamp(45px,7vw,94px);line-height:.99;letter-spacing:-.075em;max-width:1100px;margin:60px 0 55px}
+.work-cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+.work-card{position:relative;min-height:310px;background:#29292b;color:white;padding:27px;display:flex;flex-direction:column;justify-content:space-between;overflow:hidden}
+.work-card:nth-child(2){background:#393839}.work-card:nth-child(3){background:#222529}
+.work-card span{font-size:11px;color:#aaa;letter-spacing:.13em}
+.work-card strong{font-size:clamp(26px,3vw,41px);letter-spacing:-.055em}
+.work-note{margin-top:25px;color:#65615e;font-size:12px}
+.footer{padding:32px var(--gutter);font-size:11px;letter-spacing:.15em;background:#111;color:#8c8985;display:flex;justify-content:space-between}
+/* Overlay leve: somente propriedades aceleráveis (transform e opacity) mudam no tempo */
+.intro{position:fixed;inset:0;z-index:100;background:#08080a;color:#fff;visibility:hidden;pointer-events:none;opacity:0;overflow:hidden;isolation:isolate}
+.intro.active{visibility:visible;pointer-events:auto;opacity:1}
+.intro::before{content:'';pointer-events:none;position:absolute;inset:26px;border:1px solid rgba(255,255,255,.09)}
+.intro-centerline{position:absolute;left:var(--gutter);right:var(--gutter);top:50%;height:1px;background:rgba(255,255,255,.055)}
+.intro-logo{position:absolute;top:50%;left:50%;width:clamp(260px,36vw,440px);height:auto;opacity:0;transform:translate3d(-50%,-50%,0) scale(.84);transform-origin:center center;backface-visibility:hidden;will-change:transform,opacity;contain:layout paint}
+.intro-logo img{display:block;width:100%;height:auto;user-select:none;pointer-events:none}
+.intro-label{position:absolute;left:var(--gutter);bottom:45px;text-transform:uppercase;letter-spacing:.25em;color:#929094;font-size:10px;font-weight:670;opacity:0}
+.intro-count{position:absolute;right:var(--gutter);bottom:45px;color:#6c696b;font-size:10px;font-weight:650;letter-spacing:.18em;opacity:0}
+.skip{position:absolute;top:27px;right:var(--gutter);z-index:101;background:transparent;color:#aaa;border:1px solid #454549;border-radius:30px;padding:10px 16px;cursor:pointer;font-size:10px;font-weight:700;text-transform:uppercase;letter-spacing:.13em}
+.skip:hover{color:#fff;border-color:#888}
+/* A animação não depende de desfocar ou de pintar filtros repetidamente. */
+.intro.running{animation:curtain-fade var(--duration) linear both}
+.intro.running .intro-logo{animation:brand-flight var(--duration) both}
+.intro.running .intro-label,.intro.running .intro-count{animation:microcopy var(--duration) linear both}
+@keyframes brand-flight{
+ 0%{opacity:0;transform:translate3d(-50%,-50%,0) scale(.82);animation-timing-function:cubic-bezier(.19,1,.22,1)}
+ 19%{opacity:1;transform:translate3d(-50%,-50%,0) scale(1);animation-timing-function:linear}
+ 38%{opacity:1;transform:translate3d(-50%,-50%,0) scale(1);animation-timing-function:cubic-bezier(.56,0,.24,1)}
+ 86%{opacity:.82;transform:translate3d(calc(-50% + var(--flight-x)),calc(-50% + var(--flight-y)),0) scale(.115);animation-timing-function:ease-out}
+ 100%{opacity:0;transform:translate3d(calc(-50% + var(--flight-x)),calc(-50% + var(--flight-y)),0) scale(.115)}
+}
+@keyframes curtain-fade{0%,82%{opacity:1;visibility:visible}96%{opacity:0;visibility:visible}100%{opacity:0;visibility:hidden;pointer-events:none}}
+@keyframes microcopy{0%,12%{opacity:0}22%,52%{opacity:.95}76%,100%{opacity:0}}
+/* Revelação suave da interface final. */
+.js .header .brand,.js .hero-content,.js .hero-top,.js .hero-bottom{opacity:0}
+.js .revealed .header .brand{animation:show-brand .46s cubic-bezier(.2,.8,.2,1) both}
+.js .revealed .hero-content{animation:show-content .66s cubic-bezier(.2,.8,.2,1) both}
+.js .revealed .hero-top,.js .revealed .hero-bottom{animation:show-content .75s cubic-bezier(.2,.8,.2,1) both}
+@keyframes show-brand{from{opacity:0;transform:translate3d(0,5px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+@keyframes show-content{from{opacity:0;transform:translate3d(0,12px,0)}to{opacity:1;transform:translate3d(0,0,0)}}
+.lab-note{position:fixed;right:16px;bottom:16px;z-index:30;padding:9px 13px;background:rgba(29,29,31,.94);border:1px solid #4a4a4e;color:#bcb8b2;font-size:9px;letter-spacing:.11em;text-transform:uppercase;pointer-events:none}
+@media(max-width:750px){.header{height:68px}.hero{min-height:calc(100svh - 68px);padding-top:34px}.nav{display:none}.replay{padding:10px 12px;font-size:9px}.hero h1{font-size:clamp(52px,12.2vw,83px);line-height:1.02}.hero-foot{flex-direction:column;align-items:flex-start;gap:30px}.hero-top,.hero-bottom{font-size:9px}.hero-bottom span:last-child{display:none}.intro-logo{width:clamp(230px,65vw,330px)}.work-cards{grid-template-columns:1fr}.work-card{min-height:230px}.intro::before{inset:13px}.intro-label{font-size:8px}.lab-note{font-size:8px}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.intro:not(.forced){display:none!important}.intro.forced{display:block}.intro.running:not(.forced){animation:none}.intro-logo{will-change:auto}}
+
+/* LAB 05 — Header MARQA. A abertura LAB 04 e seus keyframes não foram alterados. */
+:root{--nav-height:80px;--menu-ease:cubic-bezier(.22,1,.36,1)}
+.header{position:sticky;top:0;z-index:80;height:var(--nav-height);display:grid;grid-template-columns:minmax(160px,1fr) auto minmax(280px,1fr);align-items:center;gap:24px;padding-inline:var(--gutter);background:rgba(11,11,13,.975);border-bottom:1px solid rgba(255,255,255,.12);backdrop-filter:blur(16px)}
+.header .brand{width:max-content;font-family:Inter,system-ui,sans-serif;font-weight:850;font-size:clamp(24px,2.35vw,31px);letter-spacing:-.09em;color:#f5f3ef}
+.header .brand sup{font-size:9px;margin-left:2px;letter-spacing:0}
+.header .nav{display:flex;align-items:center;justify-content:center;gap:clamp(28px,3.2vw,51px);font-size:12px;letter-spacing:.015em;text-transform:none;color:#b5b2af;font-weight:560}
+.header .nav a{position:relative;display:inline-flex;align-items:center;min-height:42px;transition:color .25s ease}
+.header .nav a::after{content:'';height:1px;position:absolute;left:0;right:100%;bottom:4px;background:#f2f0ed;transition:right .28s var(--menu-ease)}
+.header .nav a:hover,.header .nav a:focus-visible{color:#fff}
+.header .nav a:hover::after,.header .nav a:focus-visible::after{right:0}
+.header-controls{justify-content:flex-end;min-width:0}
+.header-cta{display:inline-flex;align-items:center;justify-content:center;gap:16px;min-height:45px;padding:0 18px 0 22px;border:1px solid #f5f3f0;border-radius:100px;background:#f5f3f0;color:#141416;font-size:12px;font-weight:670;letter-spacing:-.006em;white-space:nowrap;transition:background .25s ease,transform .25s var(--menu-ease),color .25s ease,box-shadow .25s ease}
+.header-cta:hover{transform:translateY(-2px);box-shadow:0 5px 22px rgba(255,255,255,.1);background:#d9d7d2;border-color:#d9d7d2}
+.header-cta .cta-arrow{display:inline-flex;align-items:center;justify-content:center;width:19px;height:19px;font-size:17px;line-height:1;font-weight:400;transition:transform .25s var(--menu-ease)}
+.header-cta:hover .cta-arrow{transform:translate(2px,-2px)}
+.menu-trigger,.mobile-nav-panel,.menu-scrim{display:none}
+/* As rotas temporárias existem para permitir o teste de navegação. */
+.expertise-preview{background:#151518;color:#f4f1ea;padding:clamp(75px,8vw,130px) var(--gutter) 110px}
+.section-kicker{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid rgba(255,255,255,.16);padding-bottom:20px;font-size:10px;letter-spacing:.15em;color:#a4a19b;font-weight:670}
+.expertise-preview h2{font-size:clamp(43px,6.6vw,92px);letter-spacing:-.07em;line-height:.99;max-width:1000px;margin:70px 0 62px}
+.expertise-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.expertise-item{border-top:1px solid #535156;padding:22px 16px 0 0;min-height:185px;display:flex;flex-direction:column;gap:35px}
+.expertise-item .number{font-size:11px;color:#88858b}.expertise-item h3{font-size:clamp(23px,3vw,35px);letter-spacing:-.04em;margin:0 0 9px}.expertise-item p{font-size:13px;line-height:1.55;color:#b1ada8;max-width:280px}
+.contact-preview{background:#ece9e2;color:#141416;padding:clamp(65px,7vw,110px) var(--gutter) 90px}
+.contact-preview .section-kicker{color:#575457;border-color:#bbb5ae}
+.contact-preview h2{font-size:clamp(49px,7.7vw,110px);letter-spacing:-.071em;line-height:.99;max-width:1120px;margin:60px 0 32px}
+.contact-foot{display:flex;justify-content:space-between;align-items:center;gap:35px;flex-wrap:wrap}
+.contact-foot p{color:#5e5a56;max-width:475px;font-size:17px;line-height:1.5}
+.contact-note{border:1px solid #aaa6a0;border-radius:99px;padding:15px 21px;white-space:normal;text-align:center;font-size:12px;color:#4d4b49}
+.footer{background:#0d0d0f;color:#a8a49d;gap:20px;align-items:center;flex-wrap:wrap}
+.footer small{font-size:10px;letter-spacing:.1em}
+.replay{font-size:10px;letter-spacing:.08em;border-color:#48474b;text-transform:none;padding:11px 16px}
+.lab-note{display:none}
+/* Somente na prévia: menu modal fino para telas pequenas. */
+@media(max-width:1040px){
+ :root{--nav-height:72px}
+ .header{grid-template-columns:1fr auto;gap:16px}
+ .header .nav,.header-cta{display:none}
+ .menu-trigger{display:inline-flex;align-items:center;justify-content:center;gap:12px;height:41px;padding:0 15px;background:transparent;border:1px solid #555358;color:#eeeae6;border-radius:30px;cursor:pointer;font-size:12px;letter-spacing:.02em;font-weight:600}
+ .menu-trigger .menu-glyph{display:flex;flex-direction:column;gap:5px}
+ .menu-trigger .menu-glyph i{display:block;height:1px;width:17px;background:#eeeae6;transition:transform .22s ease}
+ .menu-trigger[aria-expanded=true] .menu-glyph i:first-child{transform:translateY(3px) rotate(45deg)}
+ .menu-trigger[aria-expanded=true] .menu-glyph i:last-child{transform:translateY(-3px) rotate(-45deg)}
+ .menu-scrim{display:block;position:fixed;inset:var(--nav-height) 0 0;background:rgba(0,0,0,.61);opacity:0;visibility:hidden;pointer-events:none;z-index:70;transition:opacity .35s ease,visibility .35s}
+ .mobile-nav-panel{display:flex;position:fixed;z-index:79;left:0;right:0;top:var(--nav-height);background:#131316;border-bottom:1px solid #39393e;padding:37px var(--gutter) 44px;flex-direction:column;opacity:0;visibility:hidden;pointer-events:none;transform:translateY(-14px);transition:transform .35s var(--menu-ease),opacity .24s ease,visibility .35s}
+ .menu-open .menu-scrim{opacity:1;visibility:visible;pointer-events:auto}
+ .menu-open .mobile-nav-panel{transform:translateY(0);opacity:1;visibility:visible;pointer-events:auto}
+ .menu-label{font-size:10px;letter-spacing:.18em;color:#8d8a85;text-transform:uppercase;margin-bottom:20px}
+ .mobile-nav-panel>a:not(.mobile-cta){display:flex;align-items:center;justify-content:space-between;padding:17px 0 22px;border-bottom:1px solid #343337;color:#f1eeea;font-size:clamp(29px,6vw,42px);letter-spacing:-.035em;font-weight:500}
+ .mobile-nav-panel>a:not(.mobile-cta) span{font-size:23px;font-weight:400;color:#807e7a}
+ .mobile-cta{display:flex;justify-content:space-between;align-items:center;margin-top:35px;background:#f5f3f0;color:#161617;border-radius:999px;padding:20px 22px;font-size:clamp(12px,2.7vw,15px);font-weight:670;gap:10px}
+ .menu-open{overflow:hidden}
+}
+@media(max-width:750px){
+ :root{--nav-height:68px}
+ .header{height:68px}
+ .header .brand{font-size:27px}
+ .expertise-grid{grid-template-columns:1fr;gap:15px}
+ .expertise-item{min-height:unset;gap:25px;padding-bottom:15px}
+ .expertise-preview h2{margin:48px 0}
+ .contact-foot p{font-size:15px}
+ .footer{justify-content:space-between}
+}
+@media(prefers-reduced-motion:reduce){.mobile-nav-panel,.menu-scrim,.header-cta,.header-cta .cta-arrow{transition:none}}
+
+</style>
+<script>document.documentElement.classList.add('js');</script>
+</head>
+<body>
+<header class="header" id="header">
+ <a href="#inicio" class="brand" id="brand" aria-label="MARQA — voltar ao início">MARQA<sup>®</sup></a>
+ <nav class="nav" aria-label="Navegação principal">
+  <a href="#trabalhos">Projetos</a>
+  <a href="#expertise">Expertise</a>
+ </nav>
+ <div class="header-controls">
+   <a class="header-cta" href="#contato">Inicie seu projeto com a MARQA <span class="cta-arrow" aria-hidden="true">↗</span></a>
+   <button type="button" id="menuTrigger" class="menu-trigger" aria-expanded="false" aria-controls="mobileNav" aria-label="Abrir menu de navegação">
+      <span id="menuText">Menu</span><span class="menu-glyph" aria-hidden="true"><i></i><i></i></span>
+   </button>
+ </div>
+</header>
+<div class="menu-scrim" id="menuScrim" aria-hidden="true"></div>
+<nav class="mobile-nav-panel" id="mobileNav" aria-label="Navegação em celular" aria-hidden="true" inert>
+ <span class="menu-label">Navegar / MARQA</span>
+ <a href="#trabalhos">Projetos <span aria-hidden="true">↗</span></a>
+ <a href="#expertise">Expertise <span aria-hidden="true">↗</span></a>
+ <a class="mobile-cta" href="#contato">Inicie seu projeto com a MARQA <span aria-hidden="true">↗</span></a>
+</nav>
+<main>
+ <section class="hero" id="inicio">
+  <div class="hero-top"><span>MARQA / BRAND EXPERIENCE</span><span>PORTFÓLIO — 2026</span></div>
+  <div class="hero-content">
+    <span class="eyebrow">STORYTELLING · IMAGEM · PERFORMANCE</span>
+    <h1>Não basta<br>aparecer.<br><em>É preciso marcar.</em></h1>
+    <div class="hero-foot"><p>Estratégia, audiovisual e performance para marcas que querem ocupar mais espaço no mercado.</p><a href="#trabalhos">Conhecer o trabalho ↗</a></div>
+  </div>
+  <div class="hero-bottom"><span>01 / MARQA — EXPERIÊNCIA</span><span>DESLIZE PARA EXPLORAR ↓</span></div>
+ </section>
+ <section class="work" id="trabalhos"><div class="work-top"><span>02 / PORTFÓLIO</span><span>TRABALHOS SELECIONADOS</span></div><h2>O trabalho fala<br>por nós.</h2>
+  <div class="work-cards"><div class="work-card"><span>01 / CASE</span><strong>ESTRATÉGIA ↗</strong></div><div class="work-card"><span>02 / CASE</span><strong>IMAGEM ↗</strong></div><div class="work-card"><span>03 / CASE</span><strong>PERFORMANCE ↗</strong></div></div>
+  <p class="work-note">Áreas ilustrativas do LAB 04. Vamos inserir projetos reais após aprovar a abertura.</p>
+ </section>
+ <section class="expertise-preview" id="expertise" aria-labelledby="expertise-title">
+  <div class="section-kicker"><span>03 / EXPERTISE</span><span>NOSSA ATUAÇÃO</span></div>
+  <h2 id="expertise-title">Uma visão.<br>Várias competências.</h2>
+  <div class="expertise-grid">
+   <article class="expertise-item"><span class="number">01 / BRAND</span><div><h3>Estratégia</h3><p>Posicionamento, direcionamento criativo e narrativas que diferenciam.</p></div></article>
+   <article class="expertise-item"><span class="number">02 / CONTENT</span><div><h3>Audiovisual</h3><p>Fotografia, vídeo e histórias que transformam percepção em presença.</p></div></article>
+   <article class="expertise-item"><span class="number">03 / GROWTH</span><div><h3>Performance</h3><p>Mídia e análise de dados para aproximar marcas das pessoas certas.</p></div></article>
+  </div>
+ </section>
+ <section class="contact-preview" id="contato" aria-labelledby="contact-title">
+  <div class="section-kicker"><span>04 / NOVAS CONVERSAS</span><span>COMEÇAR É O PRIMEIRO PASSO</span></div>
+  <h2 id="contact-title">Seu próximo<br>projeto começa aqui.</h2>
+  <div class="contact-foot"><p>Em breve, este botão abrirá diretamente o WhatsApp comercial da MARQA com uma mensagem personalizada.</p><span class="contact-note">LAB 05 · Destino comercial em configuração</span></div>
+ </section>
+</main>
+<footer class="footer"><span>MARQA — STRATEGY · FILM · PERFORMANCE</span><small>LAB 05 / HEADER EM AVALIAÇÃO</small><button type="button" class="replay" id="replay">↺ Rever abertura</button></footer>
+<div class="intro" id="intro" role="dialog" aria-modal="true" aria-label="Abertura da MARQA" aria-hidden="true">
+ <div class="intro-centerline" aria-hidden="true"></div>
+ <div class="intro-logo" id="introLogo"><img src="data:image/png;base64,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" alt="Símbolo gráfico original da MARQA" width="842" height="570" decoding="sync"></div>
+ <span class="intro-label" aria-hidden="true">UMA MARCA DEIXA MARCAS</span>
+ <span class="intro-count" aria-hidden="true">INTRO / 01</span>
+ <button type="button" class="skip" id="skip">Pular abertura ↗</button>
+</div>
+
+<script>
+(() => {
+  const intro=document.querySelector('#intro');
+  const logo=document.querySelector('#introLogo');
+  const brand=document.querySelector('#brand');
+  const replay=document.querySelector('#replay');
+  const skip=document.querySelector('#skip');
+  const reduced=window.matchMedia('(prefers-reduced-motion: reduce)');
+  let endTimer=null, revealTimer=null;
+  const duration=1850;
+  function stopTimers(){clearTimeout(endTimer);clearTimeout(revealTimer)}
+  function target(){
+    const b=brand.getBoundingClientRect();
+    const x=b.left+b.width/2-innerWidth/2;
+    const y=b.top+b.height/2-innerHeight/2;
+    intro.style.setProperty('--flight-x',x+'px');
+    intro.style.setProperty('--flight-y',y+'px');
+  }
+  function finish(){
+    stopTimers();intro.classList.remove('active','running','forced');
+    intro.setAttribute('aria-hidden','true');
+    document.body.classList.add('revealed');
+    document.body.style.overflow='';
+  }
+  function reveal(){document.body.classList.add('revealed')}
+  function start(force=false){
+    stopTimers();
+    target();
+    if(reduced.matches && !force){finish();return;}
+    window.scrollTo({top:0,behavior:'instant'});
+    document.body.style.overflow='hidden';
+    document.body.classList.remove('revealed');
+    intro.classList.remove('running');
+    intro.classList.add('active');
+    if(force)intro.classList.add('forced');
+    intro.setAttribute('aria-hidden','false');
+    // Forçar apenas uma reavaliação de animação no replay, sem animar propriedades de layout.
+    void logo.offsetWidth;
+    intro.classList.add('running');
+    revealTimer=setTimeout(reveal,Math.round(duration*.84));
+    endTimer=setTimeout(finish,duration+70);
+  }
+  replay.addEventListener('click',()=>start(true));
+  skip.addEventListener('click',finish);
+  document.addEventListener('keydown',event=>{if(event.key==='Escape'&&intro.classList.contains('active'))finish()});
+  reduced.addEventListener?.('change',event=>{if(event.matches)finish()});
+  window.addEventListener('resize',target,{passive:true});
+  window.MARQA_LAB04={replay:()=>start(true),finish};
+  if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>start(false),{once:true});else start(false);
+})();
+</script>
+<script>
+(()=>{
+ const trigger=document.getElementById('menuTrigger');
+ const panel=document.getElementById('mobileNav');
+ const scrim=document.getElementById('menuScrim');
+ const menuText=document.getElementById('menuText');
+ if(!trigger||!panel||!scrim)return;
+ let open=false;
+ function setOpen(next,restoreFocus=false){
+  if(open===next)return;
+  open=next;
+  document.body.classList.toggle('menu-open',open);
+  trigger.setAttribute('aria-expanded',String(open));
+  trigger.setAttribute('aria-label',open?'Fechar menu de navegação':'Abrir menu de navegação');
+  menuText.textContent=open?'Fechar':'Menu';
+  panel.setAttribute('aria-hidden',String(!open));
+  panel.inert=!open;
+  if(restoreFocus)trigger.focus({preventScroll:true});
+ }
+ trigger.addEventListener('click',()=>setOpen(!open));
+ scrim.addEventListener('click',()=>setOpen(false,true));
+ panel.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>setOpen(false)));
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&open)setOpen(false,true)});
+ document.querySelector('.header .brand')?.addEventListener('click',()=>setOpen(false));
+ window.addEventListener('resize',()=>{if(innerWidth>1040 && open)setOpen(false)},{passive:true});
+})();
+</script>
+</body>
+</html>
