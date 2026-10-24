@@ -4,7 +4,7 @@ Os experimentos do portfólio são preservados separadamente para não sobrescre
 
 ## Arquivos nesta pasta
 
-- `lab14-hero-site-assets/index.html`: versão para site com MP4 **separado**, autoplay silencioso após loader, fallback automático 1080p e controle manual acessível mesmo quando movimento reduzido está ativo. Os arquivos de mídia ficam no ZIP completo e no Drive.
+- `lab15-autoplay-nativo/index.html`: video com `src`, `autoplay`, `muted` e `playsinline` declarados diretamente no HTML, sem gate de `prefers-reduced-motion`; diagnóstico de mídia incluído. Versão de teste estável em 1080p no ZIP correspondente.\n- `lab14-hero-site-assets/index.html`: versão para site com MP4 **separado**, autoplay silencioso após loader, fallback automático 1080p e controle manual acessível mesmo quando movimento reduzido está ativo. Os arquivos de mídia ficam no ZIP completo e no Drive.
 - `lab04-loader/index.html`: versão original da abertura MARQA (base aprovada).
 - `lab05-header/index.html`: refinamento de header e navegação.
 - `lab06-hero-texto/index.html`: texto e composição editorial do hero.
@@ -31,3 +31,7 @@ Os experimentos do portfólio são preservados separadamente para não sobrescre
 ## Próximo controle de versões
 
 Antes de entregar novas versões, verificar o commit no GitHub e registrar o LAB correspondente. A versão **HTML sozinha não reproduz vídeo até receber o MP4 junto à pasta `assets`**. Para testar e publicar a demonstração completa, usar o ZIP correspondente do projeto.
+
+## Diagnóstico de autoplay (LAB 15)
+
+O LAB 14 desabilitava o autoplay via JavaScript em dispositivos com preferência de movimento reduzido e definia o `src` só após o parse da página. Isso explicava uma das condições em que o controle manual funcionava e o autoplay não. O LAB 15 remove essas dependências e registra `NotAllowedError`, `readyState`, `muted`, preferência de movimento e estado `paused` em uma seção de diagnóstico. Testado com navegador Chromium nos cenários de movimento normal e reduzido, incluindo pausar/retomar. A publicação no Netlify do usuário ainda precisa de validação. O fallback 1080p é uma versão da filmagem 4K do Drive e não implica perda do original.
