@@ -4,6 +4,7 @@ Os experimentos do portfólio são preservados separadamente para não sobrescre
 
 ## Arquivos nesta pasta
 
+- `lab14-hero-site-assets/index.html`: versão para site com MP4 **separado**, autoplay silencioso após loader, fallback automático 1080p e controle manual acessível mesmo quando movimento reduzido está ativo. Os arquivos de mídia ficam no ZIP completo e no Drive.
 - `lab04-loader/index.html`: versão original da abertura MARQA (base aprovada).
 - `lab05-header/index.html`: refinamento de header e navegação.
 - `lab06-hero-texto/index.html`: texto e composição editorial do hero.
