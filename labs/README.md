@@ -4,6 +4,9 @@ Os experimentos do portfólio são preservados separadamente para não sobrescre
 
 ## Arquivos nesta pasta
 
+- `lab04-loader/index.html`: versão original da abertura MARQA (base aprovada).
+- `lab05-header/index.html`: refinamento de header e navegação.
+- `lab06-hero-texto/index.html`: texto e composição editorial do hero.
 - `lab11-hero-4k/index.html`: registro histórico da versão 4K anterior, cujo autoplay poderia iniciar atrás do loader.
 - `lab12-hero-autoplay/index.html`: correção de timing. Abertura MARQA (~1,85–1,92 s) primeiro; então reprodução de fundo a partir de 0s, sem áudio e em loop; botão apenas pausa/retoma. Rever abertura pausa e reinicia a sequência.
 - `assets/marqa-hero-4k.mp4` e `assets/marqa-hero-poster.jpg` são necessários ao lado do HTML, mas **não estão incluídos no GitHub**, por tamanho. O arquivo 4K original foi preservado no Drive (abaixo); os pacotes ZIP completos são entregues no projeto ChatGPT.
