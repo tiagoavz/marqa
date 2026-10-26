@@ -51,3 +51,5 @@ O LAB 14 desabilitava o autoplay via JavaScript em dispositivos com preferência
 - `lab18-2-alinhamento/`: revisão de transição — remove os antigos placeholders Estratégia/Imagem/Performance da Seção 04 e alinha largura com a Expertise. Seção 04 ainda provisória, sem cases reais; vídeo/assets no ZIP completo de avaliação.
 
 - `lab18-3-icones-ampliados/`: amplia os gráficos SVG da Seção 03, mantém a versão compacta e corrige sobreposições no mobile. Hero, Essência e transição provisória para Projetos são preservados. Vídeo disponível no ZIP de homologação, não no GitHub.
+
+- `lab19-provas-reais/`: Seções 02 e 03 com evidências reais e Seção 04 com curadoria de Le Vive, Vanllu e Espaçolaser. Código modular; mídias otimizadas no pacote ZIP e na Library; vídeo principal preservado no Drive e no ZIP.

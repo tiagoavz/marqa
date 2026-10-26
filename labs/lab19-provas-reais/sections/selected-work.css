@@ -1,0 +1,36 @@
+/* MARQA LAB 19 — Seção 04 / Projetos Selecionados. Novo módulo independente. */
+.work--real{background:#eae7e1;color:#161618;padding:clamp(60px,7.8vw,118px) var(--gutter);position:relative}
+.work--real .work__inner{max-width:calc(1880px - 2 * var(--gutter));margin:0 auto}
+.work--real .section-top{border-bottom:1px solid #a9a59e;color:#6b675f}
+.work-real__intro{display:grid;grid-template-columns:minmax(0,1.7fr) minmax(250px,.6fr);gap:50px;align-items:end;padding:clamp(43px,5.4vw,84px) 0 36px}
+.work-real__eyebrow{color:#777169;font-size:10px;letter-spacing:.18em;font-weight:750}
+.work--real h2{font-size:clamp(58px,7.1vw,106px);margin:20px 0 0;line-height:.97;letter-spacing:-.077em;color:#151516}
+.work-real__aside p{font-size:clamp(16px,1.4vw,19px);line-height:1.46;color:#49453f;letter-spacing:-.019em;margin:0 0 22px}
+.work-real__aside span{font-size:9px;letter-spacing:.15em;color:#7c766e;font-weight:730}
+.work-real__grid{display:grid;grid-template-columns:1.32fr 1fr 1fr;gap:12px}
+.work-real__project{min-width:0;height:clamp(325px,34vw,520px);background:#27282a;position:relative;overflow:hidden}
+.work-real__project a{position:relative;display:block;width:100%;height:100%;color:#fff;overflow:hidden;isolation:isolate}
+.work-real__project img:not(.work-real__vanllu-logo){position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 36%;transition:transform .65s cubic-bezier(.2,.7,.2,1)}
+.work-real__project:hover img:not(.work-real__vanllu-logo){transform:scale(1.045)}
+.work-real__scrim{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.1) 10%,rgba(0,0,0,.05) 40%,rgba(0,0,0,.88) 100%)}
+.work-real__tag{position:absolute;top:18px;left:18px;right:18px;z-index:2;font-size:9px;letter-spacing:.13em;color:#e9e6e1;font-weight:750}
+.work-real__copy{position:absolute;z-index:2;left:22px;right:20px;bottom:24px;display:flex;flex-direction:column;gap:8px}
+.work-real__copy>span{font-size:10px;color:#d0ccc6;font-weight:700;letter-spacing:.14em}
+.work-real__copy strong{font-size:clamp(24px,2.35vw,36px);letter-spacing:-.056em;line-height:1.06;font-weight:660}
+.work-real__copy em{font-style:normal;font-size:10px;text-transform:uppercase;letter-spacing:.11em;border-bottom:1px solid rgba(255,255,255,.5);padding-bottom:8px;width:max-content;margin-top:7px}
+.work-real__project--featured img{filter:saturate(.78) contrast(1.07)}
+.work-real__project--vanllu{background:linear-gradient(145deg,#141417,#35363a 65%,#111114)}
+.work-real__vanllu-texture{position:absolute;inset:-20%;background:radial-gradient(circle at 30% 55%,rgba(200,201,201,.13),transparent 30%),repeating-linear-gradient(133deg,transparent 0,transparent 48px,rgba(255,255,255,.018) 49px,transparent 50px);transform:rotate(-8deg)}
+.work-real__vanllu-logo{position:absolute;top:20%;left:12%;width:76%;height:18%;object-fit:contain;opacity:.88}
+.work-real__project--laser{background:radial-gradient(ellipse at 60% 30%,#314850 0%,#1c292c 37%,#111416 100%)}
+.work-real__laser-sign{position:absolute;top:21%;left:8%;right:8%;font-size:clamp(16px,2vw,28px);letter-spacing:-.04em;font-weight:650;color:#c3e3ea;text-align:center}
+.work-real__laser-plus{font-size:17px;vertical-align:top}
+.work-real__laser-metric{position:absolute;top:34%;left:0;right:0;text-align:center;color:rgba(206,233,238,.19);font-weight:780;letter-spacing:-.08em;font-size:clamp(64px,7vw,124px)}
+.work-real__project--laser .work-real__scrim{background:linear-gradient(180deg,rgba(6,12,15,.04) 0%,rgba(6,12,15,.14) 36%,rgba(4,8,10,.9) 100%)}
+.work-real__footer{margin-top:23px;border-top:1px solid #aaa59d;padding-top:17px;display:flex;gap:25px;justify-content:space-between;align-items:center}
+.work-real__footer p{font-size:11px;color:#68635c;max-width:620px;line-height:1.5;margin:0}
+.work-real__footer a{flex-shrink:0;text-transform:uppercase;font-size:10px;letter-spacing:.1em;font-weight:760;color:#171717;border-bottom:1px solid #333;padding-bottom:9px}
+@media(max-width:1080px){.work-real__grid{grid-template-columns:1.15fr 1fr}.work-real__project--featured{grid-row:span 2;height:auto;min-height:620px}.work-real__project:not(.work-real__project--featured){height:304px}.work-real__intro{grid-template-columns:1fr .5fr;gap:20px}}
+@media(max-width:700px){.work--real{padding-top:68px;padding-bottom:75px}.work-real__intro{grid-template-columns:1fr;gap:18px;padding:55px 0 31px}.work-real__intro h2{font-size:clamp(54px,10.3vw,70px)}.work-real__aside p{font-size:15px;max-width:430px}.work-real__grid{grid-template-columns:1fr;gap:10px}.work-real__project--featured{grid-row:auto;height:420px;min-height:420px}.work-real__project:not(.work-real__project--featured){height:310px}.work-real__copy strong{font-size:30px}.work-real__tag{font-size:8px}.work-real__footer{flex-direction:column;align-items:start}.work-real__footer a{font-size:9px}.work-real__vanllu-logo{top:13%;height:25%}}
+@media(max-width:370px){.work-real__project--featured{height:385px;min-height:385px}.work-real__project:not(.work-real__project--featured){height:285px}.work-real__copy strong{font-size:27px}}
+@media(prefers-reduced-motion:reduce){.work-real__project img{transition:none!important}}

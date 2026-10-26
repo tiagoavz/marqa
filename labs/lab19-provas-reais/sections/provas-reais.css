@@ -1,0 +1,20 @@
+/* MARQA LAB 19 — provas reais acrescentadas ao LAB 18.4; isoladas por classe */
+.essence-proof{position:relative;z-index:1;display:grid;grid-template-columns:1.2fr 1fr;min-height:215px;margin:0 0 28px;overflow:hidden;background:#232325;color:#eeeae5}
+.essence-proof__image{height:215px;min-height:215px;position:relative;overflow:hidden}.essence-proof__image img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center 44%;filter:saturate(.86)}
+.essence-proof__caption{display:flex;flex-direction:column;align-items:flex-start;justify-content:center;gap:12px;padding:28px clamp(22px,3vw,46px);font-style:normal}
+.essence-proof__caption>span:first-child{font-size:10px;letter-spacing:.15em;font-weight:750;color:#bbb4aa}
+.essence-proof__caption strong{font-size:clamp(20px,2.6vw,38px);line-height:1.1;letter-spacing:-.045em;font-weight:610}
+.essence-proof__note{font-size:11px;color:#b9b3ab;line-height:1.5}
+.essence-proof__index{position:absolute;bottom:14px;right:18px;font-size:8px;letter-spacing:.15em;color:#a29f99}
+.marqa-proof{display:grid;grid-template-columns:minmax(0,1.5fr) minmax(0,.74fr) minmax(0,.74fr);gap:clamp(20px,3vw,50px);align-items:center;position:relative;border:1px solid #4c4845;border-left:3px solid #ddd2c5;margin-top:24px;padding:clamp(22px,2.6vw,42px);background:linear-gradient(110deg,#211f21,#171719);color:#efebe6}
+.marqa-proof__identity>span{display:block;font-size:9px;letter-spacing:.17em;color:#b0aaa3;font-weight:700;margin-bottom:15px}
+.marqa-proof__identity strong{font-size:clamp(23px,2.4vw,36px);line-height:1.12;letter-spacing:-.045em;font-weight:630}
+.marqa-proof__identity p{font-size:10px;line-height:1.5;color:#aaa6a1;max-width:350px;margin:14px 0 0}
+.marqa-proof__metric{min-width:0;display:flex;flex-direction:column;gap:5px}
+.marqa-proof__metric strong{font-size:clamp(30px,3.2vw,52px);line-height:1;letter-spacing:-.08em;white-space:nowrap;font-weight:690}
+.marqa-proof__metric>span{font-size:12px;color:#eeebe5;font-weight:600}
+.marqa-proof__metric small{font-size:10px;color:#a49e99;line-height:1.4}
+.marqa-proof__explore{position:absolute;bottom:10px;right:20px;color:#ccc7c0;font-size:9px;display:flex;gap:12px}
+@media(max-width:980px){.marqa-proof{grid-template-columns:1fr 1fr}.marqa-proof__identity{grid-column:1/-1}.marqa-proof__explore{position:static;grid-column:1/-1;width:max-content}}
+@media(max-width:700px){.essence-proof{grid-template-columns:1fr;margin-bottom:22px}.essence-proof__image{height:180px;min-height:180px}.essence-proof__caption{padding:25px;gap:8px}.essence-proof__caption strong{font-size:25px}.essence-proof__index{bottom:10px}.marqa-proof{grid-template-columns:1fr 1fr;gap:25px 12px;padding:22px 18px}.marqa-proof__identity{grid-column:1/-1}.marqa-proof__metric strong{font-size:clamp(26px,7.5vw,40px)}.marqa-proof__metric small{font-size:9px}.marqa-proof__explore{grid-column:1/-1}}
+@media(max-width:370px){.marqa-proof__metric strong{font-size:26px}.essence-proof__caption strong{font-size:22px}}
