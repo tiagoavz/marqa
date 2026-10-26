@@ -56,3 +56,5 @@ O LAB 14 desabilitava o autoplay via JavaScript em dispositivos com preferência
 
 - `lab18-4-camera/`: cópia histórica do LAB18.4 (símbolo câmera no card Audiovisual).
 - `lab19-reestruturacao/`: nova experiência pós-Hero — Essência compacta com bastidor real, três projetos selecionados (Le Vive, Vanllu, Espaçolaser) e três esteiras de vídeos. CSS/JS separados. Fotos locais e MP4 do Hero no pacote ZIP; arquivos da web no diretório `sections/`.
+
+- `lab19-2-essencia-horizontal/`: correção da Seção 02 com título em duas linhas, conteúdo lateral alinhado e banner baixo sem cortar texto. Hero e demais seções preservados. Para hospedagem com mídias, usar ZIP do LAB19.2.
