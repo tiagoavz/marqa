@@ -1,0 +1,20 @@
+/* LAB19 — Essência: módulo independente. Não altera Hero. */
+.m-essence{background:#ebe8e2;color:#151518;padding:34px 0 49px;isolation:isolate}
+.m-wrap{width:min(1430px,calc(100% - 72px));margin-inline:auto}
+.m-topline{display:flex;justify-content:space-between;gap:24px;align-items:center;font-size:10px;font-weight:750;letter-spacing:.17em;color:#77726d;border-bottom:1px solid #b9b4ae;padding-bottom:14px}
+.m-essence__intro{display:grid;grid-template-columns:1.05fr .95fr;align-items:end;gap:clamp(44px,6vw,120px);padding:55px 0 40px}
+.m-essence__intro h2{font-size:clamp(58px,6vw,104px);font-weight:790;letter-spacing:-.081em;line-height:.97;margin:0}
+.m-essence__intro h2 em{font-style:normal;font-weight:650;color:#8f8a84}
+.m-essence__about{max-width:490px;justify-self:end}
+.m-kicker{display:block;letter-spacing:.18em;font-size:10px;color:#66625e;font-weight:780;margin-bottom:21px}
+.m-essence__about p{font-size:clamp(15px,1.14vw,18px);line-height:1.55;letter-spacing:-.022em;margin:0 0 12px;color:#484642}
+.m-essence__about p:first-of-type{font-size:clamp(18px,1.75vw,26px);line-height:1.28;font-weight:660;letter-spacing:-.045em;color:#242325}
+.m-essence__banner{height:clamp(220px,17.8vw,255px);display:grid;grid-template-columns:1.08fr 1fr;position:relative;overflow:hidden;background:#242325;color:#f6f4f0}
+.m-essence__banner img{width:100%;height:100%;object-fit:cover;object-position:60% 52%;filter:contrast(1.05) saturate(.86)}
+.m-essence__banner-text{padding:clamp(19px,2vw,28px);display:flex;flex-direction:column;justify-content:center;position:relative}
+.m-essence__banner-text>span,.m-essence__banner-no{font-size:9px;font-weight:780;letter-spacing:.17em;color:#c3beba}
+.m-essence__banner-text h3{margin:12px 0 8px;font-size:clamp(19px,2.05vw,28px);font-weight:720;line-height:1.07;letter-spacing:-.047em}
+.m-essence__banner-text p{margin:0;color:#bbb6b0;font-size:11px;line-height:1.45}
+.m-essence__banner-no{position:absolute;right:20px;bottom:16px;font-size:8px;color:#807c78}
+@media(max-width:900px){.m-essence__intro{gap:34px;padding:38px 0 30px}.m-essence__intro h2{font-size:clamp(50px,6.1vw,68px)}.m-essence__about p:first-of-type{font-size:19px}}
+@media(max-width:680px){.m-wrap{width:calc(100% - 36px)}.m-essence{padding:22px 0 31px}.m-topline{font-size:8px;letter-spacing:.13em}.m-essence__intro{display:block;padding:33px 0 26px}.m-essence__intro h2{font-size:clamp(46px,10.9vw,72px)}.m-essence__about{margin-top:28px;max-width:none}.m-kicker{font-size:9px;margin-bottom:11px}.m-essence__about p{font-size:14px}.m-essence__about p:first-of-type{font-size:20px}.m-essence__banner{height:auto;grid-template-columns:1fr}.m-essence__banner img{height:155px}.m-essence__banner-text{padding:22px 23px 33px}.m-essence__banner-text h3{font-size:23px;margin:11px 0 8px}.m-essence__banner-no{right:13px;bottom:12px}}

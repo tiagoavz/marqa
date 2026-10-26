@@ -1,0 +1,29 @@
+/* LAB19 — projetos selecionados */
+.m-selected{background:#ebe8e2;color:#141416;padding:57px 0 54px}
+.m-selected__intro{display:flex;align-items:end;justify-content:space-between;gap:30px;padding:33px 0 30px}
+.m-selected__intro h2{margin:0;font-size:clamp(62px,6.7vw,105px);line-height:.94;letter-spacing:-.082em;font-weight:780}
+.m-selected__intro p{max-width:290px;font-size:15px;line-height:1.48;letter-spacing:-.02em;margin:0 0 5px;color:#504e4a}
+.m-selected__grid{display:grid;grid-template-columns:1.27fr 1fr 1fr;gap:10px}
+.m-project{height:clamp(355px,30vw,435px);min-width:0;position:relative;overflow:hidden;background:#232325;color:#fff;display:block;isolation:isolate;outline-offset:4px;text-decoration:none}
+.m-project img:not(.m-project__brand){position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:50% 21%;transition:transform .7s cubic-bezier(.2,.7,.2,1)}
+.m-project:hover img:not(.m-project__brand){transform:scale(1.045)}
+.m-project__shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.22),transparent 25%,rgba(0,0,0,.15) 53%,rgba(0,0,0,.83));z-index:1}
+.m-project__category{position:absolute;z-index:3;left:21px;top:21px;right:10px;font-size:9px;letter-spacing:.15em;font-weight:720;color:#efede9}
+.m-project__label{position:absolute;bottom:22px;left:22px;right:18px;z-index:3}
+.m-project__label small{display:block;font-size:10px;font-weight:730;letter-spacing:.14em;color:#dcd7d2;margin-bottom:11px}
+.m-project__label h3{margin:0 0 17px;font-size:clamp(22px,2.1vw,36px);letter-spacing:-.059em;line-height:1.05;font-weight:710}
+.m-project__label>span{display:inline-block;font-size:9px;letter-spacing:.13em;font-weight:720;border-bottom:1px solid #f7f4ef;padding-bottom:5px}
+.m-project--vanllu{background:linear-gradient(135deg,#111113 2%,#262629 57%,#0c0c0e 100%)}
+.m-project--vanllu::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(129deg,transparent 0 2px,rgba(255,255,255,.014) 2px 3px);opacity:.9}
+.m-project__brand{position:absolute;left:14%;width:72%;height:auto;top:22%;max-height:27%;object-fit:contain;z-index:2;filter:drop-shadow(0 5px 15px #0008)}
+.m-project--laser{background:linear-gradient(138deg,#17262b,#1b3239 70%,#111d21)}
+.m-project--laser::before{content:'';position:absolute;inset:0;background:radial-gradient(circle at 55% 48%,rgba(174,201,202,.07),transparent 48%)}
+.m-project__metric{position:absolute;z-index:2;left:15px;right:15px;top:29%;text-align:center}
+.m-project__metric small{display:block;font-size:11px;font-weight:700;letter-spacing:.08em;color:#b3c4c9}
+.m-project__metric strong{display:block;white-space:nowrap;font-size:clamp(49px,5.8vw,96px);font-weight:760;letter-spacing:-.078em;line-height:1.35;color:#bed4d6}
+.m-project__metric span{display:block;font-size:11px;color:#b7cbcf}
+.m-selected__footer{display:flex;justify-content:space-between;gap:30px;align-items:center;padding-top:17px;margin-top:15px;border-top:1px solid #b7b2ac}
+.m-selected__footer p{margin:0;max-width:660px;font-size:10px;color:#625f59;line-height:1.5}
+.m-selected__footer a{color:#141416;flex-shrink:0;font-size:10px;font-weight:760;letter-spacing:.08em;text-decoration:none;border-bottom:1px solid #27272a;padding:6px 0}
+@media(max-width:900px){.m-selected__grid{grid-template-columns:repeat(3,minmax(0,1fr))}.m-project{height:clamp(340px,35vw,410px)}.m-project__label{left:15px;bottom:17px}.m-project__category{left:15px;top:15px;font-size:8px}.m-project__label h3{font-size:clamp(20px,2.3vw,28px)}.m-project__metric strong{font-size:clamp(42px,6.6vw,72px)}}
+@media(max-width:680px){.m-selected{padding:42px 0 40px}.m-selected__intro{display:block;padding:28px 0}.m-selected__intro h2{font-size:clamp(52px,10.9vw,73px)}.m-selected__intro p{margin-top:20px;font-size:14px}.m-selected__grid{grid-template-columns:minmax(0,1fr);gap:10px}.m-project{height:330px;min-height:0}.m-project--levive{height:360px}.m-project--laser .m-project__metric{top:19%}.m-project__metric strong{font-size:clamp(53px,16vw,64px);line-height:1.1}.m-project__metric span{font-size:10px}.m-project__category{font-size:9px}.m-project__label h3{font-size:30px}.m-selected__footer{align-items:start;flex-direction:column;gap:9px}.m-selected__footer p{font-size:10px}}

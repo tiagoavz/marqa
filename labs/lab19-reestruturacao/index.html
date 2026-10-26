@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#0b0b0d">
+<meta name="description" content="MARQA — estratégia, audiovisual e performance. Estratégia, audiovisual e performance. Essência MARQA e portfólio em construção.">
+<title>MARQA — LAB 18.3 | Expertise em cards</title>
+<link rel="preload" as="image" href="assets/marqa-hero-poster.jpg">
+<style>
+:root{--bg:#0b0b0d;--ink:#f4f1ed;--muted:#ada9a5;--light:#ebe8e1;--gutter:clamp(22px,5.4vw,84px);--nav-height:78px;--veil:.13;--menu-ease:cubic-bezier(.22,1,.36,1)}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:var(--nav-height)}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,ui-sans-serif,-apple-system,BlinkMacSystemFont,"Segoe UI",Arial,sans-serif;-webkit-font-smoothing:antialiased;overflow-x:hidden}
+button,input{font:inherit}button{cursor:pointer}a{color:inherit;text-decoration:none}img{max-width:100%;display:block}a:focus-visible,button:focus-visible,input:focus-visible{outline:2px solid white;outline-offset:4px}
+.sr-only{position:absolute;width:1px;height:1px;clip:rect(0 0 0 0);clip-path:inset(50%);overflow:hidden;white-space:nowrap}
+/* Header — continuidade do LAB 05 */
+.header{height:var(--nav-height);padding:0 var(--gutter);position:sticky;top:0;z-index:30;display:grid;grid-template-columns:minmax(140px,1fr) auto minmax(270px,1fr);align-items:center;gap:22px;background:rgba(11,11,13,.97);border-bottom:1px solid rgba(255,255,255,.12);backdrop-filter:blur(15px)}
+.brand{display:inline-flex;align-items:flex-start;gap:2px;width:max-content;font-size:clamp(26px,2.4vw,31px);font-weight:860;letter-spacing:-.088em;line-height:1;color:#f5f3f0}
+.brand sup{position:relative;top:-2px;font-size:10px;font-weight:620;letter-spacing:0;margin-left:1px}
+.nav{display:flex;align-items:center;gap:clamp(24px,3.2vw,52px);font-size:12px;color:#b5b2ad;font-weight:570}
+.nav a{position:relative;min-height:42px;display:inline-flex;align-items:center;transition:color .2s}
+.nav a:hover{color:white}.nav a:after{content:"";position:absolute;left:0;right:100%;bottom:5px;height:1px;background:#fff;transition:right .25s}.nav a:hover:after{right:0}
+.header-side{display:flex;justify-content:flex-end}
+.header-cta{min-height:44px;display:inline-flex;align-items:center;gap:15px;background:#f5f3ef;color:#111114;padding:0 19px 0 23px;border-radius:99px;font-weight:700;font-size:12px;white-space:nowrap;transition:transform .2s,background .2s}
+.header-cta:hover{transform:translateY(-2px);background:#ddd9d3}.header-cta span{font-size:17px;font-weight:400}
+.menu-trigger,.mobile-panel,.scrim{display:none}
+/* Hero em vídeo. Preserve a nitidez do conteúdo 4K: sem zoom adicional ou filtragem destrutiva. */
+.hero{min-height:min(810px,calc(100svh - var(--nav-height)));height:calc(100svh - var(--nav-height));max-height:960px;position:relative;isolation:isolate;display:flex;align-items:center;overflow:hidden;background:#161719}
+.hero-media{position:absolute;inset:0;z-index:-4;overflow:hidden;background:#161719}
+.hero-media img,.hero-media video{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;object-position:center center}
+.hero-media img{z-index:0}.hero-media video{z-index:1;opacity:0;transition:opacity .45s ease;pointer-events:none}.hero-media video.ready{opacity:1}
+.gradient{position:absolute;inset:0;z-index:-3;background:linear-gradient(90deg,rgba(7,8,10,.93) 0%,rgba(7,8,10,.79) 25%,rgba(7,8,10,.61) 49%,rgba(7,8,10,.35) 76%,rgba(7,8,10,.23) 100%);pointer-events:none}
+.toner{position:absolute;inset:0;z-index:-2;background:rgba(0,0,0,var(--veil));pointer-events:none}
+.gridlines{position:absolute;inset:0;z-index:-1;opacity:.10;pointer-events:none;background:linear-gradient(90deg,transparent 24.98%,rgba(255,255,255,.12) 25%,transparent 25.02%,transparent 49.98%,rgba(255,255,255,.12) 50%,transparent 50.02%,transparent 74.98%,rgba(255,255,255,.12) 75%,transparent 75.02%)}
+.hero-meta{position:absolute;top:44px;left:var(--gutter);right:var(--gutter);display:flex;justify-content:space-between;gap:20px;color:rgba(244,240,236,.64);font-size:10px;font-weight:750;letter-spacing:.21em;text-transform:uppercase}
+.hero-content{width:100%;max-width:1750px;padding:50px var(--gutter) 46px;margin:0 auto;position:relative;z-index:2}
+.eyebrow{display:block;margin:0 0 33px;font-size:10px;letter-spacing:.22em;font-weight:770;text-transform:uppercase;color:#d0ccc7}
+.hero-title{font-size:clamp(54px,7.25vw,110px);max-width:1230px;line-height:1.015;letter-spacing:-.071em;font-weight:785;margin:0;text-wrap:balance}
+.hero-title em{font-style:normal;color:#beb7b0}
+.hero-foot{margin-top:41px;display:flex;align-items:end;gap:clamp(30px,5vw,75px)}
+.hero-description{color:#c6c2be;line-height:1.58;font-weight:440;max-width:475px;font-size:clamp(15px,1.4vw,19px);margin:0}
+.hero-link{padding-bottom:10px;border-bottom:1px solid #f1eeea;font-size:11px;font-weight:790;text-transform:uppercase;letter-spacing:.13em;white-space:nowrap;transition:letter-spacing .2s}
+.hero-link:hover{letter-spacing:.16em}
+.hero-bottom{position:absolute;bottom:31px;left:var(--gutter);right:var(--gutter);display:flex;align-items:center;justify-content:space-between;gap:20px;color:#c9c5c2;font-size:10px;font-weight:690;letter-spacing:.14em;text-transform:uppercase}
+.hero-bottom-right{display:flex;align-items:center;gap:24px}.video-toggle{border:1px solid rgba(255,255,255,.46);border-radius:99px;min-height:34px;background:rgba(9,9,11,.25);color:#fff;padding:7px 12px;text-transform:none;letter-spacing:0;font-weight:620;font-size:11px;display:flex;align-items:center;gap:8px;white-space:nowrap;backdrop-filter:blur(8px)}.video-toggle:hover{background:rgba(255,255,255,.14)}
+.video-toggle .ico{width:15px;text-align:center;font-size:11px}
+/* Área do laboratório: ajuste opcional da legibilidade, sem alterar a estrutura aprovada */
+.lab-strip{display:flex;justify-content:space-between;align-items:center;gap:25px;flex-wrap:wrap;background:#161618;border-top:1px solid #303034;padding:20px var(--gutter)}
+.lab-note{font-size:11px;line-height:1.55;color:#a9a7a7;max-width:700px}.lab-note strong{font-size:11px;color:#e5e1dc;letter-spacing:.09em;text-transform:uppercase}
+.lab-range{font-size:11px;color:#cecbc7;display:flex;align-items:center;gap:13px;white-space:nowrap}.lab-range input{width:116px;accent-color:#d7d4ce}.lab-range output{min-width:35px;text-align:right;font-variant-numeric:tabular-nums}
+/* Conteúdo editorial de preenchimento das etapas anteriores, ainda sem cases reais */
+.section-top{display:flex;justify-content:space-between;gap:25px;border-bottom:1px solid rgba(20,20,20,.27);font-size:10px;letter-spacing:.14em;font-weight:700;text-transform:uppercase;padding:0 0 22px}
+.work{padding:clamp(70px,9vw,135px) var(--gutter);background:#e8e5de;color:#141416}
+.work h2,.expertise h2,.contact h2{font-size:clamp(46px,7.5vw,104px);line-height:.98;letter-spacing:-.074em;font-weight:730;margin:60px 0}
+.case-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+.case{background:#272729;color:#eeebe5;min-height:315px;padding:27px;display:flex;flex-direction:column;justify-content:space-between;position:relative;overflow:hidden}
+.case:nth-child(2){background:#38383a}.case:nth-child(3){background:#1e2529}.case:before{content:"";position:absolute;inset:0;background:linear-gradient(145deg,rgba(255,255,255,.07),transparent 40%);pointer-events:none}
+.case small{color:#a8a7a5;letter-spacing:.13em;font-size:10px}.case strong{font-size:clamp(25px,2.8vw,43px);line-height:1.05;letter-spacing:-.05em}.placeholder-note{margin-top:25px;color:#6c6761;font-size:12px;line-height:1.5}
+.expertise{background:#151517;padding:clamp(75px,9vw,130px) var(--gutter) 100px;color:#f4f1ec}
+.expertise .section-top{border-color:rgba(255,255,255,.17);color:#a8a5a2}
+.expertise h2{max-width:1100px}
+.expertise-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px}
+.expertise-card{border-top:1px solid #57545a;display:flex;flex-direction:column;justify-content:space-between;min-height:200px;padding:20px 18px 0 0}.expertise-card small{font-size:10px;color:#8d8988}.expertise-card h3{font-size:clamp(27px,3vw,36px);margin:0 0 9px;letter-spacing:-.045em}.expertise-card p{color:#b2adab;line-height:1.55;max-width:290px;font-size:13px;margin:0}
+.contact{background:#ece9e2;color:#141416;padding:clamp(70px,8vw,120px) var(--gutter) 100px}.contact h2{margin-bottom:30px}.contact-foot{display:flex;align-items:center;justify-content:space-between;gap:22px;flex-wrap:wrap}.contact p{font-size:16px;color:#595653;max-width:480px;line-height:1.6}.status-note{border:1px solid #bcb7b0;padding:15px 19px;border-radius:40px;font-size:12px}
+.footer{background:#0c0c0d;color:#aaa6a2;display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:29px var(--gutter);font-size:10px;letter-spacing:.12em;text-transform:uppercase}
+.footer button{border:1px solid #464449;border-radius:60px;background:transparent;color:#f2efea;padding:11px 15px;text-transform:none;letter-spacing:.01em;font-size:11px}
+/* Loader: movimento transform/opacity; continuação da abertura LAB 04 */
+.intro{position:fixed;inset:0;background:#08080a;z-index:100;color:#f6f4f0;overflow:hidden;isolation:isolate;visibility:hidden;opacity:0;pointer-events:none}
+.intro.active{visibility:visible;opacity:1;pointer-events:auto}
+.intro:before{content:"";position:absolute;inset:26px;border:1px solid rgba(255,255,255,.09);pointer-events:none}
+.intro-centerline{position:absolute;top:50%;left:var(--gutter);right:var(--gutter);height:1px;background:rgba(255,255,255,.055)}
+.intro-logo{position:absolute;left:50%;top:50%;width:clamp(260px,36vw,440px);height:auto;transform:translate3d(-50%,-50%,0) scale(.84);opacity:0;transform-origin:center center;will-change:transform,opacity;contain:layout paint}
+.intro-logo img{display:block;width:100%;height:auto;user-select:none;pointer-events:none}
+.intro-label,.intro-count{position:absolute;bottom:43px;font-size:10px;text-transform:uppercase;letter-spacing:.22em;color:#8c898f;font-weight:700;opacity:0}.intro-label{left:var(--gutter)}.intro-count{right:var(--gutter)}
+.skip{position:absolute;right:var(--gutter);top:28px;background:transparent;border:1px solid #4b494d;border-radius:50px;padding:10px 16px;font-size:10px;text-transform:uppercase;letter-spacing:.12em;color:#dedbd6;font-weight:700}
+.intro.running{animation:intro-fade 1850ms linear both}.intro.running .intro-logo{animation:brand-flight 1850ms both}.intro.running .intro-label,.intro.running .intro-count{animation:small-copy 1850ms linear both}
+@keyframes brand-flight{0%{opacity:0;transform:translate3d(-50%,-50%,0) scale(.82)}19%{opacity:1;transform:translate3d(-50%,-50%,0) scale(1)}38%{opacity:1;transform:translate3d(-50%,-50%,0) scale(1)}86%{opacity:.82;transform:translate3d(calc(-50% + var(--flight-x)),calc(-50% + var(--flight-y)),0) scale(var(--flight-scale))}100%{opacity:0;transform:translate3d(calc(-50% + var(--flight-x)),calc(-50% + var(--flight-y)),0) scale(var(--flight-scale))}}
+@keyframes intro-fade{0%,82%{opacity:1;visibility:visible}96%{opacity:0;visibility:visible}100%{opacity:0;visibility:hidden;pointer-events:none}}
+@keyframes small-copy{0%,12%{opacity:0}22%,52%{opacity:.95}76%,100%{opacity:0}}
+/* Mobile nav */
+@media(max-width:1050px){:root{--nav-height:70px}.header{grid-template-columns:1fr auto}.nav,.header-cta{display:none}.menu-trigger{display:flex;align-items:center;gap:12px;height:40px;padding:0 14px;border-radius:90px;border:1px solid #58565c;color:#eeeae6;background:transparent;font-size:12px}.glyph{display:flex;flex-direction:column;gap:5px}.glyph i{height:1px;width:16px;background:#eee;display:block;transition:transform .2s}.menu-trigger[aria-expanded="true"] .glyph i:first-child{transform:translateY(3px) rotate(45deg)}.menu-trigger[aria-expanded="true"] .glyph i:last-child{transform:translateY(-3px) rotate(-45deg)}.scrim{display:block;position:fixed;inset:var(--nav-height) 0 0;background:rgba(0,0,0,.62);opacity:0;pointer-events:none;z-index:25;transition:opacity .3s}.mobile-panel{display:flex;position:fixed;top:var(--nav-height);left:0;right:0;z-index:29;visibility:hidden;opacity:0;transform:translateY(-14px);pointer-events:none;background:#131316;padding:36px var(--gutter) 45px;border-bottom:1px solid #39393e;flex-direction:column;transition:opacity .2s,transform .3s,visibility .3s}.mobile-panel small{font-size:10px;color:#8d8b88;text-transform:uppercase;letter-spacing:.17em;margin-bottom:22px}.mobile-panel a{display:flex;justify-content:space-between;border-bottom:1px solid #37363a;padding:17px 0 21px;font-size:clamp(27px,5.5vw,44px);letter-spacing:-.04em}.mobile-panel a:last-child{font-size:14px;margin-top:30px;padding:19px 18px;background:#f5f2ec;color:#111;border:0;border-radius:70px;letter-spacing:0}.menu-open .scrim{pointer-events:auto;opacity:1}.menu-open .mobile-panel{visibility:visible;opacity:1;transform:none;pointer-events:auto}.menu-open{overflow:hidden}}
+@media(max-width:760px){:root{--nav-height:67px}.header{height:67px}.brand{font-size:27px}.hero{height:calc(100svh - var(--nav-height));min-height:650px;max-height:none}.hero-media img,.hero-media video{object-position:54% center}.gradient{background:linear-gradient(180deg,rgba(7,8,10,.65) 0%,rgba(7,8,10,.60) 18%,rgba(7,8,10,.72) 45%,rgba(7,8,10,.86) 77%,rgba(7,8,10,.91) 100%)}.hero-meta{top:25px;font-size:8px}.hero-meta span:last-child{display:none}.hero-content{padding-top:70px}.eyebrow{font-size:9px;margin-bottom:27px}.hero-title{font-size:clamp(43px,10.7vw,73px);line-height:1.055;letter-spacing:-.061em}.hero-foot{flex-direction:column;align-items:flex-start;gap:25px;margin-top:32px}.hero-description{font-size:14px;max-width:340px}.hero-bottom{bottom:22px;font-size:9px;line-height:1.45}.scroll-prompt{display:none}.hero-bottom-right{gap:8px}.lab-strip{align-items:flex-start}.case-grid,.expertise-grid{grid-template-columns:1fr}.case{min-height:240px}.expertise-card{min-height:165px}.work h2,.expertise h2,.contact h2{margin:45px 0}.intro-logo{width:clamp(230px,65vw,330px)}.intro:before{inset:13px}.intro-label,.intro-count{font-size:8px}.footer{align-items:flex-start}}
+@media(max-width:390px){.hero-title{font-size:clamp(39px,10.5vw,46px)}.hero-content{padding-top:85px}.hero{min-height:620px}.lab-range{white-space:normal}}
+@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}.hero-media video{transition:none}.mobile-panel,.scrim{transition:none}}
+
+/* Diagnóstico do laboratório, fora do hero. Não incluí-lo no portfólio final. */
+.test-diagnostics{padding:18px var(--gutter);background:#101013;border-top:1px solid #343337;color:#aeaba6;font-size:12px}
+.test-diagnostics summary{cursor:pointer;color:#e7e4df;letter-spacing:.03em}
+.test-diagnostics pre{font:11px/1.6 ui-monospace,SFMono-Regular,Consolas,monospace;white-space:pre-wrap;word-break:break-word;margin:12px 0 0}
+/* O botão nunca deve aparecer durante o loader. */
+.video-toggle[hidden]{display:none!important}
+.video-toggle:disabled{opacity:.65;cursor:default}
+
+/* Mensagem diagnóstica visível somente quando nenhuma versão do vídeo puder carregar. */
+.media-alert{position:absolute;z-index:5;right:var(--gutter);bottom:85px;max-width:340px;background:rgba(15,15,17,.9);border:1px solid rgba(255,255,255,.2);color:#f3f0e9;border-radius:8px;padding:13px 16px;font-size:12px;line-height:1.5;box-shadow:0 10px 40px #0008}
+.media-alert[hidden]{display:none!important}
+@media(max-width:760px){.media-alert{left:var(--gutter);right:var(--gutter);bottom:86px;max-width:unset}}
+</style>
+<link rel="stylesheet" href="sections/essencia.css">
+<link rel="stylesheet" href="sections/projetos.css">
+<link rel="stylesheet" href="sections/repertorio.css">
+
+<script>document.documentElement.classList.add('js');</script>
+
+</head>
+<body>
+<header class="header" id="header">
+ <a class="brand" id="brand" href="#inicio" aria-label="MARQA — início">MARQA<sup>®</sup></a>
+ <nav class="nav" aria-label="Navegação principal"><a href="#trabalhos">Projetos</a><a href="#repertorio">Repertório</a></nav>
+ <div class="header-side"><a class="header-cta" href="#contato">Inicie seu projeto com a MARQA <span aria-hidden="true">↗</span></a><button class="menu-trigger" type="button" id="menuTrigger" aria-expanded="false" aria-controls="mobilePanel"><span id="menuText">Menu</span><span class="glyph" aria-hidden="true"><i></i><i></i></span></button></div>
+</header>
+<div class="scrim" id="scrim"></div>
+<nav class="mobile-panel" id="mobilePanel" aria-label="Navegação móvel" aria-hidden="true" inert><small>Navegar / MARQA</small><a href="#trabalhos">Projetos <span aria-hidden="true">↗</span></a><a href="#repertorio">Repertório <span aria-hidden="true">↗</span></a><a href="#contato">Inicie seu projeto com a MARQA <span aria-hidden="true">↗</span></a></nav>
+<main>
+<section class="hero" id="inicio" aria-labelledby="heroTitle">
+ <div class="hero-media" aria-hidden="true"><img src="assets/marqa-hero-poster.jpg" alt="" fetchpriority="high"><video id="heroVideo" src="assets/marqa-hero-1080p.mp4" autoplay muted loop playsinline webkit-playsinline preload="auto" poster="assets/marqa-hero-poster.jpg"></video></div>
+ <div class="gradient"></div><div class="toner"></div><div class="media-alert" id="mediaAlert" role="status" hidden></div><div class="gridlines"></div>
+ <div class="hero-meta"><span>MARQA / BRAND EXPERIENCE</span><span>PORTFÓLIO — 2026</span></div>
+ <div class="hero-content"><span class="eyebrow">STORYTELLING · IMAGEM · PERFORMANCE</span><h1 class="hero-title" id="heroTitle">Construímos marcas<br>que as pessoas<br>querem <em>escolher.</em></h1><div class="hero-foot"><p class="hero-description">Estratégia, audiovisual e performance para marcas que querem ocupar mais espaço no mercado.</p><a class="hero-link" href="#trabalhos">Conhecer o trabalho ↗</a></div></div>
+ <div class="hero-bottom"><span>01 / MARQA — EXPERIÊNCIA</span><div class="hero-bottom-right"><span class="scroll-prompt">DESLIZE PARA EXPLORAR ↓</span><button class="video-toggle" id="videoToggle" type="button" aria-label="Pausar vídeo de fundo" aria-pressed="false"><span class="ico" id="videoIcon" aria-hidden="true">Ⅱ</span><span id="videoLabel">Pausar vídeo</span></button></div></div>
+</section>
+
+<!-- LAB 19 / 02 — ESSÊNCIA COM PROVA VISUAL -->
+<section class="m-essence" id="essencia" aria-labelledby="essenciaHeading">
+ <div class="m-wrap">
+  <div class="m-topline"><span>02 / NOSSO PONTO DE VISTA</span><span>MARQA® — 2026</span></div>
+  <div class="m-essence__intro">
+   <h2 id="essenciaHeading">O que se vê<br>é só o <em>começo.</em></h2>
+   <div class="m-essence__about"><span class="m-kicker">POR TRÁS DA IMAGEM</span><p>Antes de pensar no que uma marca vai publicar, pensamos no que ela precisa significar.</p><p>Somos a MARQA. Unimos estratégia, direção criativa e performance para transformar percepção em valor.</p></div>
+  </div>
+  <div class="m-essence__banner">
+   <img src="assets/marqa-bastidores.jpg" alt="Bastidores reais de uma gravação da MARQA, com câmera profissional" loading="lazy">
+   <div class="m-essence__banner-text"><span>PROCESSO REAL / MARQA EM CAMPO</span><h3>Ideias que saem do papel.<br>Histórias que ganham forma.</h3><p>Um registro de bastidores de uma produção audiovisual.</p></div>
+   <span class="m-essence__banner-no">01 / IMAGEM</span>
+  </div>
+ </div>
+</section>
+<!-- LAB 19 / 03 — PROJETOS SELECIONADOS -->
+<section class="m-selected" id="trabalhos" aria-labelledby="selectedHeading">
+ <div class="m-wrap">
+  <div class="m-topline"><span>03 / SELECTED WORK</span><span>PROJETOS SELECIONADOS</span></div>
+  <div class="m-selected__intro"><h2 id="selectedHeading">O trabalho fala<br>por nós.</h2><p>Três desafios. Três linguagens. Um recorte real do que construímos junto às marcas.</p></div>
+  <div class="m-selected__grid">
+   <a class="m-project m-project--levive" href="https://drive.google.com/file/d/1x9MZyYe8zK1fWQrYnuB0Y0qy1tgowIAi/view" target="_blank" rel="noopener noreferrer" aria-label="Conhecer produção audiovisual Le Vive no Google Drive">
+    <img src="assets/levive-diego.jpg" alt="Retrato profissional realizado para a Le Vive, na clínica" loading="lazy">
+    <div class="m-project__shade"></div><span class="m-project__category">01 / SAÚDE & POSICIONAMENTO</span><div class="m-project__label"><small>LE VIVE</small><h3>Autoridade construída<br>com direção.</h3><span>VER PRODUÇÃO ↗</span></div>
+   </a>
+   <a class="m-project m-project--vanllu" href="https://drive.google.com/file/d/1DgKFusbBzmmcssDuDm9IaYreEpVtHVdc/view" target="_blank" rel="noopener noreferrer" aria-label="Conhecer produção audiovisual Vanllu no Google Drive">
+    <img src="assets/vanllu-original-logo.png" alt="Marca original Vanllu" loading="lazy" class="m-project__brand">
+    <span class="m-project__category">02 / MARCAS & VAREJO</span><div class="m-project__label"><small>VANLLU</small><h3>Imagem, produto<br>e desejo.</h3><span>VER PRODUÇÃO ↗</span></div>
+   </a>
+   <a class="m-project m-project--laser" href="https://drive.google.com/file/d/1tbL7pxZKav8gj8JcwWC0gvNu1AnW3Srb/view" target="_blank" rel="noopener noreferrer" aria-label="Conhecer produção audiovisual Espaçolaser no Google Drive">
+    <span class="m-project__category">03 / ESTÉTICA & PERFORMANCE</span><div class="m-project__metric"><small>ESPAÇOLASER CANAÃ</small><strong>+30,7%</strong><span>de crescimento da base de seguidores*</span></div><div class="m-project__label"><small>ESPAÇOLASER</small><h3>Conteúdo que encontra<br>distribuição.</h3><span>VER PRODUÇÃO ↗</span></div>
+   </a>
+  </div>
+  <div class="m-selected__footer"><p>*Variação aproximada da base de seguidores, de 3.321 para 4.340, no recorte jul.–ago. de 2026, conforme o case anterior. Não é projeção nem promessa de resultado.</p><a href="#repertorio">EXPLORAR OUTROS TRABALHOS ↗</a></div>
+ </div>
+</section>
+<!-- LAB 19 / 04 — REPERTÓRIO EXPANDIDO -->
+<section class="m-repertoire" id="repertorio" aria-labelledby="repertoireHeading"><div class="m-wrap"><div class="m-topline"><span>04 / REPERTÓRIO</span><span>OUTRAS MARCAS. OUTRAS LINGUAGENS.</span></div><div class="m-repertoire__heading"><h2 id="repertoireHeading">Um repertório<br>em movimento.</h2><p>Uma seleção de produções reais. Explore os projetos, clientes e linguagens do universo MARQA.</p></div>
+<div class="m-rail-group"><div class="m-rail-top"><div><span>FEATURED CLIENTS</span><h3>Destaques em movimento.</h3></div><div class="m-rail-controls"><button type="button" data-rail-move="-1" data-for="rail-featured" aria-label="Anterior em Destaques em movimento.">←</button><button type="button" data-rail-move="1" data-for="rail-featured" aria-label="Próximo em Destaques em movimento.">→</button></div></div><div class="m-rail" id="rail-featured" tabindex="0" aria-label="Destaques em movimento.">
+<button class="m-rail-card" type="button" data-video-id="1TiguJ0Ga41eEA-hr7PublpB0S9Nir7iv" data-video-name="Dr. Rafael Agra" aria-label="Assistir produção de Dr. Rafael Agra"><span class="m-rail-card__fallback" aria-hidden="true">D</span><img src="https://drive.google.com/thumbnail?id=1TiguJ0Ga41eEA-hr7PublpB0S9Nir7iv&sz=w900" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span class="m-rail-card__fade"></span><span class="m-rail-card__top">MARQA / FILM</span><span class="m-rail-card__play" aria-hidden="true">↗</span><span class="m-rail-card__name"><b>Dr. Rafael Agra</b><small>Personal brand · Saúde</small></span></button>
+<button class="m-rail-card" type="button" data-video-id="1x9MZyYe8zK1fWQrYnuB0Y0qy1tgowIAi" data-video-name="Dr. Diego Barbosa" aria-label="Assistir produção de Dr. Diego Barbosa"><span class="m-rail-card__fallback" aria-hidden="true">D</span><img class="m-rail-card__local" src="assets/levive-diego.jpg" alt="" loading="lazy"><img src="https://drive.google.com/thumbnail?id=1x9MZyYe8zK1fWQrYnuB0Y0qy1tgowIAi&sz=w900" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span class="m-rail-card__fade"></span><span class="m-rail-card__top">MARQA / FILM</span><span class="m-rail-card__play" aria-hidden="true">↗</span><span class="m-rail-card__name"><b>Dr. Diego Barbosa</b><small>Saúde · Posicionamento</small></span></button>
+<button class="m-rail-card" type="button" data-video-id="1DgKFusbBzmmcssDuDm9IaYreEpVtHVdc" data-video-name="Vanllu" aria-label="Assistir produção de Vanllu"><span class="m-rail-card__fallback" aria-hidden="true">V</span><img class="m-rail-card__local m-rail-card__local--logo" src="assets/vanllu-original-logo.png" alt="" loading="lazy"><img src="https://drive.google.com/thumbnail?id=1DgKFusbBzmmcssDuDm9IaYreEpVtHVdc&sz=w900" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span class="m-rail-card__fade"></span><span class="m-rail-card__top">MARQA / FILM</span><span class="m-rail-card__play" aria-hidden="true">↗</span><span class="m-rail-card__name"><b>Vanllu</b><small>Moda · Varejo</small></span></button>
+<button class="m-rail-card" type="button" data-video-id="1whLj4XBeT62FXEa052k24aBOy4-UugS5" data-video-name="Clínica Especiale" aria-label="Assistir produção de Clínica Especiale"><span class="m-rail-card__fallback" aria-hidden="true">C</span><img src="https://drive.google.com/thumbnail?id=1whLj4XBeT62FXEa052k24aBOy4-UugS5&sz=w900" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span class="m-rail-card__fade"></span><span class="m-rail-card__top">MARQA / FILM</span><span class="m-rail-card__play" aria-hidden="true">↗</span><span class="m-rail-card__name"><b>Clínica Especiale</b><small>Saúde · Estética</small></span></button>
+<button class="m-rail-card" type="button" data-video-id="1tbL7pxZKav8gj8JcwWC0gvNu1AnW3Srb" data-video-name="Espaçolaser" aria-label="Assistir produção de Espaçolaser"><span class="m-rail-card__fallback" aria-hidden="true">E</span><img src="https://drive.google.com/thumbnail?id=1tbL7pxZKav8gj8JcwWC0gvNu1AnW3Srb&sz=w900" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span class="m-rail-card__fade"></span><span class="m-rail-card__top">MARQA / FILM</span><span class="m-rail-card__play" aria-hidden="true">↗</span><span class="m-rail-card__name"><b>Espaçolaser</b><small>Estética · Performance</small></span></button>
+</div></div>
+<div class="m-rail-group"><div class="m-rail-top"><div><span>SAÚDE, ESTÉTICA & PERFORMANCE</span><h3>Histórias que geram confiança.</h3></div><div class="m-rail-controls"><button type="button" data-rail-move="-1" data-for="rail-health" aria-label="Anterior em Histórias que geram confiança.">←</button><button type="button" data-rail-move="1" data-for="rail-health" aria-label="Próximo em Histórias que geram confiança.">→</button></div></div><div class="m-rail" id="rail-health" tabindex="0" aria-label="Histórias que geram confiança.">
+<button class="m-rail-card" type="button" data-video-id="1x9MZyYe8zK1fWQrYnuB0Y0qy1tgowIAi" data-video-name="Dr. Diego Barbosa" aria-label="Assistir produção de Dr. Diego Barbosa"><span class="m-rail-card__fallback" aria-hidden="true">D</span><img class="m-rail-card__local" src="assets/levive-diego.jpg" alt="" loading="lazy"><img src="https://drive.google.com/thumbnail?id=1x9MZyYe8zK1fWQrYnuB0Y0qy1tgowIAi&sz=w900" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span class="m-rail-card__fade"></span><span class="m-rail-card__top">MARQA / FILM</span><span class="m-rail-card__play" aria-hidden="true">↗</span><span class="m-rail-card__name"><b>Dr. Diego Barbosa</b><small>Saúde · Posicionamento</small></span></button>
+<button class="m-rail-card" type="button" data-video-id="1whLj4XBeT62FXEa052k24aBOy4-UugS5" data-video-name="Clínica Especiale" aria-label="Assistir produção de Clínica Especiale"><span class="m-rail-card__fallback" aria-hidden="true">C</span><img src="https://drive.google.com/thumbnail?id=1whLj4XBeT62FXEa052k24aBOy4-UugS5&sz=w900" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span class="m-rail-card__fade"></span><span class="m-rail-card__top">MARQA / FILM</span><span class="m-rail-card__play" aria-hidden="true">↗</span><span class="m-rail-card__name"><b>Clínica Especiale</b><small>Saúde · Estética</small></span></button>
+<button class="m-rail-card" type="button" data-video-id="1tbL7pxZKav8gj8JcwWC0gvNu1AnW3Srb" data-video-name="Espaçolaser" aria-label="Assistir produção de Espaçolaser"><span class="m-rail-card__fallback" aria-hidden="true">E</span><img src="https://drive.google.com/thumbnail?id=1tbL7pxZKav8gj8JcwWC0gvNu1AnW3Srb&sz=w900" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span class="m-rail-card__fade"></span><span class="m-rail-card__top">MARQA / FILM</span><span class="m-rail-card__play" aria-hidden="true">↗</span><span class="m-rail-card__name"><b>Espaçolaser</b><small>Estética · Performance</small></span></button>
+<button class="m-rail-card" type="button" data-video-id="1pDLGv_UKR19xfJjm9i5bPhGB1UtB_ZS6" data-video-name="Dra. Alexânia Morais" aria-label="Assistir produção de Dra. Alexânia Morais"><span class="m-rail-card__fallback" aria-hidden="true">D</span><img src="https://drive.google.com/thumbnail?id=1pDLGv_UKR19xfJjm9i5bPhGB1UtB_ZS6&sz=w900" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span class="m-rail-card__fade"></span><span class="m-rail-card__top">MARQA / FILM</span><span class="m-rail-card__play" aria-hidden="true">↗</span><span class="m-rail-card__name"><b>Dra. Alexânia Morais</b><small>Saúde · Marca pessoal</small></span></button>
+<button class="m-rail-card" type="button" data-video-id="1WUOUQPIYDm56dkwA-wE62Ph3SkcnDgnh" data-video-name="Dr. Uerle Oliveira" aria-label="Assistir produção de Dr. Uerle Oliveira"><span class="m-rail-card__fallback" aria-hidden="true">D</span><img src="https://drive.google.com/thumbnail?id=1WUOUQPIYDm56dkwA-wE62Ph3SkcnDgnh&sz=w900" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span class="m-rail-card__fade"></span><span class="m-rail-card__top">MARQA / FILM</span><span class="m-rail-card__play" aria-hidden="true">↗</span><span class="m-rail-card__name"><b>Dr. Uerle Oliveira</b><small>Saúde · Performance</small></span></button>
+</div></div>
+<div class="m-rail-group"><div class="m-rail-top"><div><span>MARCAS, VAREJO & EXPERIÊNCIAS</span><h3>Marcas que ocupam espaço.</h3></div><div class="m-rail-controls"><button type="button" data-rail-move="-1" data-for="rail-retail" aria-label="Anterior em Marcas que ocupam espaço.">←</button><button type="button" data-rail-move="1" data-for="rail-retail" aria-label="Próximo em Marcas que ocupam espaço.">→</button></div></div><div class="m-rail" id="rail-retail" tabindex="0" aria-label="Marcas que ocupam espaço.">
+<button class="m-rail-card" type="button" data-video-id="1DgKFusbBzmmcssDuDm9IaYreEpVtHVdc" data-video-name="Vanllu" aria-label="Assistir produção de Vanllu"><span class="m-rail-card__fallback" aria-hidden="true">V</span><img class="m-rail-card__local m-rail-card__local--logo" src="assets/vanllu-original-logo.png" alt="" loading="lazy"><img src="https://drive.google.com/thumbnail?id=1DgKFusbBzmmcssDuDm9IaYreEpVtHVdc&sz=w900" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span class="m-rail-card__fade"></span><span class="m-rail-card__top">MARQA / FILM</span><span class="m-rail-card__play" aria-hidden="true">↗</span><span class="m-rail-card__name"><b>Vanllu</b><small>Moda · Varejo</small></span></button>
+<button class="m-rail-card" type="button" data-video-id="1D_oKcbou3Fx6oWHnDgTgE2mfNzQZJU9J" data-video-name="Sapatinho de Luxo" aria-label="Assistir produção de Sapatinho de Luxo"><span class="m-rail-card__fallback" aria-hidden="true">S</span><img src="https://drive.google.com/thumbnail?id=1D_oKcbou3Fx6oWHnDgTgE2mfNzQZJU9J&sz=w900" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span class="m-rail-card__fade"></span><span class="m-rail-card__top">MARQA / FILM</span><span class="m-rail-card__play" aria-hidden="true">↗</span><span class="m-rail-card__name"><b>Sapatinho de Luxo</b><small>Moda · Varejo</small></span></button>
+<button class="m-rail-card" type="button" data-video-id="1MC0RwuO9qYHitWLwbFZ8K-TGAddUorrC" data-video-name="Sky Fit" aria-label="Assistir produção de Sky Fit"><span class="m-rail-card__fallback" aria-hidden="true">S</span><img src="https://drive.google.com/thumbnail?id=1MC0RwuO9qYHitWLwbFZ8K-TGAddUorrC&sz=w900" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span class="m-rail-card__fade"></span><span class="m-rail-card__top">MARQA / FILM</span><span class="m-rail-card__play" aria-hidden="true">↗</span><span class="m-rail-card__name"><b>Sky Fit</b><small>Fitness · Performance</small></span></button>
+<button class="m-rail-card" type="button" data-video-id="1OvTe8TqzI2WrGIy29uJU6QknIky1C7rn" data-video-name="Kings Sneakers" aria-label="Assistir produção de Kings Sneakers"><span class="m-rail-card__fallback" aria-hidden="true">K</span><img src="https://drive.google.com/thumbnail?id=1OvTe8TqzI2WrGIy29uJU6QknIky1C7rn&sz=w900" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span class="m-rail-card__fade"></span><span class="m-rail-card__top">MARQA / FILM</span><span class="m-rail-card__play" aria-hidden="true">↗</span><span class="m-rail-card__name"><b>Kings Sneakers</b><small>Sneakers · Varejo</small></span></button>
+<button class="m-rail-card" type="button" data-video-id="1NG3YrUxrOyuMiCurXu5skHDrpOTfr-eQ" data-video-name="Tropical" aria-label="Assistir produção de Tropical"><span class="m-rail-card__fallback" aria-hidden="true">T</span><img src="https://drive.google.com/thumbnail?id=1NG3YrUxrOyuMiCurXu5skHDrpOTfr-eQ&sz=w900" alt="" loading="lazy" referrerpolicy="no-referrer" onerror="this.style.display='none'"><span class="m-rail-card__fade"></span><span class="m-rail-card__top">MARQA / FILM</span><span class="m-rail-card__play" aria-hidden="true">↗</span><span class="m-rail-card__name"><b>Tropical</b><small>Varejo · Campanhas</small></span></button>
+</div></div>
+<div class="m-repertoire__footer"><p>As capas são carregadas do acervo no Google Drive. A reprodução depende das permissões de compartilhamento de cada vídeo.</p><span class="m-repertoire__pending">CENTRAL DE PORTFÓLIO / EM DESENVOLVIMENTO</span></div></div></section>
+<dialog id="workPlayer" class="m-player" aria-label="Visualizar produção MARQA"><div class="m-player__top"><strong id="workPlayerName">Produção MARQA</strong><button type="button" id="workPlayerClose" aria-label="Fechar vídeo">✕</button></div><div class="m-player__frame"><iframe id="workPlayerFrame" title="Produção da MARQA" allow="autoplay; fullscreen" allowfullscreen loading="lazy" referrerpolicy="no-referrer"></iframe></div><div class="m-player__foot"><span>Se o player não abrir, use o link original.</span><a id="workPlayerExternal" target="_blank" rel="noopener noreferrer" href="#">ABRIR NO DRIVE ↗</a></div></dialog>
+<section class="contact" id="contato"><div class="section-top"><span>05 / NOVAS CONVERSAS</span><span>COMEÇAR É O PRIMEIRO PASSO</span></div><h2>Seu próximo<br>projeto começa aqui.</h2><div class="contact-foot"><p>O contato comercial será conectado ao WhatsApp oficial da MARQA na etapa de publicação.</p><span class="status-note">Módulo comercial em configuração</span></div></section>
+</main>
+<footer class="footer"><span>MARQA — STRATEGY · FILM · PERFORMANCE</span><span>LAB 19 / NOVA ESTRUTURA EM AVALIAÇÃO</span><button type="button" id="replay">↺ Rever abertura</button></footer>
+<details class="dev-drawer" id="labTools"><summary>Ferramentas de teste / LAB 19</summary><details class="test-diagnostics" id="videoDiagnostics"><summary>Diagnóstico de reprodução (LAB 19)</summary><pre id="videoDiagnosticsText">Aguardando vídeo…</pre></details>
+<section class="lab-strip" aria-label="Ajustes da prévia do hero"><p class="lab-note"><strong>MARQA / LAB 19 — REESTRUTURAÇÃO</strong><span> · O navegador inicia o vídeo diretamente pelo HTML; este LAB testa o autoplay sem bloqueios no JavaScript. As demais áreas continuam com conteúdos provisórios e serão desenvolvidas em etapas.</span></p><label class="lab-range" for="darkness">Escurecimento <input id="darkness" type="range" min="0" max="55" value="13" step="1"><output id="darknessLabel">13%</output></label></section>
+</details>
+<div class="intro" id="intro" role="dialog" aria-label="Abertura da MARQA" aria-modal="true" aria-hidden="true"><div class="intro-centerline"></div><div class="intro-logo" id="introLogo" aria-label="Símbolo gráfico MARQA"><img src="assets/marqa-symbol-white.png" width="840" height="571" alt="Símbolo gráfico original da MARQA" decoding="sync" fetchpriority="high"></div><span class="intro-label">UMA MARCA DEIXA MARCAS</span><span class="intro-count">INTRO / 01</span><button type="button" class="skip" id="skip">Pular abertura ↗</button></div>
+<script>
+(() => {
+ 'use strict';
+ const body=document.body;
+ const intro=document.getElementById('intro'),logo=document.getElementById('introLogo');
+ const brand=document.getElementById('brand'),skip=document.getElementById('skip'),replay=document.getElementById('replay');
+ const video=document.getElementById('heroVideo'),toggle=document.getElementById('videoToggle');
+ const label=document.getElementById('videoLabel'),icon=document.getElementById('videoIcon');
+ const alert=document.getElementById('mediaAlert'),diagnostics=document.getElementById('videoDiagnosticsText');
+ let introDone=false,userPaused=false,blockedReason='',lastEvent='init';
+ let introTimer=null,revealTimer=null,playRequest=null;
+ // Importante: o src, autoplay, muted e playsinline estão no próprio HTML.
+ // Nenhuma condição do sistema remove autoplay, e não invocamos video.load().
+ video.defaultMuted=true;
+ video.muted=true;
+ video.playsInline=true;
+ function diag(){
+   const d={evento:lastEvent,terminouLoader:introDone,pausado:video.paused,tempo:Math.round(video.currentTime*100)/100,
+    autoplay:video.autoplay,muted:video.muted,inline:video.playsInline,pronto:video.readyState,
+    largura:video.videoWidth,altura:video.videoHeight,origem:video.currentSrc.split('/').pop(),
+    preferenciaReducaoMovimento:matchMedia('(prefers-reduced-motion: reduce)').matches,
+    permissaoAutoplay:document.permissionsPolicy?.allowsFeature?.('autoplay')??document.featurePolicy?.allowsFeature?.('autoplay')??'não informada',
+    ultimoErro:blockedReason||video.error?.message||'nenhum'};
+   diagnostics.textContent=JSON.stringify(d,null,2);
+   return d;
+ }
+ function updateUI(){
+   toggle.hidden=!introDone;
+   toggle.disabled=false;
+   const isPlaying=!video.paused&&!video.ended&&video.readyState>1;
+   const message=isPlaying?'Pausar vídeo':video.error?'Tentar reproduzir':blockedReason.includes('NotAllowedError')?'Reproduzir vídeo':video.readyState<2?'Carregando vídeo…':'Reproduzir vídeo';
+   label.textContent=message;
+   icon.textContent=isPlaying?'Ⅱ':video.readyState<2?'◌':'▶';
+   toggle.setAttribute('aria-label',message);
+   toggle.setAttribute('aria-pressed',String(isPlaying));
+   if(isPlaying){video.classList.add('ready');alert.hidden=true;alert.textContent=''}
+   else if(introDone&&blockedReason.includes('NotAllowedError')){
+     alert.hidden=false;
+     alert.textContent='Este navegador bloqueou o início automático. O controle de reprodução permanece disponível.';
+   }
+   diag();
+ }
+ function requestPlay(reason){
+   if(userPaused)return;
+   video.muted=true;
+   // Evita comandos .play() concorrentes iniciados por eventos de buffering.
+   if(playRequest)return;
+   lastEvent=reason;
+   try {
+     const p=video.play();
+     if(p && typeof p.then==='function'){
+       playRequest=p;
+       p.then(()=>{playRequest=null;blockedReason='';lastEvent=reason+' / autorizado';updateUI()})
+        .catch(e=>{playRequest=null;blockedReason=(e?.name||'Erro')+': '+(e?.message||String(e));lastEvent=reason+' / bloqueado';updateUI()});
+     }
+   }catch(e){blockedReason=(e?.name||'Erro')+': '+(e?.message||String(e));updateUI()}
+ }
+ function finishIntro(){
+   clearTimeout(introTimer);clearTimeout(revealTimer);
+   intro.classList.remove('active','running','forced');intro.setAttribute('aria-hidden','true');
+   body.style.overflow='';body.classList.add('revealed');introDone=true;
+   // Reprodução nativa já começou durante o loader. Retorna ao quadro inicial.
+   if(video.readyState>=2 && !video.paused){try{video.currentTime=0}catch(e){}}
+   if(video.paused&&!userPaused)requestPlay('fim do loader');
+   updateUI();
+ }
+ function startIntro(force=false){
+   clearTimeout(introTimer);clearTimeout(revealTimer);
+   introDone=false; userPaused=false;
+   updateUI();
+   const rect=brand.getBoundingClientRect(),logoW=logo.getBoundingClientRect().width;
+   intro.style.setProperty('--flight-x',(rect.left+rect.width/2-innerWidth/2)+'px');
+   intro.style.setProperty('--flight-y',(rect.top+rect.height/2-innerHeight/2)+'px');
+   intro.style.setProperty('--flight-scale',Math.max(.08,Math.min(.32,rect.width/logoW)));
+   window.scrollTo({top:0,behavior:'instant'});body.style.overflow='hidden';body.classList.remove('revealed');
+   intro.classList.remove('running');intro.classList.add('active');
+   if(force)intro.classList.add('forced');
+   intro.setAttribute('aria-hidden','false');void logo.offsetWidth;intro.classList.add('running');
+   revealTimer=setTimeout(()=>body.classList.add('revealed'),1550);
+   introTimer=setTimeout(finishIntro,1920);
+   // Reproduz sem áudio sob o loader. Não pausa nem troca a origem.
+   if(video.paused)requestPlay('início do loader');
+ }
+ video.addEventListener('playing',()=>{lastEvent='playing';blockedReason='';updateUI()});
+ video.addEventListener('loadeddata',()=>{lastEvent='loadeddata';updateUI()});
+ video.addEventListener('canplay',()=>{lastEvent='canplay';if(video.paused&&!userPaused)requestPlay('canplay');updateUI()});
+ video.addEventListener('waiting',()=>{lastEvent='waiting';updateUI()});
+ video.addEventListener('pause',()=>{lastEvent='pause';updateUI()});
+ video.addEventListener('error',()=>{lastEvent='error';blockedReason=video.error?.message||'Falha na leitura do arquivo';updateUI()});
+ document.addEventListener('visibilitychange',()=>{if(!document.hidden&&video.paused&&!userPaused)requestPlay('aba visível')});
+ window.addEventListener('pageshow',()=>{if(video.paused&&!userPaused)requestPlay('página reaberta')});
+ toggle.addEventListener('click',()=>{
+   if(!video.paused){userPaused=true;video.pause();updateUI();return;}
+   userPaused=false;blockedReason='';requestPlay('clique do usuário');updateUI();
+ });
+ skip.addEventListener('click',finishIntro);
+ replay.addEventListener('click',()=>{try{video.currentTime=0}catch(e){}startIntro(true)});
+ document.addEventListener('keydown',e=>{if(e.key==='Escape'&&intro.classList.contains('active'))finishIntro()});
+ const darkness=document.getElementById('darkness'),darkLabel=document.getElementById('darknessLabel');
+ darkness.addEventListener('input',()=>{document.documentElement.style.setProperty('--veil',Number(darkness.value)/100);darkLabel.textContent=darkness.value+'%'});
+ const trigger=document.getElementById('menuTrigger'),panel=document.getElementById('mobilePanel'),scrim=document.getElementById('scrim');
+ function closeMenu(){body.classList.remove('menu-open');trigger.setAttribute('aria-expanded','false');panel.setAttribute('aria-hidden','true');panel.inert=true;document.getElementById('menuText').textContent='Menu'}
+ function openMenu(){body.classList.add('menu-open');trigger.setAttribute('aria-expanded','true');panel.setAttribute('aria-hidden','false');panel.inert=false;document.getElementById('menuText').textContent='Fechar'}
+ trigger.addEventListener('click',()=>body.classList.contains('menu-open')?closeMenu():openMenu());scrim.addEventListener('click',closeMenu);
+ panel.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
+ document.addEventListener('keydown',e=>{if(e.key==='Escape')closeMenu()});addEventListener('resize',()=>{if(innerWidth>1050)closeMenu()});
+ window.__marqaVideoDiagnostics=diag;
+ updateUI();
+ if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',()=>startIntro(),{once:true});else startIntro();
+})();
+</script>
+<script src="sections/repertorio.js" defer></script>
+</body>
+</html>

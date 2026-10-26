@@ -53,3 +53,6 @@ O LAB 14 desabilitava o autoplay via JavaScript em dispositivos com preferência
 - `lab18-3-icones-ampliados/`: amplia os gráficos SVG da Seção 03, mantém a versão compacta e corrige sobreposições no mobile. Hero, Essência e transição provisória para Projetos são preservados. Vídeo disponível no ZIP de homologação, não no GitHub.
 
 - `lab19-provas-reais/`: Seções 02 e 03 com evidências reais e Seção 04 com curadoria de Le Vive, Vanllu e Espaçolaser. Código modular; mídias otimizadas no pacote ZIP e na Library; vídeo principal preservado no Drive e no ZIP.
+
+- `lab18-4-camera/`: cópia histórica do LAB18.4 (símbolo câmera no card Audiovisual).
+- `lab19-reestruturacao/`: nova experiência pós-Hero — Essência compacta com bastidor real, três projetos selecionados (Le Vive, Vanllu, Espaçolaser) e três esteiras de vídeos. CSS/JS separados. Fotos locais e MP4 do Hero no pacote ZIP; arquivos da web no diretório `sections/`.
