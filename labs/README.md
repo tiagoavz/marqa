@@ -39,3 +39,5 @@ O LAB 14 desabilitava o autoplay via JavaScript em dispositivos com preferência
 - `lab16-logo-original/index.html`: loader corrigido com símbolo oficial MARQA (o mesmo da abertura LAB04), sem alterações de vídeo/autoplay; `assets/marqa-symbol-white.png` contém o PNG original.
 
 - `lab17-essencia/`: módulo **Essência MARQA**, logo após o hero; veja README da pasta. Autoplay, logo e vídeo da LAB16 preservados; publicações devem usar o pacote completo com assets.
+
+- `lab17-1-essencia/`: refinamento editorial da **Seção 02 — Essência** em avaliação, com HTML/CSS/JS isolados e componente React preparado; sem alterar Hero/Loader ou produção. ZIP completo com mídias é entregue à parte.

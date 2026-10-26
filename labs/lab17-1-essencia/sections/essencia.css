@@ -1,0 +1,109 @@
+/* MARQA / LAB 17.1 — módulo ESSÊNCIA independente */
+:root{--ess-paper:#ebe8e2;--ess-black:#101012;--ess-ink:#171719;--ess-muted:#77736e;--ess-gutter:clamp(24px,5.4vw,84px);--ess-ease:cubic-bezier(.19,1,.22,1)}
+.essence{background:var(--ess-paper);color:var(--ess-ink);overflow:hidden}
+.essence *{box-sizing:border-box}
+.essence-wrap{width:100%;max-width:1900px;margin-inline:auto;padding-inline:var(--ess-gutter)}
+.essence-threshold{min-height:48px;padding:12px var(--ess-gutter);display:flex;justify-content:space-between;align-items:center;gap:20px;background:#111113;color:#aaa6a1;font-size:10px;letter-spacing:.185em;font-weight:750}
+.essence-threshold i{display:block;flex:1;height:1px;background:rgba(255,255,255,.21)}
+.essence-opening{position:relative;background:#ebe8e2}
+.essence-opening .essence-wrap{min-height:760px;min-height:min(810px,100svh);display:flex;flex-direction:column;justify-content:space-between;padding-top:clamp(42px,5.4vw,80px);padding-bottom:clamp(32px,4.2vw,58px)}
+.essence-meta{display:flex;justify-content:space-between;gap:15px;font-size:10px;letter-spacing:.18em;font-weight:750;color:#77736e}
+.essence-head-stage{position:relative;display:flex;align-items:center;flex:1;min-height:430px;padding:55px 0 40px}
+.essence-ghost-mark{pointer-events:none;position:absolute;right:-13%;width:min(62vw,830px);top:50%;transform:translate3d(0,-48%,0) rotate(-9deg);opacity:.075;will-change:transform;user-select:none}
+.essence-ghost-mark img{width:100%;height:auto;display:block;filter:brightness(0)}
+.essence-title{position:relative;z-index:1;font-weight:760;font-size:clamp(58px,8.8vw,148px);letter-spacing:-.087em;line-height:1.015;margin:0;max-width:1650px}
+.essence-title-line{display:block;overflow:hidden;padding-block:.075em;margin-block:-.075em}
+.essence-title-line>span{display:block}
+.essence-title em{font-style:normal;color:#948f88;font-weight:680}
+.essence-opening-foot{display:grid;grid-template-columns:1fr minmax(260px,450px) auto;gap:35px;align-items:end;padding-top:30px;border-top:1px solid rgba(18,17,19,.29)}
+.essence-index,.essence-scroll{font-size:10px;font-weight:760;letter-spacing:.15em;color:#79756e;white-space:nowrap}
+.essence-opening-foot p{font-size:clamp(17px,1.8vw,23px);font-weight:470;line-height:1.36;letter-spacing:-.035em;color:#383635;margin:0}
+.essence-statement{background:#171719;color:#f5f2ed;position:relative;isolation:isolate}
+.essence-statement:before{content:"";position:absolute;inset:0;pointer-events:none;opacity:.35;background:linear-gradient(90deg,transparent 49.96%,rgba(255,255,255,.05) 50%,transparent 50.04%)}
+.essence-statement-wrap{min-height:740px;min-height:min(820px,100svh);padding-top:clamp(42px,5vw,72px);padding-bottom:clamp(42px,5vw,72px);display:flex;flex-direction:column;justify-content:space-between;gap:80px}
+.essence-statement-meta{display:flex;align-items:center;justify-content:space-between;gap:20px;color:#aaa6a1;font-size:10px;letter-spacing:.17em;font-weight:700}
+.essence-statement-content{position:relative;margin:auto 0;display:flex;flex-direction:column;align-items:flex-start;gap:clamp(26px,3vw,51px)}
+.essence-statement-number{font-size:10px;color:#777279;letter-spacing:.17em}
+.essence-statement-content p{margin:0;font-size:clamp(45px,6.9vw,112px);line-height:1.04;letter-spacing:-.073em;font-weight:650;max-width:1360px}
+.essence-statement-first{color:#777478}
+.essence-statement-second{color:#f4f0eb}
+.essence-statement-second em{font-style:normal;color:#d0c8bb;border-bottom:1px solid rgba(208,200,187,.66)}
+.essence-statement-bottom{display:flex;flex-direction:column;gap:19px}
+.essence-statement-bottom>span:last-child{font-size:10px;letter-spacing:.15em;font-weight:720;color:#aaa6a1}
+.essence-progress-track{width:100%;height:1px;background:#49464b;position:relative}
+.essence-progress-fill{position:absolute;inset:0 auto 0 0;width:100%;background:#eee9e2;transform:scaleX(.05);transform-origin:left}
+.essence-about{background:#ebe8e2;position:relative}
+.essence-about .essence-wrap{padding-top:clamp(90px,10vw,165px);padding-bottom:34px}
+.essence-about-heading{display:grid;grid-template-columns:1fr 2fr;gap:36px;align-items:start;padding-bottom:clamp(88px,9vw,132px)}
+.essence-eyebrow{display:block;color:#77716a;font-size:10px;line-height:1.4;font-weight:750;letter-spacing:.175em}
+.essence-about-heading h3{font-size:clamp(51px,6.35vw,105px);line-height:1.02;letter-spacing:-.077em;font-weight:740;margin:0}
+.essence-about-heading h3 em{font-style:normal;color:#948f88}
+.essence-about-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(40px,8vw,130px);padding:36px 0 clamp(85px,8vw,125px);border-top:1px solid rgba(27,26,27,.28)}
+.essence-about-grid .essence-eyebrow{margin-bottom:33px}
+.essence-about-identity p{font-size:clamp(23px,2.65vw,42px);line-height:1.24;letter-spacing:-.05em;font-weight:570;max-width:700px;margin:0}
+.essence-about-description{max-width:570px}
+.essence-about-description p{font-size:clamp(15px,1.45vw,20px);line-height:1.64;letter-spacing:-.023em;color:#585650;margin:0 0 25px}
+.essence-cta{display:flex;align-items:center;justify-content:space-between;gap:25px;border-bottom:1px solid #171719;padding:15px 0;font-size:11px;letter-spacing:.12em;font-weight:740;text-transform:uppercase;max-width:365px;transition:color .25s ease}
+.essence-cta span:last-child{font-size:21px;transition:transform .3s var(--ess-ease)}
+.essence-cta:hover{color:#77736e}.essence-cta:hover span:last-child{transform:translate(4px,-4px)}
+.essence-signature{border-top:1px solid rgba(25,24,25,.26);padding:26px 0 8px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap;color:#74706b;font-size:9px;font-weight:700;letter-spacing:.12em}
+.essence-signature strong{font-size:22px;color:#171719;letter-spacing:-.09em;font-weight:850;white-space:nowrap}.essence-signature sup{font-size:8px;letter-spacing:normal;vertical-align:top;margin-left:1px}
+/* LAB: diagnóstico e controles fora do fluxo visual */
+.dev-drawer{background:#121215;color:#bdb8b1;padding:0 var(--ess-gutter)}
+.dev-drawer>summary{font-size:11px;padding:14px 0;cursor:pointer;letter-spacing:.07em}
+.dev-drawer .test-diagnostics{padding:14px 0}.dev-drawer .lab-strip{padding:15px 0 30px;border-top:1px solid #29292d}
+/* Animação por entrada: conteúdo sempre presente se JS falhar */
+@media(prefers-reduced-motion:no-preference){
+ .essence.motion-ready .essence-title-line>span{transform:translate3d(0,105%,0);transition:transform 1.35s var(--ess-ease)}
+ .essence.motion-ready .essence-title-line:nth-child(2)>span{transition-delay:.13s}
+ .essence.motion-ready .essence-opening-foot{opacity:.35;transform:translateY(13px);transition:transform 1s var(--ess-ease) .28s,opacity 1s ease .28s}
+ .essence.motion-ready .essence-ghost-mark{opacity:0;transform:translate3d(3%,-44%,0) rotate(-13deg);transition:opacity 1.65s ease .2s,transform 1.8s var(--ess-ease) .2s}
+ .essence.motion-ready .essence-opening.ess-in .essence-title-line>span{transform:translate3d(0,0,0)}
+ .essence.motion-ready .essence-opening.ess-in .essence-opening-foot{opacity:1;transform:none}
+ .essence.motion-ready .essence-opening.ess-in .essence-ghost-mark{opacity:.075;transform:translate3d(0,-48%,0) rotate(-9deg)}
+ .essence.motion-ready .essence-statement-content{opacity:.82;transform:translateY(24px);transition:opacity .9s ease,transform 1.1s var(--ess-ease)}
+ .essence.motion-ready .essence-statement.ess-in .essence-statement-content{opacity:1;transform:translateY(0)}
+ .essence.motion-ready .essence-about-heading{opacity:.7;transform:translateY(20px);transition:opacity 1s ease,transform 1s var(--ess-ease)}
+ .essence.motion-ready .essence-about.ess-in .essence-about-heading{opacity:1;transform:translateY(0)}
+}
+@media(max-width:1100px){
+ .essence-title{font-size:clamp(65px,8.7vw,100px)}
+ .essence-ghost-mark{width:70vw;right:-22%}
+ .essence-opening-foot{grid-template-columns:1fr minmax(240px,440px)}
+ .essence-scroll{display:none}
+ .essence-statement-content p{font-size:clamp(55px,6.9vw,90px)}
+}
+@media(max-width:760px){
+ .essence-threshold{min-height:46px;font-size:8px;letter-spacing:.12em}.essence-threshold i{max-width:45px}
+ .essence-meta,.essence-statement-meta{font-size:8px;letter-spacing:.11em}
+ .essence-opening .essence-wrap{min-height:660px;min-height:max(560px,calc(100svh - 70px));padding-top:54px;padding-bottom:36px}
+ .essence-head-stage{min-height:300px;padding:60px 0 35px}
+ .essence-title{font-size:clamp(45px,11vw,79px);line-height:1.07;letter-spacing:-.073em}
+ .essence-title-line{overflow:visible;padding-block:0;margin-block:0}
+ .essence-title-line>span{white-space:normal}
+ .essence-ghost-mark{right:-52%;width:104vw;opacity:.05}
+ .essence.motion-ready .essence-opening.ess-in .essence-ghost-mark{opacity:.045}
+ .essence-opening-foot{grid-template-columns:1fr;gap:20px;padding-top:19px}
+ .essence-opening-foot p{max-width:380px;font-size:19px;line-height:1.35}
+ .essence-statement-wrap{min-height:650px;min-height:max(575px,85svh);gap:45px;padding-top:45px;padding-bottom:41px}
+ .essence-statement-meta span:last-child{max-width:160px;text-align:right}
+ .essence-statement-content{gap:33px}
+ .essence-statement-content p{font-size:clamp(38px,9vw,65px);line-height:1.08;letter-spacing:-.065em}
+ .essence-statement-bottom>span:last-child{font-size:9px;line-height:1.6;letter-spacing:.1em}
+ .essence-about .essence-wrap{padding-top:87px;padding-bottom:29px}
+ .essence-about-heading{grid-template-columns:1fr;gap:30px;padding-bottom:70px}
+ .essence-about-heading h3{font-size:clamp(44px,10vw,71px);line-height:1.08}
+ .essence-about-grid{grid-template-columns:1fr;gap:59px;padding-top:28px;padding-bottom:85px}
+ .essence-about-grid .essence-eyebrow{margin-bottom:20px}
+ .essence-about-identity p{font-size:clamp(26px,6.6vw,38px);line-height:1.26}
+ .essence-about-description p{font-size:16px;line-height:1.62}
+ .essence-signature{gap:13px 35px;line-height:1.4;font-size:8px}
+ .essence-signature strong{width:100%;font-size:23px;margin-top:8px}
+ .essence.motion-ready .essence-title-line>span{transform:none;transition:none}
+}
+@media(max-width:380px){
+ .essence-title{font-size:clamp(41px,10.75vw,52px)}
+ .essence-statement-content p{font-size:clamp(37px,9vw,49px)}
+ .essence-about-heading h3{font-size:clamp(42px,10vw,50px)}
+}
+@media(prefers-reduced-motion:reduce){.essence *{scroll-behavior:auto!important;animation:none!important;transition:none!important}.essence-progress-fill{transform:scaleX(1)!important}}
