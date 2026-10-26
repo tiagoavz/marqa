@@ -37,3 +37,5 @@ Antes de entregar novas versões, verificar o commit no GitHub e registrar o LAB
 O LAB 14 desabilitava o autoplay via JavaScript em dispositivos com preferência de movimento reduzido e definia o `src` só após o parse da página. Isso explicava uma das condições em que o controle manual funcionava e o autoplay não. O LAB 15 remove essas dependências e registra `NotAllowedError`, `readyState`, `muted`, preferência de movimento e estado `paused` em uma seção de diagnóstico. Testado com navegador Chromium nos cenários de movimento normal e reduzido, incluindo pausar/retomar. A publicação no Netlify do usuário ainda precisa de validação. O fallback 1080p é uma versão da filmagem 4K do Drive e não implica perda do original.
 
 - `lab16-logo-original/index.html`: loader corrigido com símbolo oficial MARQA (o mesmo da abertura LAB04), sem alterações de vídeo/autoplay; `assets/marqa-symbol-white.png` contém o PNG original.
+
+- `lab17-essencia/`: módulo **Essência MARQA**, logo após o hero; veja README da pasta. Autoplay, logo e vídeo da LAB16 preservados; publicações devem usar o pacote completo com assets.
