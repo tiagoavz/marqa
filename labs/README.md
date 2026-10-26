@@ -58,3 +58,5 @@ O LAB 14 desabilitava o autoplay via JavaScript em dispositivos com preferência
 - `lab19-reestruturacao/`: nova experiência pós-Hero — Essência compacta com bastidor real, três projetos selecionados (Le Vive, Vanllu, Espaçolaser) e três esteiras de vídeos. CSS/JS separados. Fotos locais e MP4 do Hero no pacote ZIP; arquivos da web no diretório `sections/`.
 
 - `lab19-2-essencia-horizontal/`: correção da Seção 02 com título em duas linhas, conteúdo lateral alinhado e banner baixo sem cortar texto. Hero e demais seções preservados. Para hospedagem com mídias, usar ZIP do LAB19.2.
+
+- `lab19-3-filmes-editados/`: curadoria revisada a partir de 9 filmes MP4 editados. Dr Rafael Agra, Vanllu, Sky Fit; três pôsteres extraídos dos próprios vídeos no pacote ZIP/Library. Hero e Essência LAB19.2 preservados.
