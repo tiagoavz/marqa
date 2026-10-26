@@ -49,3 +49,5 @@ O LAB 14 desabilitava o autoplay via JavaScript em dispositivos com preferência
 - `lab18-1-expertise-compacta/`: versão compacta da Seção 03, cards 30–40% menores, descrições curtas e CTA para projetos. LAB18 preservado; assets de vídeo ficam no pacote completo para Netlify.
 
 - `lab18-2-alinhamento/`: revisão de transição — remove os antigos placeholders Estratégia/Imagem/Performance da Seção 04 e alinha largura com a Expertise. Seção 04 ainda provisória, sem cases reais; vídeo/assets no ZIP completo de avaliação.
+
+- `lab18-3-icones-ampliados/`: amplia os gráficos SVG da Seção 03, mantém a versão compacta e corrige sobreposições no mobile. Hero, Essência e transição provisória para Projetos são preservados. Vídeo disponível no ZIP de homologação, não no GitHub.

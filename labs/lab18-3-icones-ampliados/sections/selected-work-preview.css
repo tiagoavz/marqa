@@ -1,0 +1,23 @@
+/* LAB18.2 / transição de Expertise para Projetos. Nenhum card de competência duplicado. */
+.work--preview{padding:clamp(54px,6vw,102px) var(--gutter) clamp(55px,6vw,104px);background:#e8e5de;color:#18181a;}
+.work--preview .work__inner{width:100%;max-width:calc(1880px - 2 * var(--gutter));margin-inline:auto;}
+.work--preview .section-top{font-size:10px;letter-spacing:.13em;font-weight:750;padding-bottom:18px;}
+.work--preview .work__intro{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(240px,.6fr);align-items:end;gap:clamp(30px,7vw,125px);padding-block:clamp(50px,6vw,100px) clamp(46px,5vw,78px);}
+.work--preview .work__eyebrow{display:block;font-size:10px;letter-spacing:.18em;color:#716d67;font-weight:700;margin-bottom:23px;}
+.work--preview h2{font-size:clamp(52px,7vw,105px);line-height:.99;letter-spacing:-.075em;margin:0;max-width:1000px;}
+.work--preview .work__aside{padding-bottom:9px;display:flex;flex-direction:column;gap:22px;max-width:400px;justify-self:end;}
+.work--preview .work__index{font-size:11px;letter-spacing:.15em;color:#8a857d;}
+.work--preview .work__aside p{font-size:clamp(15px,1.25vw,19px);line-height:1.55;letter-spacing:-.015em;color:#484641;margin:0;}
+.work--preview .work__next{border-top:1px solid #aaa59c;padding-top:17px;font-size:10px;letter-spacing:.10em;color:#78746c;font-weight:650;line-height:1.5;}
+.work--preview .work__divider{border-top:1px solid rgba(20,20,20,.25);display:flex;align-items:center;justify-content:space-between;padding-top:12px;color:#747068;font-size:18px;}
+.work--preview .work__divider span:first-child{width:25px;height:1px;background:#89857e;}
+@media(max-width:760px){
+ .work--preview{padding-top:58px;padding-bottom:58px;}
+ .work--preview .section-top{font-size:8px;letter-spacing:.10em;}
+ .work--preview .work__intro{grid-template-columns:1fr;gap:32px;padding-block:50px 42px;}
+ .work--preview h2{font-size:clamp(44px,10vw,65px);}
+ .work--preview .work__eyebrow{font-size:9px;margin-bottom:22px;}
+ .work--preview .work__aside{justify-self:start;gap:14px;padding:0;}
+ .work--preview .work__aside p{font-size:15px;}
+ .work--preview .work__next{font-size:9px;}
+}
