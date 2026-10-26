@@ -41,3 +41,5 @@ O LAB 14 desabilitava o autoplay via JavaScript em dispositivos com preferência
 - `lab17-essencia/`: módulo **Essência MARQA**, logo após o hero; veja README da pasta. Autoplay, logo e vídeo da LAB16 preservados; publicações devem usar o pacote completo com assets.
 
 - `lab17-1-essencia/`: refinamento editorial da **Seção 02 — Essência** em avaliação, com HTML/CSS/JS isolados e componente React preparado; sem alterar Hero/Loader ou produção. ZIP completo com mídias é entregue à parte.
+
+- `lab17-2-essencia/`: Seção 02 **compacta** — substitui os três capítulos de manifesto do LAB17.1 por uma composição editorial única. Assets originais preservados no ZIP da conversa; componente React preparado e isolado.
