@@ -3,7 +3,7 @@
 Mudança **exclusivamente de apresentação na Seção 03 / Expertise**, a partir do LAB 18.2.
 
 - Os três símbolos SVG originais (alvo, enquadramento e gráfico) foram preservados, porém ampliados no interior dos cards.
-- A opacidade foi aumentada para recuperar contraste; a dimensão dos cards, seus textos e a grade geral não mudaram.
+- A opacidade foi aumentada para recuperar contraste. No desktop, os cards mantêm suas dimensões; no celular, ficaram um pouco mais altos para os gráficos não encobrirem os títulos. A grade e os textos permanecem iguais.
 - O mobile recebeu ícones proporcionais, posicionados como elementos gráficos no canto superior direito.
 - Hero / Loader e Essência preservados; transição para Seção 04 da versão 18.2 preservada.
 - Os arquivos de mídia (vídeo, poster e símbolo oficial) foram copiados sem alterações.
