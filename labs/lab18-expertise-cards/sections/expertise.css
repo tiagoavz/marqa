@@ -1,0 +1,66 @@
+/* LAB 18 — EXPERTISE MARQA / CSS isolado, sem seletores globais */
+.marqa-expertise { --ex-paper:#0e0e10; --ex-fg:#f6f4f0; --ex-mute:#a3a09c; background:var(--ex-paper); color:var(--ex-fg); position:relative; isolation:isolate; }
+.marqa-expertise * {box-sizing:border-box}
+.marqa-expertise__container {max-width:1880px;margin-inline:auto;padding:clamp(68px,7.5vw,108px) var(--gutter) clamp(56px,6vw,92px)}
+.marqa-expertise__topline {display:flex;justify-content:space-between;align-items:center;gap:15px;padding-bottom:21px;border-bottom:1px solid #373639;font-size:10px;font-weight:700;letter-spacing:.19em;color:#a7a4a0}
+.marqa-expertise__intro {display:flex;align-items:end;justify-content:space-between;gap:42px;padding:clamp(52px,6.2vw,88px) 0 clamp(42px,5.1vw,70px)}
+.marqa-expertise__eyebrow {display:block;color:#b5b1ab;font-size:10px;letter-spacing:.22em;font-weight:750;margin-bottom:26px}
+.marqa-expertise__intro h2 {font-size:clamp(54px,6.5vw,100px);font-weight:735;line-height:1.02;letter-spacing:-.078em;margin:0;max-width:1050px}
+.marqa-expertise__intro h2 em {font-style:normal;color:#aba69f;font-weight:650}
+.marqa-expertise__intro>p {font-size:clamp(14px,1.12vw,17px);line-height:1.72;color:#aaa7a2;max-width:310px;margin:0 0 7px;flex:0 0 26%}
+.marqa-expertise__grid {display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:clamp(10px,1.3vw,22px)}
+.marqa-expertise__card {position:relative;min-width:0;min-height:clamp(440px,38vw,555px);padding:clamp(21px,2.1vw,34px);display:flex;flex-direction:column;overflow:hidden;border:1px solid rgba(255,255,255,.15);border-radius:6px;transition:transform .45s cubic-bezier(.2,.8,.2,1),border-color .35s,box-shadow .45s;transform:translateZ(0)}
+.marqa-expertise__card::after {content:"";position:absolute;left:0;right:0;top:0;height:1px;background:rgba(255,255,255,.31);opacity:.55}
+.marqa-expertise__card--strategy {background:#242326;color:#f4f1ed}
+.marqa-expertise__card--film {background:#343236;color:#f7f5f1}
+.marqa-expertise__card--growth {background:#222426;color:#f7f5f1}
+.marqa-expertise__card-top {display:flex;align-items:center;justify-content:space-between;gap:10px;font-size:10px;font-weight:720;letter-spacing:.12em;color:#d4d0cb;white-space:normal;position:relative;z-index:2}
+.marqa-expertise__card-division {text-align:right;font-size:9px;color:#bab6b2;letter-spacing:.08em}
+.marqa-expertise__visual {position:relative;display:flex;align-items:center;justify-content:center;min-height:clamp(156px,15vw,235px);flex:1;color:#d9d6d1;opacity:.84}
+.marqa-expertise__visual svg {display:block;width:min(100%,350px);max-height:230px;overflow:visible;transform:translateY(3px) scale(.98);transition:transform .6s cubic-bezier(.2,.8,.2,1),opacity .6s}
+.marqa-expertise__visual-label {position:absolute;left:0;bottom:0;color:#a9a5a1;font-size:9px;font-weight:680;letter-spacing:.19em}
+.marqa-expertise__card-content {margin-top:auto;padding-top:35px;position:relative;z-index:2}
+.marqa-expertise__micro {color:#bcb8b3;display:block;font-size:9px;font-weight:700;letter-spacing:.14em;margin-bottom:9px}
+.marqa-expertise__card-content h3 {font-size:clamp(33px,3.65vw,58px);line-height:1.03;letter-spacing:-.073em;font-weight:715;margin:0 0 17px}
+.marqa-expertise__card-content h3 span {color:#afa9a4}
+.marqa-expertise__card-content p {font-size:clamp(13px,1.07vw,15px);line-height:1.6;letter-spacing:-.006em;max-width:360px;min-height:66px;margin:0 0 21px;color:#d4cfcb}
+.marqa-expertise__tags {font-size:10px;letter-spacing:.02em;color:#b9b5af;border-top:1px solid rgba(255,255,255,.20);padding-top:15px;line-height:1.5}
+.marqa-expertise__tags span {color:#797572;padding-inline:4px}
+.marqa-expertise__card:hover {transform:translateY(-7px);border-color:rgba(255,255,255,.42);box-shadow:0 20px 36px rgba(0,0,0,.22)}
+.marqa-expertise__card:hover .marqa-expertise__visual svg {transform:translateY(-5px) scale(1.04)}
+.marqa-expertise__footer {margin-top:29px;border-top:1px solid #343437;padding-top:23px;display:flex;justify-content:space-between;align-items:start;gap:20px}
+.marqa-expertise__footer>span {font-size:10px;letter-spacing:.16em;font-weight:710;color:#ece8e2}
+.marqa-expertise__footer i {font-style:normal;color:#77736e;padding-inline:11px}
+.marqa-expertise__footer p {font-size:12px;color:#928e89;line-height:1.4;margin:0;text-align:right}
+@media (max-width:1170px) and (min-width:801px) {.marqa-expertise__card {padding:21px;min-height:455px}.marqa-expertise__card-content h3{font-size:clamp(30px,3.3vw,43px)}.marqa-expertise__card-top {font-size:9px}.marqa-expertise__card-division{font-size:8px}.marqa-expertise__intro h2{font-size:clamp(56px,6.7vw,77px)}}
+@media (max-width:800px) {
+ .marqa-expertise__container {padding-top:72px;padding-bottom:66px}
+ .marqa-expertise__topline{font-size:9px;letter-spacing:.11em}
+ .marqa-expertise__intro {display:block;padding:55px 0 42px}
+ .marqa-expertise__eyebrow{font-size:9px;margin-bottom:25px}
+ .marqa-expertise__intro h2 {font-size:clamp(45px,9vw,75px);max-width:710px}
+ .marqa-expertise__intro>p {font-size:14px;max-width:520px;margin-top:26px}
+ .marqa-expertise__grid{grid-template-columns:1fr;gap:12px}
+ .marqa-expertise__card {min-height:340px;padding:25px 24px 23px}
+ .marqa-expertise__visual {min-height:110px;max-height:160px}
+ .marqa-expertise__visual svg {max-height:163px;width:280px}
+ .marqa-expertise__card-content {padding-top:19px}
+ .marqa-expertise__card-content h3 {font-size:clamp(37px,7vw,52px);margin-bottom:10px}
+ .marqa-expertise__card-content p {font-size:13px;min-height:unset;max-width:550px;margin-bottom:19px}
+ .marqa-expertise__footer {align-items:start;flex-direction:column;gap:12px}
+ .marqa-expertise__footer p {text-align:left}
+}
+@media (max-width:390px) {
+ .marqa-expertise__container{padding-top:54px}
+ .marqa-expertise__topline{font-size:8px}
+ .marqa-expertise__intro h2{font-size:clamp(41px,10.4vw,48px)}
+ .marqa-expertise__card{padding:19px;min-height:332px}
+ .marqa-expertise__card-top{font-size:8px}
+ .marqa-expertise__card-division{font-size:8px}
+ .marqa-expertise__visual{max-height:135px}
+ .marqa-expertise__visual svg {max-height:145px;width:250px}
+ .marqa-expertise__card-content h3{font-size:39px}
+ .marqa-expertise__footer>span{letter-spacing:.09em;font-size:9px}
+ .marqa-expertise__footer i{padding-inline:5px}
+}
+@media (prefers-reduced-motion:reduce) {.marqa-expertise__card,.marqa-expertise__visual svg{transition:none!important}.marqa-expertise__card:hover{transform:none}.marqa-expertise__card:hover .marqa-expertise__visual svg{transform:none}}
