@@ -62,3 +62,5 @@ O LAB 14 desabilitava o autoplay via JavaScript em dispositivos com preferência
 - `lab19-3-filmes-editados/`: curadoria revisada a partir de 9 filmes MP4 editados. Dr Rafael Agra, Vanllu, Sky Fit; três pôsteres extraídos dos próprios vídeos no pacote ZIP/Library. Hero e Essência LAB19.2 preservados.
 
 - `lab19-4-streaming/`: restauração de portfólio estilo streaming com cinco capas e esteiras por segmento, central de 24 clientes e 24 páginas individuais, cada qual com vídeo principal e outros vídeos do mesmo cliente. Fonte: V7 de link na bio; LAB19.3 mantido como histórico. Hero/Essência LAB19.2 preservados; MP4 do Hero distribuído somente no ZIP de Netlify.
+
+- **[MARCO_DE_RETOMADA.md](../MARCO_DE_RETOMADA.md)**: checkpoint do LAB19.4 com decisões, arquitetura, testes pendentes e procedimento para reiniciar o trabalho.
