@@ -47,3 +47,5 @@ O LAB 14 desabilitava o autoplay via JavaScript em dispositivos com preferência
 - `lab18-expertise-cards/`: Seção 03 / Expertise MARQA em três cards premium. Estrutura HTML/CSS/React isolada, preserva Hero LAB16 e Essência LAB17.2; MP4 completo está no ZIP de homologação.
 
 - `lab18-1-expertise-compacta/`: versão compacta da Seção 03, cards 30–40% menores, descrições curtas e CTA para projetos. LAB18 preservado; assets de vídeo ficam no pacote completo para Netlify.
+
+- `lab18-2-alinhamento/`: revisão de transição — remove os antigos placeholders Estratégia/Imagem/Performance da Seção 04 e alinha largura com a Expertise. Seção 04 ainda provisória, sem cases reais; vídeo/assets no ZIP completo de avaliação.
