@@ -1,0 +1,50 @@
+/* LAB 19.2 — Seção 02. Composição horizontal, compacta e legível. */
+.m-essence{background:#ebe8e2;color:#151518;padding:22px 0 32px;isolation:isolate}
+.m-essence .m-wrap{width:min(1430px,calc(100% - 64px));margin-inline:auto}
+.m-essence .m-topline{display:flex;justify-content:space-between;gap:20px;align-items:center;font-size:9px;font-weight:750;letter-spacing:.15em;color:#77726d;border-bottom:1px solid #b9b4ae;padding-bottom:12px}
+.m-essence__intro{display:grid;grid-template-columns:minmax(0,1.17fr) minmax(0,.83fr);align-items:start;gap:clamp(24px,4.2vw,88px);padding:31px 0 24px}
+.m-essence__intro h2{font-size:clamp(43px,5.35vw,88px);font-weight:790;letter-spacing:-.081em;line-height:.98;margin:0;min-width:0}
+.m-essence__line{display:block;white-space:nowrap}
+.m-essence__intro h2 em{font-style:normal;font-weight:650;color:#8f8a84}
+.m-essence__about{max-width:500px;justify-self:end;padding:5px 0 0;align-self:start;min-width:0}
+.m-essence .m-kicker{display:block;letter-spacing:.17em;font-size:9px;color:#66625e;font-weight:780;margin-bottom:16px}
+.m-essence__about p{font-size:clamp(14px,1.05vw,17px);line-height:1.5;letter-spacing:-.016em;margin:0 0 10px;color:#484642}
+.m-essence__about p:first-of-type{font-size:clamp(17px,1.45vw,23px);line-height:1.27;font-weight:660;letter-spacing:-.038em;color:#242325}
+.m-essence__banner{height:clamp(176px,14.9vw,222px);display:grid;grid-template-columns:minmax(0,1.08fr) minmax(0,.92fr);position:relative;overflow:hidden;grid-template-rows:minmax(0,1fr);background:#242325;color:#f6f4f0}
+.m-essence__banner img{display:block;width:100%;height:100%;min-width:0;min-height:0;object-fit:cover;object-position:56% 54%;filter:contrast(1.05) saturate(.86)}
+.m-essence__banner-text{min-width:0;min-height:0;height:100%;padding:20px clamp(18px,2.2vw,34px) 29px;display:flex;flex-direction:column;justify-content:center;position:relative}
+.m-essence__banner-text>span,.m-essence__banner-no{font-size:8px;font-weight:780;letter-spacing:.15em;color:#c3beba}
+.m-essence__banner-text h3{margin:10px 0 7px;font-size:clamp(19px,1.9vw,28px);font-weight:720;line-height:1.09;letter-spacing:-.042em;max-width:none}
+.m-essence__banner-text p{margin:0;color:#bbb6b0;font-size:clamp(10px,.8vw,12px);line-height:1.4;max-width:52ch}
+.m-essence__banner-no{position:absolute;right:18px;bottom:12px;font-size:8px;color:#a19b96}
+@media(max-width:1100px){
+  .m-essence__intro{grid-template-columns:minmax(0,1.13fr) minmax(0,.87fr);gap:clamp(18px,3vw,35px)}
+  .m-essence__intro h2{font-size:clamp(40px,5.2vw,60px)}
+  .m-essence__about p:first-of-type{font-size:clamp(16px,1.8vw,21px)}
+  .m-essence__banner-text h3{font-size:clamp(19px,2vw,24px)}
+}
+@media(max-width:760px){
+  .m-essence{padding:19px 0 27px}
+  .m-essence .m-wrap{width:calc(100% - 36px)}
+  .m-essence .m-topline{font-size:8px;letter-spacing:.1em}
+  .m-essence__intro{display:block;padding:25px 0 20px}
+  .m-essence__intro h2{font-size:clamp(33px,8.25vw,59px);line-height:1.01}
+  .m-essence__about{max-width:660px;margin-top:20px;padding:0;justify-self:auto}
+  .m-essence .m-kicker{margin-bottom:11px}
+  .m-essence__about p{font-size:14px;line-height:1.5}
+  .m-essence__about p:first-of-type{font-size:18px}
+  .m-essence__banner{height:auto;grid-template-columns:1fr}
+  .m-essence__banner img{height:150px}
+  .m-essence__banner-text{height:auto;padding:20px 20px 32px}
+  .m-essence__banner-text h3{font-size:clamp(20px,5vw,25px);margin:9px 0 8px}
+  .m-essence__banner-text p{font-size:11px;padding-right:24px}
+  .m-essence__banner-no{right:12px;bottom:10px}
+}
+@media(max-width:400px){
+  .m-essence .m-wrap{width:calc(100% - 28px)}
+  .m-essence__intro h2{font-size:clamp(31px,8vw,36px)}
+  .m-essence__about p:first-of-type{font-size:17px}
+  .m-essence__banner img{height:134px}
+  .m-essence__banner-text{padding:18px 16px 31px}
+  .m-essence__banner-text h3{font-size:20px}
+}

@@ -1,0 +1,42 @@
+[
+  {
+    "cliente": "Carmen Steffens — Canaã",
+    "pasta": "Clientes ativos",
+    "motivo": "filmes editados localizados; selecionar capa e confirmar peças prioritárias"
+  },
+  {
+    "cliente": "Cartório Bandeira",
+    "pasta": "Clientes teste",
+    "motivo": "filme pronto localizado, mas trabalho de teste; confirmar autorização para portfólio"
+  },
+  {
+    "cliente": "Dra. Rafaela Faria",
+    "pasta": "Clientes teste",
+    "motivo": "vídeos de facetas e Outubro Rosa localizados; confirmar aprovação/uso de imagem"
+  },
+  {
+    "cliente": "Christopher Carvalho",
+    "pasta": "Clientes teste",
+    "motivo": "pasta EDITADOS encontrada; revisar escopo e autorização antes de publicar"
+  },
+  {
+    "cliente": "Synergia",
+    "pasta": "Frelas",
+    "motivo": "registro de evento encontrado; verificar autorização das pessoas filmadas e da organização"
+  },
+  {
+    "cliente": "Luz Mineradora",
+    "pasta": "Clientes teste",
+    "motivo": "pasta com takes de câmera e drone, sem edição final confirmada"
+  },
+  {
+    "cliente": "Rany Beauty",
+    "pasta": "Clientes ativos",
+    "motivo": "arquivo localizado, mas o frame da amostra mostra outro nome/médico; conferir o material correto"
+  },
+  {
+    "cliente": "Carmen Steffens — Canaã",
+    "pasta": "Clientes ativos",
+    "motivo": "produção de moda disponível; vídeo de referência grande para baixar nesta sessão"
+  }
+]
