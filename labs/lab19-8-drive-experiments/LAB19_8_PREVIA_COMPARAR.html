@@ -135,7 +135,7 @@
      : 'Reenquadramento: mantém o vídeo incorporado, com um iframe virtualmente maior para diminuir a escala dos controles. A interface do Drive continua presente.';
  };
  const updateUI=()=>{
-   playButton.innerHTML='<span aria-hidden="true">▶</span> Reproduzir aqui';
+   playButton.innerHTML=onMobile()?'<span aria-hidden="true">▶</span> Reproduzir aqui':'<span aria-hidden="true">▶</span> Reproduzir filme';
    playButton.setAttribute('aria-label',`Reproduzir ${selected.title||'o filme'} nesta página`);
    panel.classList.toggle('is-mobile',onMobile());
    syncMode();
