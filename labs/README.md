@@ -64,3 +64,5 @@ O LAB 14 desabilitava o autoplay via JavaScript em dispositivos com preferência
 - `lab19-4-streaming/`: restauração de portfólio estilo streaming com cinco capas e esteiras por segmento, central de 24 clientes e 24 páginas individuais, cada qual com vídeo principal e outros vídeos do mesmo cliente. Fonte: V7 de link na bio; LAB19.3 mantido como histórico. Hero/Essência LAB19.2 preservados; MP4 do Hero distribuído somente no ZIP de Netlify.
 
 - **[MARCO_DE_RETOMADA.md](../MARCO_DE_RETOMADA.md)**: checkpoint do LAB19.4 com decisões, arquitetura, testes pendentes e procedimento para reiniciar o trabalho.
+
+- `lab19-5-drive-player/`: 24 filmes principais e 24 complementares verificados via Drive; links Game/Tetra corrigidos, player com feedback e opção Abrir no Drive. Homologação externa pendente. ZIP completo disponível na Library.
