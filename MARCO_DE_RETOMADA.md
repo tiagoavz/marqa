@@ -39,3 +39,14 @@
 2. Identificar qual seção será alterada e preservar as demais.
 3. Para novos casos, avaliar primeiro os vídeos finalizados e seus contextos, não publicar material de teste automaticamente.
 4. Versionar novos laboratórios isoladamente no GitHub e disponibilizar ZIP Netlify da versão completa.
+
+
+## LAB 21 — Esteiras em movimento
+- Base: LAB20, 36 clientes; Hero, Essência, páginas e player mobile LAB19.9 preservados.
+- Quatro esteiras com movimento horizontal contínuo e infinito, velocidades moderadas e sentidos alternados.
+- Mouse hover pausa; toque e arrasto pausam e retomam 2,8 s depois; setas continuam navegando um card por vez.
+- Funciona com zoom/larguras variáveis por reconstrução de cópias; movimento reduzido desativa a animação.
+- GitHub: https://github.com/tiagoavz/marqa/tree/main/labs/lab21-esteiras-infinitas
+- Patch ZIP: https://github.com/tiagoavz/marqa/raw/refs/heads/main/labs/lab21-esteiras-infinitas/LAB21_PATCH_APLICAR_SOBRE_LAB20.zip
+- Situação: código salvo; **teste visual no Netlify ainda pendente**. Não declarar aprovado até conferir com o usuário.
+- A homepage antiga já importava `sections/streaming.js`, mas esse arquivo estava faltando no LAB20 no GitHub; o LAB21 o adiciona.
