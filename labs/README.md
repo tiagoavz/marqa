@@ -78,3 +78,5 @@ O LAB 14 desabilitava o autoplay via JavaScript em dispositivos com preferência
 - `lab20-curadoria-drive/`: curadoria de 12 novas marcas da pasta de Clientes ativos, Finalizados e Freelas (total 36), capas reais JPEG extraídas de filmes editados, páginas individuais e novo filtro Serviços & Institucional. `data/candidatos_pendentes_lab20.json` preserva os trabalhos de teste para aprovação; Hero, Essência e player 19.9 preservados. Vídeo do Hero disponível no ZIP Netlify da biblioteca.
 
 - `lab21-esteiras-infinitas/`: experiência experimental de quatro esteiras com deslocamento horizontal infinito, pausa em hover/toque, setas e respeito a movimento reduzido; baseado no LAB20. Player, 36 clientes, Hero e Essência sem alterações.
+
+- `lab22-zoom-e-esteiras/`: equaliza larguras e zoom das seções e consolida loop infinito de 4 esteiras com 5 destaques iguais no desktop. Pacote Netlify integrado estará anexado neste LAB.

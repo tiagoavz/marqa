@@ -1,0 +1,1366 @@
+{
+  "agra": {
+    "name": "Dr. Rafael Agra",
+    "eyebrow": "Selected client • Personal Brand",
+    "category": "Cirurgia • Personal Brand",
+    "description": "Produção audiovisual, conteúdo e posicionamento construídos para transformar expertise em percepção, desejo e autoridade.",
+    "tags": [
+      "Film",
+      "Content",
+      "Positioning"
+    ],
+    "hero": {
+      "id": "1TiguJ0Ga41eEA-hr7PublpB0S9Nir7iv",
+      "title": "Selected Film"
+    },
+    "videos": [
+      {
+        "id": "1KwUVbcVtxHJ2WNcZGemPzNInSHlD8Unl",
+        "title": "RA 1208"
+      },
+      {
+        "id": "1MobbR11wB-n0-9pyv-EcQE5G9jpFCN-g",
+        "title": "RA 0408"
+      },
+      {
+        "id": "1jQidDiB4Bmq2MrfG2fu1wHqZxRwmQAbp",
+        "title": "RA 1707 2"
+      },
+      {
+        "id": "1R55V5lGlmwiveYDbIjcEVrG5s75mddok",
+        "title": "RA 2207"
+      },
+      {
+        "id": "1d0nncK2IS1cOgtcXCtY43GL9QfiN64hs",
+        "title": "RA 1707 1"
+      },
+      {
+        "id": "1li0cWT1Rbytk8C3QTwbSy0-TZ8yIFjyw",
+        "title": "RA 1107 2"
+      },
+      {
+        "id": "1pB0zWsmP5vqGb_1cVQ49dDm_SY7uOKp1",
+        "title": "RA 1107 1"
+      },
+      {
+        "id": "1Fw5OYeeIAtQWg6ToJVgqhSOAE9p_HF2c",
+        "title": "R.A 2506"
+      },
+      {
+        "id": "1tAyvyu8opVGBx7QkQUvhUTSdGrUIfkRZ",
+        "title": "Bem-vinda"
+      },
+      {
+        "id": "1FJc4DLCATo6qVbas2H-IvYPKPHJQ0Gys",
+        "title": "RA 1106 1"
+      },
+      {
+        "id": "1IV8ddGly8ANhpeX79PwRy9bGpNh3C_8d",
+        "title": "Lipo 02"
+      },
+      {
+        "id": "16ndM0z5KpWHudxTLasUsTZLZK46Y7Xrx",
+        "title": "Lipo 01"
+      },
+      {
+        "id": "1oW541ZtsEJgGIgNNqK98Rv8lmWcRQvjK",
+        "title": "RA 1106 2"
+      },
+      {
+        "id": "1X6ysIVZYNUjvX48AcC_31xXdm6Im8ZXO",
+        "title": "RA 2605 2"
+      },
+      {
+        "id": "1oT-ITJsAyHZKJ5YUXeSqT6QtS96B_NYz",
+        "title": "RA 2605 1"
+      },
+      {
+        "id": "1e5WmJoHVqF2pZy4RWG89ncaFqDS3lX0w",
+        "title": "RA 1305"
+      },
+      {
+        "id": "1Y0LNV27duInp1_kqgsMS96ibq8gduiJ3",
+        "title": "RA 1405"
+      },
+      {
+        "id": "1CXGseBwdH_kq0ZNZN9maBVqba9Q6R3je",
+        "title": "Mastopexia — depoimento"
+      },
+      {
+        "id": "1nBniq8SaCfwucZFbWRr0gk47pVIwneY0",
+        "title": "Mommy Makeover"
+      }
+    ]
+  },
+  "diego": {
+    "name": "Dr. Diego Barbosa",
+    "eyebrow": "Selected client • Health",
+    "category": "Saúde • Performance",
+    "description": "Conteúdo médico com linguagem contemporânea, direção audiovisual e construção de presença para transformar conhecimento em autoridade de marca.",
+    "tags": [
+      "Film",
+      "Health",
+      "Personal Brand"
+    ],
+    "hero": {
+      "id": "1x9MZyYe8zK1fWQrYnuB0Y0qy1tgowIAi",
+      "title": "Selected Film"
+    },
+    "videos": [
+      {
+        "id": "1kexrOCDUKsNL9shUKjoOAJHUe-i_0hwR",
+        "title": "LV 0208 1"
+      },
+      {
+        "id": "1EzCcLUJk-urhhXaATBFRei1hLcOe2jcU",
+        "title": "LV 0208 3"
+      },
+      {
+        "id": "1O16LClkMYYq5M8ROIR412x14PCeN6uRk",
+        "title": "LV 0208 4"
+      },
+      {
+        "id": "1bYE_C1SBtiW7mBVAZcmE19CC2DFK2IvO",
+        "title": "LV 1106 5"
+      },
+      {
+        "id": "1F16thfQrrmTAHakAervNm-sw934FoqBu",
+        "title": "LV 1408 1"
+      },
+      {
+        "id": "1_MGSFdzzpJPoUkVPjsQYmutxRidXYrE9",
+        "title": "LV 1408 2"
+      },
+      {
+        "id": "1YQR2I_Pdbzv0Kpde8NcDh-9VqP_TZyih",
+        "title": "LV 1408 3"
+      },
+      {
+        "id": "1d651pv6gY1NAbLZPPYu_Heqc8_eG0Kh_",
+        "title": "LV 1708"
+      },
+      {
+        "id": "1B9eL2MDxmHOKKYnU6squyaN0-JiV2Z_o",
+        "title": "LV 1106 4"
+      },
+      {
+        "id": "1kGfKbGJdKjDMuRv4jLifnMwy3AEgBXUv",
+        "title": "LV 1106 2"
+      },
+      {
+        "id": "1WNqKK_cAfrmVLAXIyB729POPJw5mCcYm",
+        "title": "LV 1106 1"
+      },
+      {
+        "id": "1Q5iQGjt1PBJKUynuXe1F-90HD-o01JoP",
+        "title": "LV 1106 3"
+      },
+      {
+        "id": "16CKncPUgYfJ-EDv1lETEXeGb-e7JM-3p",
+        "title": "LV 0906 1"
+      },
+      {
+        "id": "1VmEJyGx5teeqfCrpWZEFsDNKBFzc8XTU",
+        "title": "LV 0806 1"
+      },
+      {
+        "id": "18e_GJYhbHmeLVc0oV5TMuCdGiTwZluBz",
+        "title": "LV 0505"
+      },
+      {
+        "id": "1USnylpTGNJBoF4MwZk65BJ-rWmAzSSOx",
+        "title": "LV 0416"
+      },
+      {
+        "id": "1zoXKpZlfo44bSB_71BXcOvvKPUxd0peb",
+        "title": "LV 0315"
+      }
+    ]
+  },
+  "vanllu": {
+    "name": "Vanllu - Multimarcas",
+    "eyebrow": "Selected client • Fashion",
+    "category": "Multimarcas • Fashion",
+    "description": "Direção de conteúdo para moda masculina premium, combinando produto, comportamento e lifestyle em uma linguagem visual mais desejável.",
+    "tags": [
+      "Fashion",
+      "Film",
+      "Retail"
+    ],
+    "hero": {
+      "id": "1DgKFusbBzmmcssDuDm9IaYreEpVtHVdc",
+      "title": "Selected Film"
+    },
+    "videos": [
+      {
+        "id": "1dVOlOeB4EqI1tbSRmAkz485gf51ARLSM",
+        "title": "V 0806 1"
+      },
+      {
+        "id": "123Ms6QRzFdXqY0InQEd2ZEOgA7wRT9FJ",
+        "title": "V 0806 2"
+      },
+      {
+        "id": "1XWVzV4vyFzrIDfqNhU2nA1F4bQGKywer",
+        "title": "V 2905 2"
+      },
+      {
+        "id": "1AU7aJEMegGNCF1VN3nCwnixR19o0htdi",
+        "title": "V 2404"
+      }
+    ]
+  },
+  "vale": {
+    "name": "Tetra+ Vale",
+    "eyebrow": "Selected client • Corporate",
+    "category": "Corporate • Institutional",
+    "description": "Narrativas institucionais e registros de projetos construídos com linguagem documental, sensibilidade de marca e escala corporativa.",
+    "tags": [
+      "Corporate",
+      "Documentary",
+      "Film"
+    ],
+    "hero": {
+      "id": "1lTXTp65XKA3ECACW6vxkc5lswLvs61aV",
+      "title": "Vale Borrachas — Filme institucional"
+    },
+    "videos": [
+      {
+        "id": "1FQGzju3_JdqkmkksSszKaZcBTjkMorrZ",
+        "title": "Vale Reunião"
+      },
+      {
+        "id": "1HwRO0eTH-lXLsb_cIZtMXDN7R6lt6cH5",
+        "title": "Projeto Bacaba"
+      },
+      {
+        "id": "1vP0KWSmO9D5bliRWhU-WfN8uvLHTlyBr",
+        "title": "Team Building"
+      }
+    ]
+  },
+  "game": {
+    "name": "Game Burguer",
+    "eyebrow": "Selected client • Food",
+    "category": "Food • Advertising",
+    "description": "Conteúdo de produto pensado para gerar desejo: textura, movimento, ritmo e uma linguagem publicitária própria para a marca.",
+    "tags": [
+      "Food",
+      "Film",
+      "Advertising"
+    ],
+    "hero": {
+      "id": "179IbjTk5CEoHJgAQnSkKEfOevjsJ2nId",
+      "title": "Game Burger — GB 1808 3"
+    },
+    "videos": [
+      {
+        "id": "1FaTV57uUHl1LBl1OfRcvvThSO3HcTssg",
+        "title": "Game 03"
+      },
+      {
+        "id": "1IIIDMkuJVYzIH8uPqO2mwhi6951LrnUR",
+        "title": "Game 02"
+      },
+      {
+        "id": "1wDzNAOWgr5phCUzo11TPHFsMMY-XY1EV",
+        "title": "Game 01"
+      }
+    ]
+  },
+  "alexania": {
+    "name": "Dra. Alexânia Morais",
+    "eyebrow": "Health, Aesthetics & Performance",
+    "category": "Saúde • Personal Brand",
+    "description": "Audiovisual e conteúdo orientados à construção de presença, confiança e autoridade profissional.",
+    "tags": [
+      "Health",
+      "Film",
+      "Content"
+    ],
+    "hero": {
+      "id": "1pDLGv_UKR19xfJjm9i5bPhGB1UtB_ZS6",
+      "title": "AX 1408 4"
+    },
+    "videos": [
+      {
+        "id": "1khGGgr6cOS-bqo8uFAB1VdisuDK92OxU",
+        "title": "AX 1408 3"
+      },
+      {
+        "id": "1ruxV4UNBltBV_5fbboLbxLWogXXh5j5O",
+        "title": "AX 1408 2"
+      },
+      {
+        "id": "181JVwn1iwYFgBQikQooYesqm0V1vq0z3",
+        "title": "AX 1408 1"
+      }
+    ]
+  },
+  "uerle": {
+    "name": "Dr. Uerle Oliveira",
+    "eyebrow": "Health, Aesthetics & Performance",
+    "category": "Saúde • Performance",
+    "description": "Construção recorrente de autoridade combinando conteúdo, audiovisual e posicionamento de marca pessoal.",
+    "tags": [
+      "Health",
+      "Performance",
+      "Content"
+    ],
+    "hero": {
+      "id": "1WUOUQPIYDm56dkwA-wE62Ph3SkcnDgnh",
+      "title": "UO 2407 5"
+    },
+    "videos": [
+      {
+        "id": "1yWNn0Wy6i6DX72rjHk0oVS-9uqosBDIZ",
+        "title": "UO 2407 4"
+      },
+      {
+        "id": "1jKtcQLuTUBEBIvFDfACNnn2Aw2m5dvaI",
+        "title": "UO 2407 3"
+      },
+      {
+        "id": "1TaJKtdPiwANci_MXL_aDBVoWxzi-eG2o",
+        "title": "UO 2407 2"
+      },
+      {
+        "id": "1osFjOdYjX4ow7hku1sSM0_-Sho1XzY43",
+        "title": "UO 2407 1"
+      },
+      {
+        "id": "1cJ1TcO7rPhKVQEwemKwNx4UaLnAOOFwY",
+        "title": "T-Sculptor"
+      },
+      {
+        "id": "1nUya9zDf6QrKbV-TKhgq2IkJgBh0NA_O",
+        "title": "U 1606 2"
+      },
+      {
+        "id": "18PDRPKLYsTMcWCR5_SeZsgNnuUx10Ght",
+        "title": "U 1606 4"
+      },
+      {
+        "id": "1CniX0EoHRKO6Vx02YePOvZnSx9buhrlF",
+        "title": "U 1606 3"
+      },
+      {
+        "id": "1pwOX09MkHx-yk8yXTwCWfmey4WRkoJ_G",
+        "title": "U 1606 1"
+      },
+      {
+        "id": "1iHMfF5DgjKRmrE73E5XTSDAz2adX1fm2",
+        "title": "U 2705 2"
+      },
+      {
+        "id": "1WQnQOf1e9U2tJcLPlKhfca-SxYYxXqKx",
+        "title": "Uerle 04"
+      },
+      {
+        "id": "1Z_ThRoTl6Dk1m3DucpoKIxSwM0L_L_wC",
+        "title": "Uerle 03"
+      },
+      {
+        "id": "1m2kVnP0HWZT8KEc0ssy3AieEYN52MtMm",
+        "title": "Uerle 02"
+      },
+      {
+        "id": "17XYDWVwEkB6hMFLDz_k4Ivvnfbq0TdDD",
+        "title": "Uerle 01"
+      }
+    ]
+  },
+  "mila": {
+    "name": "Dra. Mila",
+    "eyebrow": "Health, Aesthetics & Performance",
+    "category": "Saúde • Personal Brand",
+    "description": "Conteúdo audiovisual para traduzir conhecimento profissional em uma marca pessoal mais clara e reconhecível.",
+    "tags": [
+      "Health",
+      "Film",
+      "Personal Brand"
+    ],
+    "hero": {
+      "id": "1iwpLaweoBQmH35gXE-cO0cMqDNE0E8ph",
+      "title": "M 0907 4"
+    },
+    "videos": [
+      {
+        "id": "17AKtbOxfa_RISXlckvxkG8790v5bGvnt",
+        "title": "M 0907 3"
+      },
+      {
+        "id": "1g9BUK2wJGJ6Tmvt6GfgOn35YDXzXu5i0",
+        "title": "M 0907 2"
+      },
+      {
+        "id": "1jHcSFYCvLJ-p6zbPzdShNahQekBk5TmR",
+        "title": "M 0907 1"
+      },
+      {
+        "id": "1xZPYs27XQ1UlxVGuODBT1YDFrmUT8LdV",
+        "title": "M 0807 4"
+      },
+      {
+        "id": "1cmtksh2_jhOqXHZWalN8A5wrCBrqisLR",
+        "title": "M 0807 2"
+      },
+      {
+        "id": "1qQQ8WLAHejpJAXJk_plF1kQrO_Xcq48t",
+        "title": "M 0807 3"
+      },
+      {
+        "id": "1svn_ZaUzeMI5hjTBWnw13dekAkSeGfzV",
+        "title": "M 0807 6"
+      },
+      {
+        "id": "1KXhowr8vNd2Z_BsYMcZ-mI0t0Cv5knKr",
+        "title": "M 0807 5"
+      },
+      {
+        "id": "1GLupDS7g6Pg2ngnzuVo7PaTh1KzQ6tke",
+        "title": "M 0807 1"
+      }
+    ]
+  },
+  "marlon": {
+    "name": "Dr. Marlon",
+    "eyebrow": "Health, Aesthetics & Performance",
+    "category": "Personal Brand • Performance",
+    "description": "Presença audiovisual construída em torno de imagem, comunicação e consistência de marca pessoal.",
+    "tags": [
+      "Personal Brand",
+      "Film",
+      "Content"
+    ],
+    "hero": {
+      "id": "12UcgbHi1UzSTzYN2U7tOtiTapkdYrCNF",
+      "title": "Film 04"
+    },
+    "videos": [
+      {
+        "id": "1F2cFmunvKFmwhhMUxOBYhAinaK70KSiO",
+        "title": "M 2906 2"
+      },
+      {
+        "id": "1-APNnN84T4Q6HU0GUd9GXc8PiWuazqRt",
+        "title": "M 2906 3"
+      },
+      {
+        "id": "18GStdeQFr2Y4B4EvvuFFqOEto7Nvq02Y",
+        "title": "M 2906"
+      },
+      {
+        "id": "1n5fXB65Z1wXI2IMV6FLXRDASlr-UWGt1",
+        "title": "M 0106 2"
+      },
+      {
+        "id": "1rF855gsUbUhtTQS2czdxwKsuEPP4-wp5",
+        "title": "M 0106 1"
+      },
+      {
+        "id": "1iq6f11XKjL-LDI2ZbOHLXMIpbjGRRMao",
+        "title": "M 3 05.05"
+      },
+      {
+        "id": "1rYqV8AjTcJIiLWEh_BYdQ3ZfTasMo6yc",
+        "title": "M 2 28.04"
+      },
+      {
+        "id": "1E7-Sk38CKdLeLMHbzaXi_d3hbzhqW1T_",
+        "title": "M 28.04"
+      },
+      {
+        "id": "1o_H_tUn9-6TAiQiP868M4c5WH3uZnidK",
+        "title": "Marlon 2"
+      },
+      {
+        "id": "1ww4nmUsxIFLsxkqtro6pAsNf4HGGybrS",
+        "title": "Film 01"
+      },
+      {
+        "id": "1fb6Mx1VAucW-Ldi-QPDOdm6nD0aJeaYS",
+        "title": "Marlon 1"
+      }
+    ]
+  },
+  "lois": {
+    "name": "Dra. Lois Lene",
+    "eyebrow": "Health, Aesthetics & Performance",
+    "category": "Odontologia • Estética",
+    "description": "Conteúdo e prova social com direção visual pensada para fortalecer confiança, técnica e percepção de resultado.",
+    "tags": [
+      "Dental",
+      "Aesthetics",
+      "Film"
+    ],
+    "hero": {
+      "id": "1xi5TzsDoG-gfcyD9ksoD_xKk3F97CvN_",
+      "title": "03"
+    },
+    "videos": [
+      {
+        "id": "1-cL3NMt3g8DY0US29ETeBUGcSSdOazNk",
+        "title": "LL 2704"
+      },
+      {
+        "id": "1MyX08JPtEaGlE6iT_10giIyKg-9M-dq3",
+        "title": "Film 02"
+      },
+      {
+        "id": "1tgNKkNUO_lJpIeE2XBJGUD0grqJlmZTI",
+        "title": "Film 01"
+      },
+      {
+        "id": "1q0ndMVADwvQTuDdrIn5yQFfo99GM72PL",
+        "title": "Depoimento B"
+      },
+      {
+        "id": "1h1Chhw6U2QtaZ_pntP6IDXFi4WtYc84-",
+        "title": "Depoimento A"
+      },
+      {
+        "id": "1giUU1tOhL4OF3gn1YHzjoQSqks0Z3Nee",
+        "title": "Depoimento 4"
+      },
+      {
+        "id": "1u3BlpkKkKd_myqFXTzZJJa0-L1OFwRX0",
+        "title": "Depoimento Karen"
+      },
+      {
+        "id": "1rCDDQSlVnoVrGqIYKhKzFoSYaZkmukiE",
+        "title": "Aniversário"
+      },
+      {
+        "id": "18ValTfGSWJoEaML-naAoeK-BETGs00Vb",
+        "title": "Simone"
+      },
+      {
+        "id": "1XzWACHBQ9lje1K_zP7K9XIYZ8vJfLUTV",
+        "title": "Depoimento 2"
+      },
+      {
+        "id": "1WcSE_DQZBKCnLc0DXGTABZUJ9LSkwxac",
+        "title": "Depoimento"
+      },
+      {
+        "id": "1ewIL7p8cT_jsbqCwF0IY_arBysuk9TYA",
+        "title": "Film 02 B"
+      },
+      {
+        "id": "1Lr-nOG2Qcv6Jn03BtU89_LYB2CCAfgc6",
+        "title": "Film 01 B"
+      },
+      {
+        "id": "1XpfxTrDjb3p4yZeC5aEEGzTymWUh-BBc",
+        "title": "Film 02 C"
+      }
+    ]
+  },
+  "juliane": {
+    "name": "Dra. Juliane",
+    "eyebrow": "Health, Aesthetics & Performance",
+    "category": "Saúde • Estética",
+    "description": "Produção audiovisual para uma comunicação profissional mais humana, aspiracional e consistente.",
+    "tags": [
+      "Health",
+      "Aesthetics",
+      "Film"
+    ],
+    "hero": {
+      "id": "1x3SZnG4Iski6OLIJgMiMeRtyfXFulMlH",
+      "title": "Selected Film"
+    },
+    "videos": [
+      {
+        "id": "1keXA5hxwJOmB01yoskb6GVgthW8hZ-gb",
+        "title": "Film 05"
+      },
+      {
+        "id": "1LAVYhysO0G28pLlL6mPgc9KMlrhb6Mal",
+        "title": "Film 02"
+      },
+      {
+        "id": "1GLslHE9fu2xHCib0Vckm4k2OMuvMEoVk",
+        "title": "Film 01"
+      }
+    ]
+  },
+  "diegobarreto": {
+    "name": "Diego Barreto",
+    "eyebrow": "Health, Aesthetics & Performance",
+    "category": "Personal Brand • Performance",
+    "description": "Conteúdo de marca pessoal com linguagem direta, ritmo visual e foco em percepção profissional.",
+    "tags": [
+      "Personal Brand",
+      "Performance",
+      "Film"
+    ],
+    "hero": {
+      "id": "1pex_WA0nSQOrGelY3qagM3eNE6CUapY2",
+      "title": "Film 06"
+    },
+    "videos": [
+      {
+        "id": "1C644_oiwk_Pu1N8tWGq-ZbS_WI0dRd3D",
+        "title": "Film 05"
+      },
+      {
+        "id": "1jI5kBOtJ2u7_5XrXEGOgENBQdL4bjsKD",
+        "title": "Film 04"
+      },
+      {
+        "id": "1iQeqyK_mO_ze14A0rdzMQc2soHsvlMFL",
+        "title": "Film 03"
+      },
+      {
+        "id": "1NETwkvkrIRBNATKazS5-bfpf6RHm6GXn",
+        "title": "Film 02"
+      },
+      {
+        "id": "1vgCt9ITfP1jnkK0trn_aeckdzB1MXZ0d",
+        "title": "Film 01"
+      }
+    ]
+  },
+  "espacolaser": {
+    "name": "EspaçoLaser",
+    "eyebrow": "Brands, Retail & Experiences",
+    "category": "Estética • Franquia",
+    "description": "Campanhas e conteúdo local combinando reconhecimento de marca, oferta e produção audiovisual para performance.",
+    "tags": [
+      "Aesthetics",
+      "Retail",
+      "Campaign"
+    ],
+    "hero": {
+      "id": "1tbL7pxZKav8gj8JcwWC0gvNu1AnW3Srb",
+      "title": "EL 1307 2"
+    },
+    "videos": [
+      {
+        "id": "1-2l9lCiHTZJ0vqnqdUTuhn3ZZuHuEL4r",
+        "title": "EL 1307 1"
+      },
+      {
+        "id": "1W5u-car_zaPesrWTTDvMP-BcF5PDK9LQ",
+        "title": "EL 0207 2"
+      },
+      {
+        "id": "1QDCifzTBhxYfOuKM-ijzCJkXNaFUilUE",
+        "title": "EL 0207"
+      },
+      {
+        "id": "1dPICX3YP7kDZDqiK0EB3mf_vo3_cZDp5",
+        "title": "EL 0107"
+      }
+    ]
+  },
+  "nayane": {
+    "name": "Nayane Sá",
+    "eyebrow": "Health, Aesthetics & Performance",
+    "category": "Estética • Personal Brand",
+    "description": "Imagem profissional e conteúdo audiovisual trabalhados para construir proximidade sem perder percepção premium.",
+    "tags": [
+      "Aesthetics",
+      "Personal Brand",
+      "Film"
+    ],
+    "hero": {
+      "id": "13KZhjxsKt8Rg4VfyXnl8DGLuW1OruR27",
+      "title": "NS 07.05"
+    },
+    "videos": [
+      {
+        "id": "12Z9tceZB5rFNpdmG_Bu7-wg50x6QIZ1r",
+        "title": "NS 30.04 3"
+      },
+      {
+        "id": "1sWGlt5IqSMMZ7Rks3Aq5ddaYb88ULDu7",
+        "title": "NS 30.04 2"
+      },
+      {
+        "id": "1l_MUUIPUuqRF9xGjzcQkb3fbB0icHr-B",
+        "title": "NS 30.04"
+      },
+      {
+        "id": "1NlQH3hUu_1lAwQuguwwm64vnIYNRu7uz",
+        "title": "NS 28.04"
+      }
+    ]
+  },
+  "juliana": {
+    "name": "Dra. Juliana",
+    "eyebrow": "Health, Aesthetics & Performance",
+    "category": "Saúde • Personal Brand",
+    "description": "Produção de conteúdo para fortalecer reconhecimento, autoridade e consistência de presença digital.",
+    "tags": [
+      "Health",
+      "Personal Brand",
+      "Film"
+    ],
+    "hero": {
+      "id": "1_hgZas_KMgWcrHgTJ_b4WD1IpqNQlKRp",
+      "title": "Film 02"
+    },
+    "videos": [
+      {
+        "id": "1o__84bVQjYaIO2WYog9boyYfni7uT35R",
+        "title": "Film 03"
+      },
+      {
+        "id": "1M91R3R_mMseokYp6V0qPIjJIQJIEP1m9",
+        "title": "Film 01"
+      }
+    ]
+  },
+  "anapaula": {
+    "name": "Dra. Ana Paula Braz",
+    "eyebrow": "Health, Aesthetics & Performance",
+    "category": "Saúde • Personal Brand",
+    "description": "Conteúdo profissional com narrativa simples, visual limpo e foco em confiança e autoridade.",
+    "tags": [
+      "Health",
+      "Personal Brand",
+      "Content"
+    ],
+    "hero": {
+      "id": "1yjzUEqKRnxWYPjhjoVREd6ogYZ7-14KL",
+      "title": "SET 02"
+    },
+    "videos": [
+      {
+        "id": "1pFM08u-2t1KNZBABm9RExyhoAOSsrVKS",
+        "title": "SET 01"
+      }
+    ]
+  },
+  "luana": {
+    "name": "Luana Carla",
+    "eyebrow": "Health, Aesthetics & Performance",
+    "category": "Saúde • Personal Brand",
+    "description": "Estratégia audiovisual para ampliar presença, criar familiaridade e sustentar uma comunicação profissional consistente.",
+    "tags": [
+      "Health",
+      "Film",
+      "Content"
+    ],
+    "hero": {
+      "id": "1yR7NnZ1HC_3HXYa4B3seeYIj7u0iFvSg",
+      "title": "LC 2608"
+    },
+    "videos": [
+      {
+        "id": "1Tkp8gkGw7dIwGTxJnuQ5EyXX71H8w6dE",
+        "title": "LC 1808"
+      },
+      {
+        "id": "1mVuAESsCcekfyNa8tkVxZgBKkMEqVDEn",
+        "title": "LC 0107"
+      },
+      {
+        "id": "1VpBNgNW8QwojIR7m6TtSHCh0cNJBgC9m",
+        "title": "LC 0705"
+      }
+    ]
+  },
+  "leticia": {
+    "name": "Dra. Leticia",
+    "eyebrow": "Health, Aesthetics & Performance",
+    "category": "Saúde • Estética",
+    "description": "Conteúdo audiovisual com foco em imagem profissional, consistência e construção de percepção de valor.",
+    "tags": [
+      "Health",
+      "Aesthetics",
+      "Film"
+    ],
+    "hero": {
+      "id": "1FQ5zIqY0t388F2xJOLfTuNKYyM-FBQhn",
+      "title": "Film 11"
+    },
+    "videos": [
+      {
+        "id": "1r8ACAytJqPzWavHC_IoFrkogQIf0bk8o",
+        "title": "Film 10"
+      },
+      {
+        "id": "1jVgoyMNadFQwsd7AOYJmDJH5o44u9YeK",
+        "title": "Film 09"
+      },
+      {
+        "id": "1hV1g5lHthqq3iUdipuLREDJbqw_ZwITg",
+        "title": "Film 08"
+      },
+      {
+        "id": "1rDmSQD086t1G-x2ZJzusagZsE2-JfCeD",
+        "title": "Film 04"
+      },
+      {
+        "id": "1awanZt7w8nBK1l0fnEQs-_b8N762Plyn",
+        "title": "Film 07"
+      },
+      {
+        "id": "1EG4M0S9eFTdQpwZBximWlemHj54PkKUz",
+        "title": "Film 06"
+      },
+      {
+        "id": "1xEjGDVo0eHqilOY5ED9G6l_dXgxVHGPA",
+        "title": "Film 05"
+      },
+      {
+        "id": "12IAaX5AFqzISSNzjk1QTgknkuJX-cMYK",
+        "title": "Film 03"
+      },
+      {
+        "id": "1dFKhB0ATpkWZUY2Nx4SYvgTLwU44RgYw",
+        "title": "Film 02"
+      },
+      {
+        "id": "1FODWqMInb2ixoTao5LZkEUo7r00f-PNM",
+        "title": "Film 01"
+      }
+    ]
+  },
+  "skyfit": {
+    "name": "Sky Fit",
+    "eyebrow": "Brands, Retail & Experiences",
+    "category": "Fitness • Performance",
+    "description": "Conteúdo para transformar estrutura, rotina e experiência de treino em percepção de marca e comunidade.",
+    "tags": [
+      "Fitness",
+      "Performance",
+      "Film"
+    ],
+    "hero": {
+      "id": "1MC0RwuO9qYHitWLwbFZ8K-TGAddUorrC",
+      "title": "Film 02 OUT"
+    },
+    "videos": [
+      {
+        "id": "1c0RgSfKursjgXp7O004iXk0MmElVks9k",
+        "title": "01 NOV"
+      },
+      {
+        "id": "1qJEDZQ2nxW52GQKQLtVsqdL1fBtz6pK9",
+        "title": "Film 03"
+      },
+      {
+        "id": "1G_UjPnUhxqf5mxJKEGW3VtMQlfteLr2_",
+        "title": "Film 02"
+      },
+      {
+        "id": "1iejZZy_G5N_ziwtvrWvxegFKydqwQTRL",
+        "title": "Film 01"
+      }
+    ]
+  },
+  "marina": {
+    "name": "Dra. Marina",
+    "eyebrow": "Health, Aesthetics & Performance",
+    "category": "Saúde • Personal Brand",
+    "description": "Presença digital construída com direção audiovisual, clareza e consistência de marca pessoal.",
+    "tags": [
+      "Health",
+      "Personal Brand",
+      "Film"
+    ],
+    "hero": {
+      "id": "1eDQPluZx2xNKh5UPINmYXI6hdXcXZ9FB",
+      "title": "Selected Film"
+    },
+    "videos": [
+      {
+        "id": "16ivo-gtmGWKAdwXeS8fT2pfBBJMFq1Po",
+        "title": "Film 01 A"
+      },
+      {
+        "id": "1g6MoMCQiQzyvU4pE5GMsiI5m5vS4CWpH",
+        "title": "SET 03"
+      },
+      {
+        "id": "1ckbtBS0QUebswgpjRwC1hB8pXzA6EwUL",
+        "title": "SET 01"
+      },
+      {
+        "id": "1arNU4xxCZG1xweJh-EKc27bV7Pl2uaBC",
+        "title": "AGO 01"
+      }
+    ]
+  },
+  "especiale": {
+    "name": "Clínica Especiale",
+    "eyebrow": "Health, Aesthetics & Performance",
+    "category": "Clínica • Saúde & Estética",
+    "description": "Conteúdo audiovisual para traduzir cuidado, especialidade e experiência clínica em uma presença de marca mais forte.",
+    "tags": [
+      "Health",
+      "Aesthetics",
+      "Film"
+    ],
+    "hero": {
+      "id": "1whLj4XBeT62FXEa052k24aBOy4-UugS5",
+      "title": "E 2905 1"
+    },
+    "videos": [
+      {
+        "id": "1WwN7revBDEILdJrDYHEJ3-VmUKreo-H7",
+        "title": "E 2905 3"
+      },
+      {
+        "id": "1lArcezLi5kZR4TCKBxkhl1KTWvRF78Dq",
+        "title": "E 2905 4"
+      },
+      {
+        "id": "1wojn2TAH_oXpqEuPndsZ0NMAKwwNEv02",
+        "title": "E 2905 2"
+      },
+      {
+        "id": "1RMoaJx7z5_UjqgRGHwYR_CR9Zo2bAS_G",
+        "title": "E 1205 2"
+      },
+      {
+        "id": "1dJyQ6hgqF9GQOLHfWULk7yEi_MhZyZRa",
+        "title": "E 1205 1"
+      },
+      {
+        "id": "1YQqzHG6gdFUMv0kcikj9aTPUgWjU9q8W",
+        "title": "E 0805 3"
+      }
+    ]
+  },
+  "sapdeluxo": {
+    "name": "Sapatinho de Luxo",
+    "eyebrow": "Brands, Retail & Experiences",
+    "category": "Varejo • Fashion",
+    "description": "Produção de conteúdo para transformar produto, estilo e experiência de compra em desejo de marca.",
+    "tags": [
+      "Retail",
+      "Fashion",
+      "Film"
+    ],
+    "hero": {
+      "id": "1D_oKcbou3Fx6oWHnDgTgE2mfNzQZJU9J",
+      "title": "SDL 0106 4"
+    },
+    "videos": [
+      {
+        "id": "15amoto4_jX7Z9lk-XpxlqtEcHf40QzFg",
+        "title": "SDL 0106 3"
+      },
+      {
+        "id": "1dwGjU7V02gYhl17OCkXRE4W56kPUFPQi",
+        "title": "SDL 0106 2"
+      },
+      {
+        "id": "1Tz9dSwGDdohaxuDkDxEgOe2Z9c9sIX-L",
+        "title": "SDL 0106 1"
+      },
+      {
+        "id": "1FLMufZalJPG8MOVpPpRkWELIgkrx0Wcb",
+        "title": "2804"
+      },
+      {
+        "id": "1gLHJVQQS26ef9kY_FCxTNssORhjq8Y-o",
+        "title": "SL 1504"
+      },
+      {
+        "id": "1YmPYK9cmgve1fkADTyBAEcTn9MqNkDvP",
+        "title": "04 1605"
+      },
+      {
+        "id": "1xN6_h2k8sQdarWG0cldAb_EWP2scCzHC",
+        "title": "03 1605"
+      },
+      {
+        "id": "1oGcw8bl3u0Os8syLXVfyQe1lVz2GMwYo",
+        "title": "02 1605"
+      },
+      {
+        "id": "1y31hjqhXXxeyR8iLXqBWGmKmHDMYWj9a",
+        "title": "01 1605"
+      },
+      {
+        "id": "1XxXfjXkk6K56MZsD4ZFPaq9y0CIFwsPf",
+        "title": "03 0605"
+      },
+      {
+        "id": "11N0h48HSNcaFMIkkYJkBq5GOb19rsMJ0",
+        "title": "02 0605"
+      },
+      {
+        "id": "15BbkLxnGk3Hfqb012cgz3VGUD856XkY4",
+        "title": "01 0605"
+      },
+      {
+        "id": "1nf8JwUicn2lcU7MingbnAB5d0fPoQt4d",
+        "title": "03 2404"
+      },
+      {
+        "id": "161O5MzDfwNCetYaNM_tHmyGPHsg1zZNv",
+        "title": "02 2404"
+      }
+    ]
+  },
+  "kings": {
+    "name": "Kings Sneakers",
+    "eyebrow": "Brands, Retail & Experiences",
+    "category": "Sneakers • Retail",
+    "description": "Conteúdo de produto e lifestyle para traduzir cultura, desejo e identidade em uma linguagem comercial mais forte.",
+    "tags": [
+      "Sneakers",
+      "Retail",
+      "Lifestyle"
+    ],
+    "hero": {
+      "id": "1OvTe8TqzI2WrGIy29uJU6QknIky1C7rn",
+      "title": "Film 03"
+    },
+    "videos": [
+      {
+        "id": "1hymlO2JO22GsIqW4Otp07anygm2P17ua",
+        "title": "Film 02"
+      },
+      {
+        "id": "1mVhXrCVx2eZcfTWg-vNNEIO5FCyorxYw",
+        "title": "Film 01"
+      }
+    ]
+  },
+  "tropical": {
+    "name": "Tropical",
+    "eyebrow": "Brands, Retail & Experiences",
+    "category": "Marca • Varejo",
+    "description": "Produção audiovisual para apresentar produto, experiência e identidade de marca de forma mais desejável.",
+    "tags": [
+      "Brand",
+      "Retail",
+      "Film"
+    ],
+    "hero": {
+      "id": "1NG3YrUxrOyuMiCurXu5skHDrpOTfr-eQ",
+      "title": "Film 03"
+    },
+    "videos": [
+      {
+        "id": "1J3TMlLnTt4uJOSSxN6NO3HovboP2I5-d",
+        "title": "Film 02"
+      },
+      {
+        "id": "1hNWwg6k7HFkysMD7aAbSoh2kJFChfvx6",
+        "title": "Film 01"
+      }
+    ]
+  },
+  "rihappy": {
+    "name": "Ri Happy Canaã",
+    "eyebrow": "Produção MARQA · Clientes ativos",
+    "category": "Varejo • Campanhas",
+    "description": "Campanhas para a infância e varejo de experiências. Produções audiovisuais desenvolvidas pela MARQA e organizadas por projeto.",
+    "tags": [
+      "Campanhas",
+      "Conteúdo",
+      "Varejo"
+    ],
+    "hero": {
+      "id": "1lbfwFtmnySJ6zwnJMLbLBpiuxdVNF9zd",
+      "title": "Mês das Crianças / Cinema"
+    },
+    "videos": [
+      {
+        "id": "1G2ruHAhw-wi3i7vUxd5vmo8MZARPSOFh",
+        "title": "Mês das Crianças"
+      },
+      {
+        "id": "1g1Kb8S9KPFsWfH3N8YAF-4DqCNvOT3WW",
+        "title": "Cinema / Campanha"
+      }
+    ],
+    "poster": "../../assets/rihappy-filme.jpg"
+  },
+  "divinoamor": {
+    "name": "Divino Amor",
+    "eyebrow": "Produção MARQA · Clientes ativos",
+    "category": "Varejo • Institucional",
+    "description": "Imagem de marca e inauguração. Produções audiovisuais desenvolvidas pela MARQA e organizadas por projeto.",
+    "tags": [
+      "Filme",
+      "Campanha",
+      "Varejo"
+    ],
+    "hero": {
+      "id": "19O7OcF-6OgPIIffdeVT5t5BzMHRViUZ_",
+      "title": "Filme de inauguração"
+    },
+    "videos": [
+      {
+        "id": "1ZThs2M46srwblUyIOpwlr0u_nlp4IQM1",
+        "title": "Convite / Data"
+      },
+      {
+        "id": "1YUQwIGwv9x56TZjKAd7m_IcK52G8qSpN",
+        "title": "Campanha de setembro"
+      }
+    ],
+    "poster": "../../assets/divinoamor-filme.jpg"
+  },
+  "paniago": {
+    "name": "Paniago Diagnósticos",
+    "eyebrow": "Produção MARQA · Clientes ativos",
+    "category": "Saúde • Diagnóstico",
+    "description": "Comunicação de exames e serviços de saúde. Produções audiovisuais desenvolvidas pela MARQA e organizadas por projeto.",
+    "tags": [
+      "Informação",
+      "Saúde",
+      "Conteúdo"
+    ],
+    "hero": {
+      "id": "1VpS9UjFlQZYehUfyOy09jZE69eclQ21R",
+      "title": "Planos atendidos"
+    },
+    "videos": [
+      {
+        "id": "1jAzl8lz7ElOwe-t0I0lWqVom8iyGjvVh",
+        "title": "Campanha / Canaã"
+      },
+      {
+        "id": "1cWxhw9sleDExCaW5b3myE2-CQAhQdh9q",
+        "title": "Campanha / Ourilândia"
+      }
+    ],
+    "poster": "../../assets/paniago-filme.jpg"
+  },
+  "chillibeans": {
+    "name": "Chilli Beans Canaã",
+    "eyebrow": "Produção MARQA · Finalizados",
+    "category": "Moda • Acessórios",
+    "description": "Campanhas comerciais e comunicação de varejo. Produções audiovisuais desenvolvidas pela MARQA e organizadas por projeto.",
+    "tags": [
+      "Moda",
+      "Campanha",
+      "Varejo"
+    ],
+    "hero": {
+      "id": "1ZdCWVgu7Qt6EHPUfTKOhoxHxZNveWrPv",
+      "title": "Campanha / Dia das Mães"
+    },
+    "videos": [
+      {
+        "id": "1UzJV8otldQsD4Ipg8w8Y_tsgaRei6QPO",
+        "title": "Produção / Abril"
+      },
+      {
+        "id": "14uBprLtshfonkckiKA50cEosa8DGT-bl",
+        "title": "Filme / Chilli Beans"
+      }
+    ],
+    "poster": "../../assets/chillibeans-filme.jpg"
+  },
+  "splash": {
+    "name": "Splash Piscinas",
+    "eyebrow": "Produção MARQA · Frelas",
+    "category": "Serviços • Piscinas",
+    "description": "Narrativas de produto e soluções para clientes. Produções audiovisuais desenvolvidas pela MARQA e organizadas por projeto.",
+    "tags": [
+      "Serviços",
+      "Conteúdo",
+      "Produto"
+    ],
+    "hero": {
+      "id": "1LzgZyTOr_Lj8JAFwoKM_A-uRjIDXlTqh",
+      "title": "História de um cliente"
+    },
+    "videos": [
+      {
+        "id": "152Hdn3rhGBCC9Rx9vz-DWbVQy2BJwU9H",
+        "title": "Piscinas com pastilhas"
+      },
+      {
+        "id": "1y-2CrCHKFSAkKN4h5NVfi0DRFBqzV7ot",
+        "title": "Piscina convencional"
+      }
+    ],
+    "poster": "../../assets/splash-filme.jpg"
+  },
+  "crepecone": {
+    "name": "Crepe Cone",
+    "eyebrow": "Produção MARQA · Finalizados",
+    "category": "Gastronomia • Produto",
+    "description": "Detalhes, preparo e desejo pelo produto. Produções audiovisuais desenvolvidas pela MARQA e organizadas por projeto.",
+    "tags": [
+      "Food",
+      "Produto",
+      "Audiovisual"
+    ],
+    "hero": {
+      "id": "1UQ69gyJz6XUgVuLhDgVDioodkxL_YAdX",
+      "title": "Produção / 03"
+    },
+    "videos": [
+      {
+        "id": "1W8CbRPc0oJmMiq97UaoDZhLtyMnwHJcN",
+        "title": "Produção / 04"
+      },
+      {
+        "id": "1Gu3SKHd5svzhrzw886CgJnRvWCRCmE0M",
+        "title": "Produção / 01"
+      }
+    ],
+    "poster": "../../assets/crepecone-filme.jpg"
+  },
+  "cheirinbao": {
+    "name": "Cheirin Bão",
+    "eyebrow": "Produção MARQA · Clientes ativos",
+    "category": "Gastronomia • Café",
+    "description": "Histórias e experiências em torno do café. Produções audiovisuais desenvolvidas pela MARQA e organizadas por projeto.",
+    "tags": [
+      "Gastronomia",
+      "Marca",
+      "Conteúdo"
+    ],
+    "hero": {
+      "id": "118MKiEjbA6v_0zjFFwE1ktbd13spPYJz",
+      "title": "Conheça a Cheirin Bão"
+    },
+    "videos": [
+      {
+        "id": "1Z6E7qH0oIXlWQISY9yLjm-VjgeeN0fP7",
+        "title": "Empório da Cheirin"
+      },
+      {
+        "id": "1LqPMp2WfwZE61LPT69rCYjZ3Dn0NDNq8",
+        "title": "Café microlote"
+      }
+    ],
+    "poster": "../../assets/cheirinbao-filme.jpg"
+  },
+  "alpha": {
+    "name": "Alpha Suplementos",
+    "eyebrow": "Produção MARQA · Clientes ativos",
+    "category": "Fitness • Varejo",
+    "description": "Apresentação de produtos e campanhas de varejo. Produções audiovisuais desenvolvidas pela MARQA e organizadas por projeto.",
+    "tags": [
+      "Campanha",
+      "Produto",
+      "Varejo"
+    ],
+    "hero": {
+      "id": "1Fvp73eYVZ0P8FgtOBetpOCYKyGKO33pS",
+      "title": "Campanha / Pré-treino"
+    },
+    "videos": [
+      {
+        "id": "1E6RPB6R5bFHDaK0pm7p642RY11k5eQEx",
+        "title": "Entrega grátis"
+      },
+      {
+        "id": "1QpKyHvbTLq_cn-Ygi2-NloYjHKyh83UG",
+        "title": "Campanha / Alpha"
+      }
+    ],
+    "poster": "../../assets/alpha-filme.jpg"
+  },
+  "senna": {
+    "name": "Senna Imóveis",
+    "eyebrow": "Produção MARQA · Frelas",
+    "category": "Imobiliário • Conteúdo",
+    "description": "Imagem de imóveis e oportunidades de mercado. Produções audiovisuais desenvolvidas pela MARQA e organizadas por projeto.",
+    "tags": [
+      "Imobiliário",
+      "Conteúdo",
+      "Produção"
+    ],
+    "hero": {
+      "id": "1KMrEtYoqhy8qIeX_r9Ja0dFTWK3NUkWc",
+      "title": "Filme narrado / Imóvel"
+    },
+    "videos": [
+      {
+        "id": "1D2C4evkhqrLxDnxQtvL41iuBRb4QiKlV",
+        "title": "Apresentação / 08"
+      },
+      {
+        "id": "1xBIlW4jRf652kSAP9K9Ohtp1AtsSrQ5w",
+        "title": "Apresentação / 11"
+      }
+    ],
+    "poster": "../../assets/senna-filme.jpg"
+  },
+  "drsorriso": {
+    "name": "Clínica Dr. Sorriso",
+    "eyebrow": "Produção MARQA · Clientes ativos",
+    "category": "Odontologia • Estética",
+    "description": "Apresentação de especialistas e comunicação clínica. Produções audiovisuais desenvolvidas pela MARQA e organizadas por projeto.",
+    "tags": [
+      "Saúde",
+      "Clínica",
+      "Conteúdo"
+    ],
+    "hero": {
+      "id": "1l0jqT1F_VG6GQ7Bvh5Y7z3giQeYKbzg4",
+      "title": "Dra. Estefane / Apresentação"
+    },
+    "videos": [
+      {
+        "id": "1RNnnfWxEMb2lL06_ummdT3HSIz1TM_97",
+        "title": "Full Face"
+      },
+      {
+        "id": "1km49uIsWaqo-WqplSJfwm7tLhLkkPowY",
+        "title": "Criativo de campanha"
+      }
+    ],
+    "poster": "../../assets/drsorriso-filme.jpg"
+  },
+  "sitra": {
+    "name": "Sitra",
+    "eyebrow": "Produção MARQA · Clientes ativos",
+    "category": "Institucional • Serviços",
+    "description": "Comunicação pública e informação sobre assistência em deslocamento. Produções audiovisuais desenvolvidas pela MARQA e organizadas por projeto.",
+    "tags": [
+      "Institucional",
+      "Informação",
+      "Conteúdo"
+    ],
+    "hero": {
+      "id": "1_i61wnl81GyFvbSqTIcr1TO_8zuk06ti",
+      "title": "Paciente em deslocamento"
+    },
+    "videos": [
+      {
+        "id": "122fg6kUJIKFXOpQXEVmgWwWH_qGBAm1A",
+        "title": "Planilha / Serviço"
+      },
+      {
+        "id": "15gLHG2wEYaa6VHp-cogP7eVTun0vW1Du",
+        "title": "Três sinais"
+      }
+    ],
+    "poster": "../../assets/sitra-filme.jpg"
+  },
+  "belaking": {
+    "name": "Bela King",
+    "eyebrow": "Produção MARQA · Clientes ativos",
+    "category": "Moda • Varejo",
+    "description": "Produtos de moda em linguagem comercial. Produções audiovisuais desenvolvidas pela MARQA e organizadas por projeto.",
+    "tags": [
+      "Moda",
+      "Varejo",
+      "Produto"
+    ],
+    "hero": {
+      "id": "1uA7lcPezuvB2_GOlGj1A866fbpomM8nV",
+      "title": "Campanha / Rasteirinhas"
+    },
+    "videos": [
+      {
+        "id": "1GpK9Utn1mHyBWWm9hsE45aB_oFwOjb3f",
+        "title": "Rasteirinhas / Produção 01"
+      },
+      {
+        "id": "1ZODA6qdSh3vmGJkUJWYS4QiSMIMBvus1",
+        "title": "Campanha / Bolsa"
+      }
+    ],
+    "poster": "../../assets/belaking-filme.jpg"
+  }
+}
