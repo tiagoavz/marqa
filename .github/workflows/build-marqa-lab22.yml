@@ -1,0 +1,78 @@
+name: Build MARQA LAB22 ZIP completo
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'labs/lab22-zoom-e-esteiras/.build/basechunks/**'
+      - '.github/workflows/build-marqa-lab22.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  netlify-zip:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Integrar LAB20 e LAB22 em um ZIP unico
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import base64,io,zipfile,shutil,re
+          root=Path('labs/lab22-zoom-e-esteiras')
+          chunks=sorted((root/'.build/basechunks').glob('part_*.txt'))
+          assert len(chunks)==10, f'Fragmentos: esperado 10, encontrado {len(chunks)}'
+          raw=base64.b64decode(''.join(p.read_text().strip() for p in chunks),validate=True)
+          stage=Path('marqa-netlify-stage')
+          if stage.exists(): shutil.rmtree(stage)
+          stage.mkdir()
+          with zipfile.ZipFile(io.BytesIO(raw)) as base:
+            assert base.testzip() is None, 'Arquivo original corrompido'
+            for entry in base.infolist():
+              if entry.is_dir(): continue
+              rel=Path(entry.filename)
+              assert not rel.is_absolute() and '..' not in rel.parts
+              output=stage/rel
+              output.parent.mkdir(parents=True,exist_ok=True)
+              output.write_bytes(base.read(entry))
+          for relative in ('index.html','PREVIA_SEM_VIDEO.html','README.md','sections/streaming.css','sections/streaming.js'):
+            output=stage/relative
+            output.parent.mkdir(parents=True,exist_ok=True)
+            shutil.copy2(root/relative,output)
+          assert (stage/'index.html').is_file()
+          assert (stage/'assets/marqa-hero-1080p.mp4').stat().st_size > 2_000_000
+          assert len(list((stage/'projetos').glob('*/index.html')))==36
+          site=(stage/'index.html').read_text()
+          assert all('id="'+n+'"' in site for n in ['stream-featured','stream-health','stream-brands','stream-services'])
+          assert 'streaming.js?v=lab22' in site
+          style=(stage/'sections/streaming.css').read_text()
+          assert '4 * var(--rail-gap)' in style and '--marqa-site-gutter' in style
+          js=(stage/'sections/streaming.js').read_text()
+          assert "this.speed = el.classList.contains('stream-rail--feature') ? 88 : 58" in js
+          archive=Path('dist/MARQA_LAB22_NETLIFY_COMPLETO.zip')
+          archive.parent.mkdir(exist_ok=True)
+          with zipfile.ZipFile(archive,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as final:
+            for item in sorted(stage.rglob('*')):
+              if item.is_file(): final.write(item,item.relative_to(stage).as_posix())
+          with zipfile.ZipFile(archive) as final:
+            assert final.testzip() is None, 'Falha de integridade'
+            assert 'index.html' in final.namelist()
+            assert 'assets/marqa-hero-1080p.mp4' in final.namelist()
+            assert len([p for p in final.namelist() if re.fullmatch(r'projetos/[^/]+/index.html',p)])==36
+            assert 'sections/streaming.js' in final.namelist()
+          print(f'ZIP pronto: {archive} ({archive.stat().st_size} bytes)')
+          PY
+      - name: Salvar ZIP completo no GitHub
+        run: |
+          git config user.name "marqa-build-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f dist/MARQA_LAB22_NETLIFY_COMPLETO.zip
+          git diff --cached --quiet || git commit -m "build: LAB22 pacote completo Netlify"
+          git push
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MARQA-LAB22-NETLIFY-COMPLETO
+          path: dist/MARQA_LAB22_NETLIFY_COMPLETO.zip
