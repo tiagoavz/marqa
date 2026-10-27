@@ -1,0 +1,71 @@
+name: Build MARQA LAB21 Netlify completo
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'labs/lab21-esteiras-infinitas/.build/basechunks/**'
+      - '.github/workflows/build-marqa-lab21.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          persist-credentials: true
+      - name: Montar pacote unico para Netlify
+        run: |
+          python3 - <<'PY'
+          from pathlib import Path
+          import base64, io, zipfile, shutil, json, re
+          root=Path('labs/lab21-esteiras-infinitas')
+          chunks=sorted((root/'.build/basechunks').glob('part_*.txt'))
+          assert len(chunks)==10, f'Esperados 10 fragmentos do LAB20, encontrados {len(chunks)}'
+          raw=base64.b64decode(''.join(p.read_text().strip() for p in chunks), validate=True)
+          stage=Path('build-marqa-netlify')
+          if stage.exists(): shutil.rmtree(stage)
+          stage.mkdir()
+          with zipfile.ZipFile(io.BytesIO(raw)) as original:
+            assert original.testzip() is None, 'Base LAB20 corrompida'
+            for item in original.infolist():
+              if item.is_dir(): continue
+              path=Path(item.filename)
+              if path.is_absolute() or '..' in path.parts: raise ValueError(f'Caminho invalido: {path}')
+              target=stage/path
+              target.parent.mkdir(parents=True,exist_ok=True)
+              target.write_bytes(original.read(item.filename))
+          assert (stage/'assets/marqa-hero-1080p.mp4').stat().st_size > 2000000
+          shutil.copy2(root/'sections/streaming.js', stage/'sections/streaming.js')
+          shutil.copy2(root/'sections/streaming.css', stage/'sections/streaming.css')
+          assert len(list((stage/'projetos').glob('*/index.html')))==36, 'Páginas de clientes ausentes'
+          home=(stage/'index.html').read_text()
+          assert all(f'id="{name}"' in home for name in ('stream-featured','stream-health','stream-brands','stream-services'))
+          assert '<script defer="True" src="sections/streaming.js"></script>' in home
+          assert 'stream-rail--infinite' in (stage/'sections/streaming.css').read_text()
+          result=Path('dist/MARQA_LAB21_NETLIFY_COMPLETO.zip')
+          result.parent.mkdir(exist_ok=True)
+          with zipfile.ZipFile(result,'w',zipfile.ZIP_DEFLATED,compresslevel=6) as output:
+            for path in sorted(stage.rglob('*')):
+              if path.is_file(): output.write(path, path.relative_to(stage).as_posix())
+          with zipfile.ZipFile(result) as z:
+            assert z.testzip() is None
+            assert 'index.html' in z.namelist()
+            assert 'assets/marqa-hero-1080p.mp4' in z.namelist()
+            assert len([x for x in z.namelist() if re.fullmatch(r'projetos/[^/]+/index.html',x)])==36
+          print(f'ZIP VALIDADO: {result} — {result.stat().st_size} bytes')
+          PY
+      - name: Publicar ZIP unico no repositorio
+        run: |
+          git config user.name "marqa-build-bot"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add -f dist/MARQA_LAB21_NETLIFY_COMPLETO.zip
+          git diff --cached --quiet || git commit -m "build: LAB21 Netlify completo com 36 clientes, Hero e esteiras"
+          git push
+      - uses: actions/upload-artifact@v4
+        with:
+          name: MARQA-LAB21-Netlify-completo
+          path: dist/MARQA_LAB21_NETLIFY_COMPLETO.zip
