@@ -1,0 +1,12 @@
+MARQA LAB 19.6 — COMO ABRIR SEM ERROS
+
+1. Baixe o ZIP completo.
+2. No Windows, clique com o botão direito no ZIP e escolha "Extrair tudo..." (ou "Extrair aqui" pelo WinRAR).
+3. Entre na pasta extraída e dê dois cliques em "index.html". Não abra o HTML dentro da janela do ZIP/WinRAR.
+4. Clique nas capas dos clientes. Cada uma abre, agora, diretamente um arquivo "projetos/NOME/index.html".
+5. Para simular o comportamento real da hospedagem e testar o player do Drive, publique o ZIP no Netlify, mantendo as pastas internas. Use uma janela anônima para verificar a reprodução dos MP4.
+
+Observação: o erro "Índice de C:\Users\...\Temp\Rar$EXa...\projetos\uerle\" era causado por links para diretórios abertos no WinRAR. O HTML e o player de cada cliente já existem no pacote; a correção usa URLs explícitas para index.html.
+
+Módulos preservados: Hero/Loader LAB16; Essência LAB19.2; visual Streaming LAB19.4; Player Drive LAB19.5.
+Alteração do LAB19.6: somente navegação, instruções de uso e aviso de arquivo aberto de dentro do ZIP.

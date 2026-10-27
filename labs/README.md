@@ -66,3 +66,5 @@ O LAB 14 desabilitava o autoplay via JavaScript em dispositivos com preferência
 - **[MARCO_DE_RETOMADA.md](../MARCO_DE_RETOMADA.md)**: checkpoint do LAB19.4 com decisões, arquitetura, testes pendentes e procedimento para reiniciar o trabalho.
 
 - `lab19-5-drive-player/`: 24 filmes principais e 24 complementares verificados via Drive; links Game/Tetra corrigidos, player com feedback e opção Abrir no Drive. Homologação externa pendente. ZIP completo disponível na Library.
+
+- `lab19-6-navegacao/`: links de diretórios alterados para caminhos explícitos index.html, com instrução de extrair o ZIP antes da visualização local. Hero/Essência/Player preservados. ZIP completo com mídia na Library.
