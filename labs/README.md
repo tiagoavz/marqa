@@ -68,3 +68,5 @@ O LAB 14 desabilitava o autoplay via JavaScript em dispositivos com preferência
 - `lab19-5-drive-player/`: 24 filmes principais e 24 complementares verificados via Drive; links Game/Tetra corrigidos, player com feedback e opção Abrir no Drive. Homologação externa pendente. ZIP completo disponível na Library.
 
 - `lab19-6-navegacao/`: links de diretórios alterados para caminhos explícitos index.html, com instrução de extrair o ZIP antes da visualização local. Hero/Essência/Player preservados. ZIP completo com mídia na Library.
+
+- `lab19-7-player-mobile/`: corrige player Drive em telas estreitas — clique principal abre visualizador nativo em nova aba, embed dentro da página vira opcional (iframe escalonado) e troca de filmes não abre abas automaticamente; sem alterar Hero ou Essência. Player público ainda exige verificação no Netlify.
