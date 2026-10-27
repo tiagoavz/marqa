@@ -2,41 +2,46 @@
   {
     "cliente": "Carmen Steffens — Canaã",
     "pasta": "Clientes ativos",
-    "motivo": "filmes editados localizados; selecionar capa e confirmar peças prioritárias"
+    "motivo": "filmes de moda finalizados no Drive; priorizar capa editorial e selecionar filme para a vitrine"
   },
   {
     "cliente": "Cartório Bandeira",
     "pasta": "Clientes teste",
-    "motivo": "filme pronto localizado, mas trabalho de teste; confirmar autorização para portfólio"
+    "motivo": "filme pronto localizado; confirmar autorização de divulgação de trabalho de teste"
   },
   {
     "cliente": "Dra. Rafaela Faria",
     "pasta": "Clientes teste",
-    "motivo": "vídeos de facetas e Outubro Rosa localizados; confirmar aprovação/uso de imagem"
+    "motivo": "vídeos de facetas e Outubro Rosa; confirmar aprovação e direitos de imagem"
   },
   {
     "cliente": "Christopher Carvalho",
     "pasta": "Clientes teste",
-    "motivo": "pasta EDITADOS encontrada; revisar escopo e autorização antes de publicar"
+    "motivo": "pasta EDITADOS encontrada; revisar trabalho e autorização antes de publicar"
+  },
+  {
+    "cliente": "Dr. Márcio Victor",
+    "pasta": "Clientes teste",
+    "motivo": "pasta EDITADOS encontrada; avaliar acabamento e liberação"
   },
   {
     "cliente": "Synergia",
     "pasta": "Frelas",
-    "motivo": "registro de evento encontrado; verificar autorização das pessoas filmadas e da organização"
+    "motivo": "vídeo de evento localizado; conferir autorização da organização e participantes"
   },
   {
     "cliente": "Luz Mineradora",
     "pasta": "Clientes teste",
-    "motivo": "pasta com takes de câmera e drone, sem edição final confirmada"
+    "motivo": "takes de câmera e drone sem filme finalizado confirmado"
   },
   {
     "cliente": "Rany Beauty",
     "pasta": "Clientes ativos",
-    "motivo": "arquivo localizado, mas o frame da amostra mostra outro nome/médico; conferir o material correto"
+    "motivo": "arquivo localizado, mas frame apresenta nome de outro médico; conferir correspondência do material"
   },
   {
-    "cliente": "Carmen Steffens — Canaã",
-    "pasta": "Clientes ativos",
-    "motivo": "produção de moda disponível; vídeo de referência grande para baixar nesta sessão"
+    "cliente": "Rayna Lopes",
+    "pasta": "Frelas",
+    "motivo": "dois vídeos editados encontrados; comparar visual e pertinência para a seleção"
   }
 ]
