@@ -72,3 +72,5 @@ O LAB 14 desabilitava o autoplay via JavaScript em dispositivos com preferência
 - `lab19-7-player-mobile/`: corrige player Drive em telas estreitas — clique principal abre visualizador nativo em nova aba, embed dentro da página vira opcional (iframe escalonado) e troca de filmes não abre abas automaticamente; sem alterar Hero ou Essência. Player público ainda exige verificação no Netlify.
 
 - `lab19-8-drive-experiments/`: avaliação não definitiva de player Drive mobile — duas alternativas reversíveis: máscara visual parcial e reenquadramento do iframe. Mantém site LAB19.7 e altera apenas `client/client.css` e `.js`; prévia independente incluída. Playback público ainda depende da permissão Drive/Netlify e controles internos do Google não podem ser ocultados diretamente.
+
+- `lab19-9-player-final/`: player do Google Drive **reenquadrado por padrão no mobile**, opção de máscara e botões de experimento removidos; player incorporado no site em celular e desktop. 24 páginas preservadas. Arquivos e ZIP de publicação salvos na biblioteca /PORTFOLIO MARQA/LAB19_9. Reprodução pública ainda depende do Drive e exige validação no Netlify.
