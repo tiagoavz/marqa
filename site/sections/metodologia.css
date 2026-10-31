@@ -1,0 +1,360 @@
+/* MARQA LAB24 / Seção 04 — método editorial. Escopo isolado. */
+.marqa-method { --mm-paper:#e9e6df; --mm-ink:#181818; --mm-mid:#77736f; --mm-rule:#bbb6af; --mm-gutter:var(--marqa-site-gutter,clamp(20px,3.6vw,82px)); position:relative; isolation:isolate; background:var(--mm-paper); color:var(--mm-ink); padding:clamp(60px,7vw,128px) 0 clamp(65px,7vw,120px); overflow:hidden; }
+.marqa-method * { box-sizing:border-box; }
+.marqa-method__inner { width:calc(100% - 2 * var(--mm-gutter)); margin-inline:auto; min-width:0; }
+.marqa-method__eyebrow { display:flex; align-items:center; justify-content:space-between; gap:24px; border-bottom:1px solid var(--mm-rule); padding-bottom:16px; font-size:10px; line-height:1.4; font-weight:780; letter-spacing:.15em; text-transform:uppercase; color:#595753; }
+.marqa-method__intro { display:grid; grid-template-columns:minmax(0,1.25fr) minmax(230px,.42fr); align-items:end; gap:clamp(20px,7vw,150px); padding:clamp(43px,6vw,98px) 0 clamp(34px,4.9vw,77px); }
+.marqa-method h2,.marqa-method h3,.marqa-method p { margin:0; }
+.marqa-method__intro h2 { font-size:clamp(48px,6vw,112px); line-height:.93; letter-spacing:-.083em; font-weight:790; }
+.marqa-method__intro h2 em { font-style:normal; color:#8e8982; }
+.marqa-method__intro p { max-width:400px; font-size:clamp(14px,1.15vw,18px); line-height:1.54; letter-spacing:-.02em; color:#57524f; padding-bottom:8px; }
+.marqa-method__frame { display:grid; grid-template-columns:minmax(0,.95fr) minmax(0,1fr); min-height:clamp(560px,43vw,720px); background:#19191a; color:#f5f2ed; overflow:hidden; }
+.marqa-method__visual { position:relative; overflow:hidden; min-height:0; background:#242423; isolation:isolate; }
+.marqa-method__photograph { position:absolute; inset:0; display:block; width:100%; height:100%; object-fit:cover; object-position:50% 45%; filter:saturate(.78) contrast(1.07); transition:opacity .38s ease, transform 1s cubic-bezier(.2,.72,.19,1); }
+.marqa-method__visual.is-changing .marqa-method__photograph { opacity:.16; transform:scale(1.03); }
+.marqa-method__visual:after { content:''; pointer-events:none; position:absolute; inset:0; z-index:0; background:linear-gradient(to bottom, rgba(15,15,16,.26),rgba(15,15,16,.07) 42%,rgba(15,15,16,.8)); }
+.marqa-method__photo-top,.marqa-method__photo-foot { position:absolute; left:clamp(22px,3vw,49px); right:clamp(22px,3vw,49px); z-index:1; }
+.marqa-method__photo-top { top:clamp(24px,2.5vw,42px); display:flex; justify-content:space-between; gap:10px; font-size:9px; letter-spacing:.16em; font-weight:760; color:rgba(255,255,255,.85); }
+.marqa-method__photo-foot { bottom:clamp(24px,3vw,50px); display:flex; justify-content:space-between; align-items:end; gap:24px; border-top:1px solid rgba(255,255,255,.34); padding-top:15px; }
+.marqa-method__photo-foot strong { font-size:clamp(46px,6vw,105px); font-weight:690; letter-spacing:-.09em; line-height:.83; }
+.marqa-method__photo-foot span { max-width:150px; font-size:10px; line-height:1.45; letter-spacing:.06em; text-align:right; color:#dad6d0; }
+.marqa-method__panel { padding:clamp(29px,3.35vw,60px); display:flex; flex-direction:column; min-width:0; }
+.marqa-method__panel-top { display:flex; align-items:center; justify-content:space-between; gap:14px; padding-bottom:22px; border-bottom:1px solid #444346; }
+.marqa-method__panel-top span { font-size:10px; font-weight:720; letter-spacing:.13em; color:#a6a29d; }
+.marqa-method__steps { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:7px; margin:26px 0 clamp(24px,3.4vw,52px); }
+.marqa-method__step { position:relative; border:0; border-top:2px solid #57565a; background:transparent; color:#9d9993; text-align:left; padding:13px 0 8px; min-width:0; cursor:pointer; transition:color .2s ease, border-color .2s ease; }
+.marqa-method__step:hover { color:#fff; }
+.marqa-method__step.is-current { border-top-color:#ede8df; color:#f6f3ef; }
+.marqa-method__step:focus-visible { outline:2px solid #fff; outline-offset:3px; }
+.marqa-method__step small { display:block; font-size:9px; letter-spacing:.14em; font-weight:760; margin-bottom:6px; }
+.marqa-method__step strong { display:block; font-size:clamp(12px,1.2vw,16px); font-weight:680; letter-spacing:-.018em; }
+.marqa-method__body { flex:1; display:flex; flex-direction:column; min-width:0; }
+
+.marqa-method__controls { display:grid; grid-template-columns:auto minmax(0,1fr) auto; align-items:center; gap:14px; margin:-6px 0 clamp(24px,3vw,34px); }
+.marqa-method__nav { display:inline-flex; align-items:center; justify-content:center; min-height:42px; padding:0 16px; border:1px solid #57565a; border-radius:999px; background:transparent; color:#f5f2ed; font-size:11px; font-weight:760; letter-spacing:.08em; cursor:pointer; transition:background .2s ease, color .2s ease, border-color .2s ease, opacity .2s ease; }
+.marqa-method__nav:hover:not(:disabled), .marqa-method__nav:focus-visible { background:#f1ede7; color:#19191a; border-color:#f1ede7; outline:none; }
+.marqa-method__nav:disabled { opacity:.35; cursor:not-allowed; }
+.marqa-method__hint { margin:0; text-align:center; color:#b7b1ab; font-size:11px !important; line-height:1.5 !important; max-width:none !important; }
+.marqa-method__hint strong { color:#f5f2ed; font-weight:760; }
+.marqa-method__system { display:block; color:#d3c5b2; font-size:10px; letter-spacing:.16em; font-weight:760; margin:0 0 17px; }
+.marqa-method__body h3 { font-size:clamp(31px,3.7vw,60px); letter-spacing:-.067em; line-height:.98; font-weight:720; max-width:740px; text-wrap:balance; }
+.marqa-method__body p { max-width:515px; color:#b5b0aa; font-size:clamp(13px,1.06vw,17px); line-height:1.56; margin-top:22px; }
+.marqa-method__proof { display:grid; grid-template-columns:1fr minmax(0,1fr); gap:clamp(16px,2.1vw,36px); border-top:1px solid #444346; margin-top:auto; padding-top:clamp(26px,3vw,42px); }
+.marqa-method__label { display:block; font-size:9px; font-weight:760; letter-spacing:.14em; color:#a49e97; margin-bottom:13px; }
+.marqa-method__deliverables { padding:0; margin:0; list-style:none; }
+.marqa-method__deliverables li { position:relative; margin:0 0 9px; padding-left:17px; font-size:clamp(12px,1vw,15px); line-height:1.4; }
+.marqa-method__deliverables li:before { content:'—'; position:absolute; left:0; color:#aaa59f; }
+.marqa-method__output { font-size:clamp(13px,1.15vw,17px); line-height:1.4; color:#f1ede8; max-width:235px; }
+.marqa-method__outro { display:flex; align-items:start; justify-content:space-between; gap:24px; padding-top:clamp(28px,3vw,52px); }
+.marqa-method__outro p { max-width:700px; font-size:clamp(18px,2vw,34px); line-height:1.17; letter-spacing:-.049em; font-weight:690; }
+.marqa-method__outro a { display:inline-flex; align-items:center; justify-content:space-between; min-width:230px; border-bottom:1px solid #333; padding:8px 0 13px; font-size:12px; font-weight:730; gap:25px; white-space:nowrap; }
+.marqa-method__outro a:hover { color:#807568; border-color:#807568; }
+.marqa-method__outro a:focus-visible { outline:2px solid #161616; outline-offset:4px; }
+@media(max-width:1100px){
+ .marqa-method__intro {grid-template-columns:1fr minmax(200px,.42fr);}
+ .marqa-method__frame { grid-template-columns:minmax(0,.88fr) minmax(0,1fr); }
+ .marqa-method__panel {padding:29px;}
+ .marqa-method__proof {grid-template-columns:1fr 1fr;}
+}
+@media(max-width:760px){
+ .marqa-method {padding:57px 0 63px;}
+ .marqa-method__eyebrow {font-size:8px;letter-spacing:.1em;gap:10px;}
+ .marqa-method__intro {display:block;padding:38px 0 32px;}
+ .marqa-method__intro h2 {font-size:clamp(43px,10.2vw,70px);}
+ .marqa-method__intro p {margin-top:24px;max-width:450px;font-size:15px;padding:0;}
+ .marqa-method__frame {display:block;min-height:0;}
+ .marqa-method__visual {height:clamp(285px,74vw,410px);}
+ .marqa-method__photograph {object-position:50% 38%;}
+ .marqa-method__photo-top,.marqa-method__photo-foot {left:21px;right:21px;}
+ .marqa-method__photo-top {top:19px;font-size:8px;}
+ .marqa-method__photo-foot {bottom:22px;}
+ .marqa-method__photo-foot strong {font-size:67px;}
+ .marqa-method__photo-foot span {font-size:9px;}
+ .marqa-method__panel {padding:26px 21px 30px;}
+ .marqa-method__panel-top {padding-bottom:15px;}
+ .marqa-method__panel-top span {font-size:9px;}
+ .marqa-method__steps {margin:23px 0 18px;gap:8px;}
+ .marqa-method__controls {grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;margin:0 0 24px;}
+ .marqa-method__hint {grid-column:1/-1;order:3;font-size:12px !important;text-align:left;}
+ .marqa-method__nav {min-height:40px;padding:0 12px;font-size:10px;}
+ .marqa-method__step {padding:11px 0 6px;}
+ .marqa-method__step small {font-size:8px;}
+ .marqa-method__step strong {font-size:13px;}
+ .marqa-method__body h3 {font-size:clamp(34px,9vw,48px);max-width:550px;}
+ .marqa-method__body p {font-size:14px;margin:17px 0 0;}
+ .marqa-method__proof {margin-top:38px;gap:14px;}
+ .marqa-method__outro {display:block;}
+ .marqa-method__outro p {font-size:clamp(23px,6vw,34px);}
+ .marqa-method__outro a {margin-top:21px;width:min(100%,340px);}
+}
+@media(max-width:360px){.marqa-method__step strong{font-size:12px}.marqa-method__proof{grid-template-columns:1fr}.marqa-method__visual{height:282px}.marqa-method__controls{grid-template-columns:1fr}.marqa-method__hint{order:1}.marqa-method__nav{width:100%}}
+@media(prefers-reduced-motion:reduce){.marqa-method__photograph,.marqa-method__step{transition:none!important}}
+
+
+
+.marqa-method__case-link{display:flex;justify-content:space-between;align-items:center;gap:20px;border-top:1px solid #444346;margin-top:26px;padding:17px 0 0;color:#f1eee7;text-decoration:none}.marqa-method__case-link>span{font-size:9px;letter-spacing:.14em;color:#b6aaa0;font-weight:730}.marqa-method__case-link strong{font-size:13px;letter-spacing:-.01em;font-weight:660}.marqa-method__case-link strong span{margin-left:10px}.marqa-method__case-link:hover strong{text-decoration:underline}.marqa-method__case-link:focus-visible{outline:2px solid #fff;outline-offset:5px}
+
+/* MARQA LAB 25.12 — Provas em composição editorial, sem painel preto. */
+.marqa-proof {
+  --proof-ink:#1b1b1a;--proof-muted:#6f6c68;--proof-rule:#c9c2ba;
+  --proof-card-gap:clamp(12px,1.3vw,22px);
+  margin-top:clamp(52px,6vw,88px);scroll-margin-top:85px;
+  font-family:inherit;color:var(--proof-ink);
+}
+.marqa-proof a {text-decoration:none;}
+.marqa-proof button {font-family:inherit;}
+.marqa-proof__sectionbar {
+  border-top:1px solid var(--proof-rule);padding:15px 0 0;
+  display:flex;gap:16px;align-items:center;justify-content:space-between;
+  color:#706a64;font-size:10px;font-weight:750;line-height:1.45;letter-spacing:.13em;
+}
+.marqa-proof__workspace{min-width:0;}
+.marqa-proof__overview {
+  display:grid;grid-template-columns:minmax(0,2fr) minmax(0,3fr);
+  align-items:center;gap:var(--proof-card-gap);
+  margin-top:clamp(30px,4vw,57px);min-width:0;
+}
+.marqa-proof__head {padding:0 clamp(20px,3vw,54px) 0 0;display:flex;flex-direction:column;align-self:stretch;justify-content:space-between;gap:20px;}
+.marqa-proof__smalltype {color:#7d7771;font-size:10px;letter-spacing:.14em;font-weight:770;}
+.marqa-proof__head-copy{display:flex;flex-direction:column;gap:22px;}
+.marqa-proof__head h3{margin:0;max-width:530px;font-size:clamp(43px,4.4vw,74px);font-weight:780;letter-spacing:-.076em;line-height:.98;color:#201e1c;text-wrap:balance;}
+.marqa-proof__head h3 em{font-style:normal;color:#96918b;}
+.marqa-proof__head p{margin:0;max-width:355px;font-size:clamp(14px,1.08vw,17px);color:#68635e;line-height:1.6;}
+.marqa-proof__aside-foot {display:flex;gap:12px;flex-direction:column;max-width:300px;padding-top:16px;border-top:1px solid var(--proof-rule);}
+.marqa-proof__aside-foot span{color:#726c67;font-size:10px;letter-spacing:.11em;line-height:1.45;font-weight:720;}
+.marqa-proof__aside-foot strong{color:#34312e;font-size:clamp(14px,1.13vw,16px);font-weight:620;letter-spacing:-.018em;}
+.marqa-proof__cards{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:var(--proof-card-gap);min-width:0;align-self:start;}
+.marqa-casefile{
+ position:relative;isolation:isolate;display:block;min-width:0;width:100%;aspect-ratio:2/3;height:auto;
+ padding:0;overflow:hidden;border:1px solid #2d2b2d;border-radius:13px;
+ background:#201f21;color:#fff;cursor:pointer;text-align:left;
+ box-shadow:0 8px 22px #332c2518;
+ transition:transform .3s cubic-bezier(.18,.7,.3,1),box-shadow .3s ease,border-color .3s ease;
+}
+.marqa-casefile:hover,.marqa-casefile:focus-visible {transform:translateY(-7px);box-shadow:0 19px 35px #332c2526;border-color:#827365;}
+.marqa-casefile__media {position:absolute;inset:0;display:block;overflow:hidden;background:#211e21;border-radius:inherit;}
+.marqa-casefile__backdrop{position:absolute;inset:-8%;width:116%;height:116%;object-fit:cover;filter:blur(18px) brightness(.5);}
+.marqa-casefile__portrait {position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;display:block;filter:saturate(.91);transition:filter .4s ease,transform .55s ease;}
+.marqa-casefile:hover .marqa-casefile__portrait{filter:saturate(1);transform:scale(1.015);}
+.marqa-casefile__media-shade {position:absolute;inset:0;background:linear-gradient(180deg,#09090a5c 0%,transparent 22%,transparent 37%,#09080988 66%,#09090af0 100%);}
+.marqa-casefile__top {position:absolute;top:14px;left:13px;right:13px;z-index:2;display:flex;justify-content:space-between;gap:6px;align-items:start;color:#eee9e3;font-size:8px;font-weight:800;letter-spacing:.11em;}
+.marqa-casefile__arrow{display:grid;place-items:center;flex-shrink:0;width:29px;height:29px;border:1px solid #fffc;border-radius:50%;background:#17161755;font-size:16px;line-height:1;transition:background .25s,color .25s;}
+.marqa-casefile:hover .marqa-casefile__arrow,.marqa-casefile:focus-visible .marqa-casefile__arrow {background:#f3eee7;color:#161616;}
+.marqa-casefile__copy{position:absolute;left:0;right:0;bottom:0;padding:17px 13px 13px;z-index:2;display:flex;flex-direction:column;align-items:flex-start;color:#fff;}
+.marqa-casefile__eyebrow{font-size:8px;color:#efe6dd;font-weight:760;letter-spacing:.13em;margin-bottom:8px;line-height:1.25;}
+.marqa-casefile__name{font-size:clamp(16px,1.38vw,25px);font-weight:790;letter-spacing:-.05em;line-height:1.05;text-wrap:balance;}
+.marqa-casefile__summary{font-size:clamp(10px,.8vw,12px);line-height:1.43;color:#e6ddd3;margin-top:7px;}
+.marqa-casefile__action{display:flex;justify-content:space-between;width:100%;gap:8px;border-top:1px solid #ffffff69;padding-top:9px;margin-top:12px;font-size:8px;font-weight:780;letter-spacing:.075em;color:#f5f0e8;}
+.marqa-casefile__action span{font-size:13px;}
+.marqa-proof__detail[hidden],.marqa-proof__overview[hidden],.marqa-proof__player[hidden]{display:none!important;}
+.marqa-proof__detail{margin-top:clamp(25px,3.5vw,47px);animation:proof-rise .34s ease both;scroll-margin-top:105px;}
+@keyframes proof-rise{from{opacity:.3;transform:translateY(9px)}to{opacity:1;transform:none}}
+.marqa-proof__detailbar{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:0 0 17px;font-size:10px;letter-spacing:.11em;font-weight:780;color:#706a64;}
+.marqa-proof__back {display:inline-flex;align-items:center;gap:8px;border:0;padding:7px 0;background:none;color:#342f2c;cursor:pointer;font-size:11px;font-weight:760;letter-spacing:.075em;}
+.marqa-proof__back>span{font-size:18px;}
+.marqa-proof__back:hover{text-decoration:underline;}
+.marqa-proof__detailgrid{
+  background:#f2efe9;color:#201f1d;display:grid;
+  grid-template-columns:minmax(350px,.92fr) minmax(0,1.08fr);
+  border:1px solid #cac3b9;border-radius:15px;overflow:hidden;min-height:0;
+  box-shadow:0 8px 32px #3a302410;
+}
+.marqa-proof__visual-column{
+  min-width:0;display:flex;flex-direction:column;align-items:center;justify-content:center;
+  padding:clamp(20px,2.8vw,39px);gap:12px;
+  background:#dfdad2;border-right:1px solid #c9c2ba;
+}
+.marqa-proof__screen{
+ position:relative;isolation:isolate;display:flex;align-items:center;justify-content:center;
+ width:min(100%,350px);aspect-ratio:9/16;min-height:0;max-height:none;
+ background:#211f20;border:1px solid #292629;border-radius:12px;overflow:hidden;
+ box-shadow:0 10px 35px #33251b27;
+}
+.marqa-proof__screen>img{position:absolute;inset:0;width:100%;height:100%;object-fit:contain;object-position:center;display:block;filter:saturate(.95);}
+.marqa-proof__screen-vignette{display:none;}
+.marqa-proof__screen-top{position:absolute;z-index:2;top:15px;left:14px;right:14px;color:#f4ede8;display:flex;justify-content:space-between;gap:9px;font-size:8px;letter-spacing:.09em;font-weight:800;text-shadow:0 2px 4px #000b;}
+.marqa-proof__screen-note{position:absolute;z-index:2;bottom:15px;left:14px;right:14px;color:#f4ede8;font-size:8px;letter-spacing:.075em;font-weight:750;text-shadow:0 2px 5px #000c;}
+.marqa-proof__play{z-index:3;position:relative;display:flex;align-items:center;gap:10px;padding:6px 17px 6px 6px;background:#171517bf;color:#fff;border:1px solid #ffffffb0;border-radius:100px;backdrop-filter:blur(8px);cursor:pointer;font-size:10px;font-weight:800;letter-spacing:.06em;transition:transform .2s;}
+.marqa-proof__play:hover{transform:scale(1.035)}
+.marqa-proof__play-icon{display:grid;place-items:center;width:44px;height:44px;border-radius:50%;background:#f3eee6;color:#1e1c1a;padding-left:2px;font-size:16px;}
+.marqa-proof__player{position:absolute;inset:0;z-index:9;display:flex;align-items:center;justify-content:center;background:#181718;}
+.marqa-proof__player iframe{border:0;display:block;width:100%;height:100%;aspect-ratio:9/16;}
+.marqa-proof__close,.marqa-proof__drive{position:absolute;z-index:10;border-radius:90px;font-size:9px;font-weight:770;cursor:pointer;}
+.marqa-proof__close{top:11px;right:11px;padding:11px 13px;background:#f2eee8;color:#222;border:0;}
+.marqa-proof__close span{font-size:14px;vertical-align:middle;}
+.marqa-proof__drive{bottom:11px;left:11px;padding:9px 12px;border:1px solid #ffffff50;background:#171616df;color:#fff;}
+.marqa-proof__video-meta{display:flex;justify-content:space-between;gap:14px;width:min(100%,350px);font-size:8px;letter-spacing:.095em;color:#77716b;font-weight:760;line-height:1.4;}
+.marqa-proof__story {min-width:0;display:flex;flex-direction:column;justify-content:center;padding:clamp(26px,3.6vw,56px);}
+.marqa-proof__story-top{display:flex;justify-content:space-between;align-items:center;gap:15px;padding:0 0 16px;border-bottom:1px solid #d4cdc5;font-size:9px;color:#85776d;font-weight:770;letter-spacing:.12em;}
+.marqa-proof__story-main{padding:26px 0 12px;}
+.marqa-proof__client{margin:0 0 11px;color:#78716a;font-size:13px;font-weight:700;}
+.marqa-proof__story h4{margin:0 0 16px;max-width:600px;color:#24201d;font-size:clamp(35px,3.5vw,59px);line-height:1;letter-spacing:-.068em;font-weight:780;text-wrap:balance;}
+.marqa-proof__description{margin:0;max-width:510px;color:#615b54;font-size:clamp(14px,1.06vw,16px);line-height:1.57;}
+.marqa-proof__works{margin-top:25px;padding-top:18px;border-top:1px solid #cfc7bf;}
+.marqa-proof__works>span,.marqa-proof__outcome>span{color:#797168;font-size:9px;font-weight:780;letter-spacing:.12em;}
+.marqa-proof__works ul{margin:12px 0 0;padding:0;list-style:none;display:flex;flex-direction:column;gap:8px;}
+.marqa-proof__works li{color:#3f3934;font-size:14px;line-height:1.4;}
+.marqa-proof__works li::before{content:'—';margin-right:10px;color:#9a8070;}
+.marqa-proof__outcome{margin-top:24px;padding-top:20px;border-top:1px solid #cfc7bf;display:flex;flex-direction:column;align-items:flex-start;gap:7px;}
+.marqa-proof__outcome strong{color:#25211f;font-size:clamp(32px,3.2vw,52px);line-height:1.03;letter-spacing:-.055em;font-weight:785;}
+.marqa-proof__outcome p{margin:0;color:#726a63;font-size:13px;line-height:1.45;}
+.marqa-proof__project-link {display:flex;align-items:center;justify-content:space-between;gap:10px;padding:13px 0 11px;margin-top:23px;border-bottom:1px solid #bbb2a7;border-top:1px solid #bbb2a7;color:#27231f;font-weight:780;letter-spacing:.08em;font-size:10px;}
+.marqa-proof__project-link:hover{color:#9b6745;border-bottom-color:#9b6745;}
+.marqa-proof__next{padding-top:clamp(29px,3vw,40px);}
+.marqa-proof__next-label{display:flex;justify-content:space-between;gap:12px;align-items:center;color:#827c76;font-size:9px;letter-spacing:.115em;font-weight:770;margin-bottom:13px;}
+.marqa-proof__next-stack{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:10px;}
+.marqa-proof__mini {position:relative;isolation:isolate;display:flex;flex-direction:column;justify-content:flex-end;min-width:0;min-height:92px;padding:12px;overflow:hidden;border:1px solid #88807850;border-radius:9px;text-align:left;background:#252226;color:#fff;cursor:pointer;box-shadow:none;transition:transform .2s ease,border-color .2s;}
+.marqa-proof__mini>img{position:absolute;z-index:-2;inset:0;width:100%;height:100%;object-fit:cover;filter:saturate(.75) brightness(.7);}
+.marqa-proof__mini::after{content:'';position:absolute;z-index:-1;inset:0;background:linear-gradient(to bottom,#0004,#000b);}
+.marqa-proof__mini:hover,.marqa-proof__mini:focus-visible{transform:translateY(-3px);border-color:#9b8573;}
+.marqa-proof__mini-cap{font-size:8px;letter-spacing:.09em;font-weight:750;color:#eee8e0;}
+.marqa-proof__mini strong{font-size:clamp(12px,1vw,15px);font-weight:760;letter-spacing:-.028em;line-height:1.14;margin-top:5px;}
+.marqa-proof__mini small{font-size:10px;color:#e4d5c5;margin-top:4px;}
+.marqa-proof__mini-arrow{position:absolute;right:11px;top:9px;font-size:14px;}
+.marqa-proof__detailfoot{display:flex;justify-content:space-between;gap:14px;padding-top:16px;color:#857e75;font-size:9px;letter-spacing:.1em;font-weight:780;}
+.marqa-proof__disclaimer{margin:23px 0 0!important;color:#8a8178!important;font-size:10px!important;line-height:1.55!important;max-width:1000px!important;}
+.marqa-casefile:focus-visible,.marqa-proof__mini:focus-visible,.marqa-proof__back:focus-visible,.marqa-proof__play:focus-visible,.marqa-proof__close:focus-visible,.marqa-proof__project-link:focus-visible{outline:3px solid #b48461;outline-offset:4px;}
+@media(min-width:1400px){.marqa-proof__head{padding-right:clamp(30px,3.3vw,60px)}}
+@media(max-width:1199px){
+ .marqa-proof__overview{display:block;}
+ .marqa-proof__head{display:grid;grid-template-columns:minmax(0,1.1fr) minmax(200px,.65fr);align-items:end;gap:22px;padding:0 0 30px;}
+ .marqa-proof__head-copy{gap:14px;}
+ .marqa-proof__head h3{font-size:clamp(43px,5.3vw,70px)}
+ .marqa-proof__head p{max-width:380px;}
+ .marqa-proof__aside-foot{display:none;}
+ .marqa-proof__cards{grid-template-columns:repeat(3,minmax(0,1fr));max-width:820px;margin-inline:auto;}
+ .marqa-casefile__name{font-size:clamp(19px,2.15vw,27px)}
+ .marqa-casefile__summary{font-size:11px}
+}
+@media(max-width:760px){
+ .marqa-proof{margin-top:65px;}
+ .marqa-proof__sectionbar{font-size:8px;}
+ .marqa-proof__sectionbar span:last-child{display:none;}
+ .marqa-proof__overview{margin-top:29px;}
+ .marqa-proof__head{display:block;padding-bottom:25px;}
+ .marqa-proof__head h3{font-size:clamp(42px,10vw,66px);}
+ .marqa-proof__head p{margin-top:17px;font-size:14px;max-width:430px;}
+ .marqa-proof__cards{display:flex;gap:12px;overflow-x:auto;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;scrollbar-width:none;max-width:none;padding:2px 2px 18px;margin-right:calc(-1*var(--mm-gutter));touch-action:pan-x;}
+ .marqa-proof__cards::-webkit-scrollbar{display:none;}
+ .marqa-casefile{flex:0 0 clamp(215px,67vw,320px);width:clamp(215px,67vw,320px);scroll-snap-align:start;}
+ .marqa-casefile__name{font-size:clamp(20px,5.6vw,27px)}
+ .marqa-casefile__summary{font-size:11px}
+ .marqa-proof__detail{margin-top:27px;}
+ .marqa-proof__detailgrid{display:flex;flex-direction:column;}
+ .marqa-proof__visual-column{border-right:0;border-bottom:1px solid #c9c2ba;padding:24px 16px 19px;}
+ .marqa-proof__screen{width:min(100%,345px);}
+ .marqa-proof__story{padding:29px 22px 34px;}
+ .marqa-proof__story h4{font-size:clamp(35px,8vw,51px)}
+ .marqa-proof__description{font-size:14px;}
+ .marqa-proof__works li{font-size:13px;}
+ .marqa-proof__detailfoot span:last-child{display:none;}
+ .marqa-proof__video-meta{font-size:7px;}
+}
+@media(max-width:365px){.marqa-proof__screen{width:min(100%,285px)}}
+@media(prefers-reduced-motion:reduce){.marqa-casefile,.marqa-proof__mini,.marqa-proof__detail,.marqa-proof__play{animation:none!important;transition:none!important;}}
+
+/* LAB 25.12 — refinamento exclusivo do título da seção de cases */
+.marqa-proof__head h3#marqa-proof-heading {
+  font-size: clamp(31px, 3.1vw, 49px);
+  line-height: 1.045;
+  letter-spacing: -.055em;
+  text-wrap: pretty;
+}
+@media (max-width: 1199px) {
+  .marqa-proof__head h3#marqa-proof-heading {font-size: clamp(32px, 4.3vw, 49px);}
+}
+@media (max-width: 640px) {
+  .marqa-proof__head h3#marqa-proof-heading {font-size: clamp(29px, 7.3vw, 36px);line-height: 1.08;}
+}
+
+
+/* LAB 25.12 / refinamento da chamada editorial — identidade MARQA original */
+.marqa-proof__head{
+  position:relative;isolation:isolate;overflow:hidden;
+  border-radius:10px;
+}
+.marqa-proof__head::before{
+  content:"";position:absolute;z-index:-1;top:12%;left:6%;
+  width:min(112%,480px);aspect-ratio:840/571;pointer-events:none;
+  background:linear-gradient(137deg,#c8b8a6 3%,#e3d6ca 48%,#a5a09b 100%);
+  -webkit-mask-image:url('../assets/marqa-symbol-white.png');mask-image:url('../assets/marqa-symbol-white.png');
+  -webkit-mask-position:center;mask-position:center;
+  -webkit-mask-size:contain;mask-size:contain;
+  -webkit-mask-repeat:no-repeat;mask-repeat:no-repeat;
+  opacity:.28;transform:rotate(-9deg);
+}
+.marqa-proof__head::after{
+ content:"";position:absolute;z-index:-1;inset:0;pointer-events:none;
+ background:linear-gradient(90deg,transparent 0%,#ece9e2ad 45%,#ece9e2d6 91%);
+}
+.marqa-proof__smalltype{font-size:10px;letter-spacing:.16em;color:#635b55;}
+.marqa-proof__head-copy{gap:19px;}
+.marqa-proof__head h3#marqa-proof-heading{
+  display:flex;flex-direction:column;align-items:flex-start;
+  max-width:560px;gap:0;color:#201e1c;
+  font-family:Inter,Arial,sans-serif;font-weight:760;
+  text-wrap:initial;line-height:1;
+}
+.marqa-proof__headline-guide{
+  display:block;font-size:clamp(20px,2vw,29px);line-height:1.16;
+  font-weight:610;letter-spacing:-.052em;color:#675b53;
+  padding-bottom:clamp(12px,1.6vw,21px);
+}
+.marqa-proof__headline-primary{
+  display:block;font-size:clamp(36px,3.45vw,58px);line-height:.97;
+  letter-spacing:-.071em;font-weight:790;color:#201e1c;
+}
+.marqa-proof__head h3#marqa-proof-heading em.marqa-proof__headline-impact{
+  display:block;font-family:Georgia,'Times New Roman',serif;
+  font-style:italic;font-weight:520;
+  font-size:clamp(41px,3.78vw,63px);line-height:1.13;
+  letter-spacing:-.075em;white-space:nowrap;
+  background:linear-gradient(106deg,#302622 10%,#7b6255 62%,#ad9682 100%);
+  -webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent;
+  color:#5a453a;
+}
+.marqa-proof__headline-dot{color:#9b755e;-webkit-text-fill-color:#9b755e;}
+.marqa-proof__head-copy>p{max-width:385px;font-size:clamp(14px,1.04vw,16px);color:#5d5751;line-height:1.62;}
+.marqa-proof__explore{
+  align-self:flex-start;display:inline-flex;align-items:center;gap:11px;
+  cursor:pointer;border:0;padding:4px 0 5px;margin:5px 0 0;background:none;
+  color:#24201e;font-family:inherit;font-size:10px;font-weight:810;letter-spacing:.1em;
+  text-align:left;transition:color .2s ease;
+}
+.marqa-proof__explore-icon{
+  display:grid;place-items:center;width:40px;height:40px;border:1px solid #312c29;
+  border-radius:50%;background:#292522;color:#f5f0e8;
+  font-size:20px;font-weight:500;
+  transition:transform .25s ease,background .25s ease;
+}
+.marqa-proof__explore-line{display:block;height:1px;width:36px;background:#96877b;transition:width .25s ease;}
+.marqa-proof__explore:hover .marqa-proof__explore-icon,.marqa-proof__explore:focus-visible .marqa-proof__explore-icon{
+  transform:translate(3px,-3px);background:#6d594a;
+}
+.marqa-proof__explore:hover .marqa-proof__explore-line,.marqa-proof__explore:focus-visible .marqa-proof__explore-line{width:52px;}
+.marqa-proof__explore:focus-visible{outline:2px solid #815f4e;outline-offset:5px;border-radius:4px;}
+.marqa-proof__aside-foot{max-width:335px;}
+.marqa-proof__aside-foot strong{font-size:13px;font-weight:550;line-height:1.48;color:#71665d;}
+@media(max-width:1199px){
+ .marqa-proof__head{overflow:visible;}
+ .marqa-proof__head::before{top:-8%;left:20%;width:330px;opacity:.18;}
+ .marqa-proof__headline-primary{font-size:clamp(34px,4.9vw,56px);}
+ .marqa-proof__head h3#marqa-proof-heading em.marqa-proof__headline-impact{font-size:clamp(40px,5.1vw,60px);}
+}
+@media(max-width:760px){
+ .marqa-proof__head{overflow:hidden;}
+ .marqa-proof__head::before{left:35%;top:5%;width:280px;opacity:.17;}
+ .marqa-proof__head::after{background:linear-gradient(90deg,transparent 0%,#ece9e275 63%,#ece9e2cc 100%);}
+ .marqa-proof__headline-guide{font-size:21px;padding-bottom:9px;}
+ .marqa-proof__headline-primary{font-size:clamp(36px,9vw,53px);}
+ .marqa-proof__head h3#marqa-proof-heading em.marqa-proof__headline-impact{font-size:clamp(39px,9.8vw,60px);}
+ .marqa-proof__head-copy{gap:13px;}
+ .marqa-proof__head-copy>p{font-size:14px;margin-top:10px;max-width:335px;}
+ .marqa-proof__explore{margin-top:8px;font-size:9px;}
+ .marqa-proof__explore-icon{width:36px;height:36px;}
+}
+@media(max-width:365px){
+ .marqa-proof__headline-primary{font-size:35px;}
+ .marqa-proof__head h3#marqa-proof-heading em.marqa-proof__headline-impact{font-size:38px;}
+}
+@media(prefers-reduced-motion:reduce){.marqa-proof__explore,.marqa-proof__explore-icon,.marqa-proof__explore-line{transition:none;}}

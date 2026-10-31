@@ -1,0 +1,47 @@
+[
+  {
+    "cliente": "Carmen Steffens — Canaã",
+    "pasta": "Clientes ativos",
+    "motivo": "filmes de moda finalizados no Drive; priorizar capa editorial e selecionar filme para a vitrine"
+  },
+  {
+    "cliente": "Cartório Bandeira",
+    "pasta": "Clientes teste",
+    "motivo": "filme pronto localizado; confirmar autorização de divulgação de trabalho de teste"
+  },
+  {
+    "cliente": "Dra. Rafaela Faria",
+    "pasta": "Clientes teste",
+    "motivo": "vídeos de facetas e Outubro Rosa; confirmar aprovação e direitos de imagem"
+  },
+  {
+    "cliente": "Christopher Carvalho",
+    "pasta": "Clientes teste",
+    "motivo": "pasta EDITADOS encontrada; revisar trabalho e autorização antes de publicar"
+  },
+  {
+    "cliente": "Dr. Márcio Victor",
+    "pasta": "Clientes teste",
+    "motivo": "pasta EDITADOS encontrada; avaliar acabamento e liberação"
+  },
+  {
+    "cliente": "Synergia",
+    "pasta": "Frelas",
+    "motivo": "vídeo de evento localizado; conferir autorização da organização e participantes"
+  },
+  {
+    "cliente": "Luz Mineradora",
+    "pasta": "Clientes teste",
+    "motivo": "takes de câmera e drone sem filme finalizado confirmado"
+  },
+  {
+    "cliente": "Rany Beauty",
+    "pasta": "Clientes ativos",
+    "motivo": "arquivo localizado, mas frame apresenta nome de outro médico; conferir correspondência do material"
+  },
+  {
+    "cliente": "Rayna Lopes",
+    "pasta": "Frelas",
+    "motivo": "dois vídeos editados encontrados; comparar visual e pertinência para a seleção"
+  }
+]

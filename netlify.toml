@@ -1,6 +1,7 @@
+# Portfólio MARQA | publicação automática a partir da pasta editável site/
 [build]
-  command = "npm run build"
-  publish = "dist"
+  command = "python3 tools/build_portfolio.py"
+  publish = "dist/site"
 
 [[headers]]
   for = "/*"

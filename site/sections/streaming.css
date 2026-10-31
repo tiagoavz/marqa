@@ -1,0 +1,82 @@
+/* MARQA LAB19.4: experiência streaming isolada das seções Hero e Essência. */
+.stream-home{background:#09090b;color:#f6f5f2;overflow:hidden;padding:clamp(58px,6vw,105px) 0 clamp(54px,5vw,90px);font-family:inherit}
+.stream-home *{box-sizing:border-box}
+.stream-home__inner{--stream-gutter:clamp(20px,3.6vw,82px);width:calc(100% - 2*var(--stream-gutter));margin-inline:auto}
+.stream-eyebrow{display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid #39393d;padding-bottom:17px;color:#9c9ba0;font:700 10px/1.3 inherit;letter-spacing:.17em}
+.stream-home__intro{display:grid;grid-template-columns:minmax(0,1.3fr) minmax(240px,.6fr);gap:clamp(20px,5vw,100px);align-items:end;padding:clamp(40px,5.8vw,90px) 0 clamp(34px,4vw,64px)}
+.stream-kicker{display:block;color:#aba9a6;font-size:10px;letter-spacing:.18em;font-weight:760;margin-bottom:15px}
+.stream-home h2,.stream-home h3,.stream-home p{margin:0}
+.stream-home__intro h2{font-size:clamp(44px,5.5vw,105px);line-height:.96;letter-spacing:-.078em;font-weight:760}
+.stream-home__intro h2 em{font-style:normal;color:#a3a09a}
+.stream-home__intro>p{max-width:440px;font-size:clamp(13px,1.05vw,17px);line-height:1.6;color:#a19fa5;justify-self:end;margin-bottom:9px}
+.stream-railhead{display:flex;gap:20px;justify-content:space-between;align-items:end;margin:0 0 18px}
+.stream-railhead>div:first-child>span{display:block;font-size:9px;letter-spacing:.15em;color:#85848a;font-weight:780;margin-bottom:8px}
+.stream-railhead h3{font-size:clamp(23px,2.2vw,36px);font-weight:745;line-height:1.1;letter-spacing:-.043em}
+.stream-railhead h3 em{font-style:normal;color:#7f7e84}
+.stream-arrows{display:flex;gap:7px;flex-shrink:0}
+.stream-arrows button{width:37px;height:37px;border-radius:50%;border:1px solid #34343a;color:#f5f3ee;background:#111114;cursor:pointer;font-size:17px;display:grid;place-items:center}
+.stream-arrows button:hover,.stream-arrows button:focus-visible{background:#f4f1ec;color:#131316}
+.stream-rail{display:flex;overflow-x:auto;gap:clamp(12px,1.3vw,22px);scrollbar-width:none;overscroll-behavior-x:contain;scroll-snap-type:x mandatory;padding:2px 1px 23px;min-width:0}
+.stream-rail::-webkit-scrollbar{display:none}
+.stream-card{position:relative;isolation:isolate;overflow:hidden;min-width:0;flex:0 0 clamp(224px,21vw,440px);aspect-ratio:2/3;border:1px solid #2c2c31;border-radius:15px;background:radial-gradient(ellipse at 30% 15%,#36363a,#161619 70%);color:#fff;display:block;text-decoration:none;scroll-snap-align:start}
+.stream-card--catalog{flex-basis:clamp(180px,15vw,338px);border-radius:12px}
+.stream-card img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .55s cubic-bezier(.19,.6,.2,1);display:block}
+.stream-card:hover img{transform:scale(1.045)}
+.stream-card__shade{position:absolute;inset:0;background:linear-gradient(180deg,rgba(0,0,0,.14),transparent 38%,rgba(0,0,0,.91) 100%)}
+.stream-card__top{position:absolute;top:18px;left:18px;color:#fff;font-size:9px;letter-spacing:.13em;font-weight:800}
+.stream-card__arrow{position:absolute;top:13px;right:13px;display:grid;place-items:center;width:36px;height:36px;border-radius:50%;background:rgba(0,0,0,.34);border:1px solid #ffffff55;backdrop-filter:blur(9px);font-size:17px}
+.stream-card__caption{position:absolute;bottom:19px;left:18px;right:18px;display:block;z-index:2}
+.stream-card__over{display:block;font-size:9px;font-weight:700;color:#ffffffa8;letter-spacing:.14em;margin-bottom:6px}
+.stream-card__caption strong{display:block;color:#fff;font-size:clamp(23px,2.1vw,33px);font-weight:740;letter-spacing:-.054em;line-height:1.03;overflow-wrap:anywhere}
+.stream-card__caption small{display:block;color:#ddd8d0b5;font-size:11px;line-height:1.45;margin-top:7px}
+.stream-card--catalog .stream-card__caption strong{font-size:clamp(18px,1.46vw,25px)}
+.stream-card--catalog .stream-card__caption small{font-size:10px}
+.stream-divider{border-top:1px solid #343437;margin:clamp(30px,3.5vw,60px) 0}
+.stream-home__last{border-top:1px solid #343437;margin-top:clamp(30px,3vw,44px);padding-top:18px;display:flex;align-items:center;justify-content:space-between;gap:18px}
+.stream-home__last>span{color:#85848a;font-size:10px;letter-spacing:.14em;font-weight:750}
+.stream-home__last>a{display:inline-flex;gap:24px;color:#f7f5f1;font-size:12px;font-weight:750;text-decoration:none;border-bottom:1px solid #77747a;padding-bottom:6px}
+.stream-home a:focus-visible{outline:3px solid #e4d8c2;outline-offset:4px}
+@media(max-width:760px){.stream-home{padding:56px 0 52px}.stream-eyebrow{font-size:8px}.stream-home__intro{display:block;padding:43px 0 39px}.stream-home__intro h2{font-size:clamp(39px,9.3vw,64px)}.stream-home__intro>p{max-width:460px;margin-top:20px;font-size:14px}.stream-railhead h3{font-size:clamp(23px,5.5vw,32px)}.stream-rail{gap:12px;margin-right:calc(-1*var(--stream-gutter));padding-right:var(--stream-gutter)}.stream-card{flex-basis:clamp(220px,63vw,330px)}.stream-card--catalog{flex-basis:clamp(165px,44vw,245px)}.stream-card__caption strong{font-size:26px}.stream-card--catalog .stream-card__caption strong{font-size:19px}.stream-divider{margin:35px 0}.stream-home__last{align-items:flex-start}.stream-home__last>span{font-size:9px}.stream-home__last>a{font-size:11px;gap:12px}}
+@media(max-width:360px){.stream-railhead h3{font-size:20px}.stream-arrows button{width:32px;height:32px}.stream-home__last{flex-direction:column}}
+@media(prefers-reduced-motion:reduce){.stream-card img{transition:none}.stream-rail{scroll-behavior:auto}}
+
+/* LAB25 — eixo de margens e escala consistente em todos os zooms */
+:root{--marqa-site-gutter:clamp(20px,3.6vw,82px);--gutter:var(--marqa-site-gutter)}
+.hero-content{max-width:none}
+.m-essence .m-wrap,.stream-home__inner{
+  width:calc(100% - 2*var(--marqa-site-gutter));max-width:none;margin-inline:auto
+}
+.stream-home__inner{--stream-gutter:var(--marqa-site-gutter)}
+.stream-rail{--rail-gap:clamp(12px,1.3vw,22px);gap:var(--rail-gap)}
+/* Cinco filmes em destaque com dimensões iguais no desktop. */
+@media(min-width:1200px){
+  .stream-rail--feature>.stream-card{flex:0 0 calc((100% - 4*var(--rail-gap))/5);aspect-ratio:2/3}
+  .stream-rail--feature .stream-card__caption strong{font-size:clamp(17px,1.55vw,27px);line-height:1.06}
+  .stream-rail--feature .stream-card__caption small{font-size:clamp(10px,.8vw,12px)}
+}
+@media(min-width:761px) and (max-width:1199px){
+  .stream-rail--feature>.stream-card{flex:0 0 calc((100% - 2*var(--rail-gap))/3);aspect-ratio:2/3}
+}
+@media(max-width:760px){
+  .m-essence .m-wrap{width:calc(100% - 2*var(--marqa-site-gutter))}
+  .stream-rail--feature>.stream-card{flex-basis:clamp(215px,67vw,330px)}
+}
+/* Marquee com dois conjuntos visualmente idênticos. Sem JS => scroll nativo. */
+.stream-rail.stream-rail--marquee{
+  display:block;overflow:hidden;scroll-snap-type:none;touch-action:pan-y;
+  padding:2px 1px 23px;-webkit-user-select:none;user-select:none;
+  -webkit-mask-image:linear-gradient(to right,transparent 0%,#000 1.4%,#000 98.6%,transparent 100%);
+  mask-image:linear-gradient(to right,transparent 0%,#000 1.4%,#000 98.6%,transparent 100%)
+}
+.stream-marquee-track{display:flex;width:max-content;gap:0;align-items:stretch;will-change:transform}
+.stream-marquee-set{display:flex;flex:none;align-items:stretch;gap:var(--rail-gap);padding-right:var(--rail-gap)}
+.stream-rail--marquee .stream-card{
+  flex:0 0 var(--marqa-card-width)!important;width:var(--marqa-card-width)!important;
+  scroll-snap-align:none;aspect-ratio:2/3;position:relative
+}
+.stream-rail--marquee .stream-card img{-webkit-user-drag:none}
+@media(max-width:760px){
+  .stream-rail--marquee{margin-right:calc(-1*var(--stream-gutter))}
+  .stream-marquee-set{gap:12px;padding-right:12px}
+}
+@media(prefers-reduced-motion:reduce){.stream-rail{scroll-snap-type:x mandatory;scroll-behavior:auto}}

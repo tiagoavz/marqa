@@ -1,0 +1,182 @@
+[
+  {
+    "slug": "rihappy",
+    "name": "Ri Happy Canaã",
+    "origin": "Clientes ativos",
+    "filter": "marcas",
+    "segment": "Varejo • Campanhas",
+    "drive_folder_source": "MARQA / CLIENTES",
+    "hero_drive_id": "1lbfwFtmnySJ6zwnJMLbLBpiuxdVNF9zd",
+    "other_drive_ids": [
+      "1G2ruHAhw-wi3i7vUxd5vmo8MZARPSOFh",
+      "1g1Kb8S9KPFsWfH3N8YAF-4DqCNvOT3WW"
+    ],
+    "poster": "assets/rihappy-filme.jpg",
+    "status": "candidato integrado em prévia; conferir autorização para publicação"
+  },
+  {
+    "slug": "divinoamor",
+    "name": "Divino Amor",
+    "origin": "Clientes ativos",
+    "filter": "marcas",
+    "segment": "Varejo • Institucional",
+    "drive_folder_source": "MARQA / CLIENTES",
+    "hero_drive_id": "19O7OcF-6OgPIIffdeVT5t5BzMHRViUZ_",
+    "other_drive_ids": [
+      "1ZThs2M46srwblUyIOpwlr0u_nlp4IQM1",
+      "1YUQwIGwv9x56TZjKAd7m_IcK52G8qSpN"
+    ],
+    "poster": "assets/divinoamor-filme.jpg",
+    "status": "candidato integrado em prévia; conferir autorização para publicação"
+  },
+  {
+    "slug": "paniago",
+    "name": "Paniago Diagnósticos",
+    "origin": "Clientes ativos",
+    "filter": "saude",
+    "segment": "Saúde • Diagnóstico",
+    "drive_folder_source": "MARQA / CLIENTES",
+    "hero_drive_id": "1VpS9UjFlQZYehUfyOy09jZE69eclQ21R",
+    "other_drive_ids": [
+      "1jAzl8lz7ElOwe-t0I0lWqVom8iyGjvVh",
+      "1cWxhw9sleDExCaW5b3myE2-CQAhQdh9q"
+    ],
+    "poster": "assets/paniago-filme.jpg",
+    "status": "candidato integrado em prévia; conferir autorização para publicação"
+  },
+  {
+    "slug": "chillibeans",
+    "name": "Chilli Beans Canaã",
+    "origin": "Finalizados",
+    "filter": "marcas",
+    "segment": "Moda • Acessórios",
+    "drive_folder_source": "MARQA / CLIENTES",
+    "hero_drive_id": "1ZdCWVgu7Qt6EHPUfTKOhoxHxZNveWrPv",
+    "other_drive_ids": [
+      "1UzJV8otldQsD4Ipg8w8Y_tsgaRei6QPO",
+      "14uBprLtshfonkckiKA50cEosa8DGT-bl"
+    ],
+    "poster": "assets/chillibeans-filme.jpg",
+    "status": "candidato integrado em prévia; conferir autorização para publicação"
+  },
+  {
+    "slug": "splash",
+    "name": "Splash Piscinas",
+    "origin": "Frelas",
+    "filter": "servicos",
+    "segment": "Serviços • Piscinas",
+    "drive_folder_source": "MARQA / CLIENTES",
+    "hero_drive_id": "1LzgZyTOr_Lj8JAFwoKM_A-uRjIDXlTqh",
+    "other_drive_ids": [
+      "152Hdn3rhGBCC9Rx9vz-DWbVQy2BJwU9H",
+      "1y-2CrCHKFSAkKN4h5NVfi0DRFBqzV7ot"
+    ],
+    "poster": "assets/splash-filme.jpg",
+    "status": "candidato integrado em prévia; conferir autorização para publicação"
+  },
+  {
+    "slug": "crepecone",
+    "name": "Crepe Cone",
+    "origin": "Finalizados",
+    "filter": "marcas",
+    "segment": "Gastronomia • Produto",
+    "drive_folder_source": "MARQA / CLIENTES",
+    "hero_drive_id": "1UQ69gyJz6XUgVuLhDgVDioodkxL_YAdX",
+    "other_drive_ids": [
+      "1W8CbRPc0oJmMiq97UaoDZhLtyMnwHJcN",
+      "1Gu3SKHd5svzhrzw886CgJnRvWCRCmE0M"
+    ],
+    "poster": "assets/crepecone-filme.jpg",
+    "status": "candidato integrado em prévia; conferir autorização para publicação"
+  },
+  {
+    "slug": "cheirinbao",
+    "name": "Cheirin Bão",
+    "origin": "Clientes ativos",
+    "filter": "marcas",
+    "segment": "Gastronomia • Café",
+    "drive_folder_source": "MARQA / CLIENTES",
+    "hero_drive_id": "118MKiEjbA6v_0zjFFwE1ktbd13spPYJz",
+    "other_drive_ids": [
+      "1Z6E7qH0oIXlWQISY9yLjm-VjgeeN0fP7",
+      "1LqPMp2WfwZE61LPT69rCYjZ3Dn0NDNq8"
+    ],
+    "poster": "assets/cheirinbao-filme.jpg",
+    "status": "candidato integrado em prévia; conferir autorização para publicação"
+  },
+  {
+    "slug": "alpha",
+    "name": "Alpha Suplementos",
+    "origin": "Clientes ativos",
+    "filter": "marcas",
+    "segment": "Fitness • Varejo",
+    "drive_folder_source": "MARQA / CLIENTES",
+    "hero_drive_id": "1Fvp73eYVZ0P8FgtOBetpOCYKyGKO33pS",
+    "other_drive_ids": [
+      "1E6RPB6R5bFHDaK0pm7p642RY11k5eQEx",
+      "1QpKyHvbTLq_cn-Ygi2-NloYjHKyh83UG"
+    ],
+    "poster": "assets/alpha-filme.jpg",
+    "status": "candidato integrado em prévia; conferir autorização para publicação"
+  },
+  {
+    "slug": "senna",
+    "name": "Senna Imóveis",
+    "origin": "Frelas",
+    "filter": "servicos",
+    "segment": "Imobiliário • Conteúdo",
+    "drive_folder_source": "MARQA / CLIENTES",
+    "hero_drive_id": "1KMrEtYoqhy8qIeX_r9Ja0dFTWK3NUkWc",
+    "other_drive_ids": [
+      "1D2C4evkhqrLxDnxQtvL41iuBRb4QiKlV",
+      "1xBIlW4jRf652kSAP9K9Ohtp1AtsSrQ5w"
+    ],
+    "poster": "assets/senna-filme.jpg",
+    "status": "candidato integrado em prévia; conferir autorização para publicação"
+  },
+  {
+    "slug": "drsorriso",
+    "name": "Clínica Dr. Sorriso",
+    "origin": "Clientes ativos",
+    "filter": "saude",
+    "segment": "Odontologia • Estética",
+    "drive_folder_source": "MARQA / CLIENTES",
+    "hero_drive_id": "1l0jqT1F_VG6GQ7Bvh5Y7z3giQeYKbzg4",
+    "other_drive_ids": [
+      "1RNnnfWxEMb2lL06_ummdT3HSIz1TM_97",
+      "1km49uIsWaqo-WqplSJfwm7tLhLkkPowY"
+    ],
+    "poster": "assets/drsorriso-filme.jpg",
+    "status": "candidato integrado em prévia; conferir autorização para publicação"
+  },
+  {
+    "slug": "sitra",
+    "name": "Sitra",
+    "origin": "Clientes ativos",
+    "filter": "servicos",
+    "segment": "Institucional • Serviços",
+    "drive_folder_source": "MARQA / CLIENTES",
+    "hero_drive_id": "1_i61wnl81GyFvbSqTIcr1TO_8zuk06ti",
+    "other_drive_ids": [
+      "122fg6kUJIKFXOpQXEVmgWwWH_qGBAm1A",
+      "15gLHG2wEYaa6VHp-cogP7eVTun0vW1Du"
+    ],
+    "poster": "assets/sitra-filme.jpg",
+    "status": "candidato integrado em prévia; conferir autorização para publicação"
+  },
+  {
+    "slug": "belaking",
+    "name": "Bela King",
+    "origin": "Clientes ativos",
+    "filter": "marcas",
+    "segment": "Moda • Varejo",
+    "drive_folder_source": "MARQA / CLIENTES",
+    "hero_drive_id": "1uA7lcPezuvB2_GOlGj1A866fbpomM8nV",
+    "other_drive_ids": [
+      "1GpK9Utn1mHyBWWm9hsE45aB_oFwOjb3f",
+      "1ZODA6qdSh3vmGJkUJWYS4QiSMIMBvus1"
+    ],
+    "poster": "assets/belaking-filme.jpg",
+    "status": "candidato integrado em prévia; conferir autorização para publicação"
+  }
+]
