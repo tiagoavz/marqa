@@ -1,0 +1,244 @@
+/* PORTFÓLIO MARQA — Experimento de abertura tridimensional.
+   Seções internas isoladas; navegação com identidade escura consistente. */
+
+/* Navegação uniforme com a abertura cinematográfica. */
+.site-header {
+  background: rgba(9, 9, 11, .96);
+  color: #f7f7f7;
+  border-bottom-color: rgba(255, 255, 255, .10);
+}
+.site-header .nav-links { color: #b6b6b9; }
+.site-header .brand-dot { color: #8d8d90; }
+.site-header .nav-action { border-bottom: 1px solid rgba(255, 255, 255, .4); padding-bottom: 7px; }
+
+.tunnel-section {
+  --tunnel-nav-height: 74px;
+  position: relative;
+  min-height: 220svh;
+  background: #08080b;
+  color: #fff;
+}
+.tunnel-stage {
+  position: sticky;
+  top: var(--tunnel-nav-height);
+  height: calc(100svh - var(--tunnel-nav-height));
+  min-height: 450px;
+  overflow: hidden;
+  isolation: isolate;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(ellipse at 50% 53%, #18181e 0%, #101014 35%, #08080b 75%);
+  color: #fff;
+  transform-style: preserve-3d;
+}
+.tunnel-grain {
+  position: absolute;
+  pointer-events: none;
+  inset: 0;
+  z-index: 0;
+  opacity: .26;
+  background-image: radial-gradient(circle, rgba(255,255,255,.13) .55px, transparent .7px);
+  background-size: 28px 28px;
+  mask-image: radial-gradient(ellipse 60% 65% at center, #000 50%, transparent 100%);
+}
+.tunnel-halo {
+  pointer-events: none;
+  position: absolute;
+  z-index: 0;
+  height: 74vmin;
+  width: 74vmin;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(255,255,255,.035), transparent 68%);
+}
+.tunnel-circle {
+  pointer-events: none;
+  position: absolute;
+  border-radius: 50%;
+  border: 1px solid rgba(255,255,255,.075);
+}
+.tunnel-circle-one { height: 47vmin; width: 47vmin; }
+.tunnel-circle-two { height: 76vmin; width: 76vmin; border-color: rgba(255,255,255,.045); }
+.tunnel-topline {
+  position: absolute;
+  z-index: 30;
+  top: clamp(24px, 3.4vw, 46px);
+  left: var(--page-gutter);
+  right: var(--page-gutter);
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  color: rgba(255,255,255,.48);
+  font-size: 10px;
+  letter-spacing: .17em;
+  font-weight: 700;
+}
+.tunnel-intro {
+  pointer-events: none;
+  position: relative;
+  z-index: 15;
+  width: 100%;
+  padding-inline: 22px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+.tunnel-title-wrap { max-width: min(80vw, 940px); will-change: transform, opacity; }
+.tunnel-overline {
+  display: block;
+  color: rgba(255,255,255,.53);
+  font-weight: 700;
+  letter-spacing: .37em;
+  font-size: clamp(8px, .85vw, 12px);
+  margin-bottom: clamp(16px, 2.3vw, 30px);
+}
+.tunnel-title-wrap h1 {
+  color: #f6f5f3;
+  font-size: clamp(72px, 16vw, 230px);
+  line-height: .76;
+  font-weight: 800;
+  letter-spacing: -.104em;
+  padding-right: .1em;
+}
+.tunnel-title-wrap h1 span { color: #77777c; }
+.tunnel-title-wrap p {
+  max-width: 410px;
+  margin: clamp(25px, 3.7vw, 42px) auto 0;
+  font-size: clamp(13px, 1.2vw, 16px);
+  line-height: 1.5;
+  font-weight: 400;
+  color: #9b9ba0;
+}
+.tunnel-space {
+  pointer-events: none;
+  z-index: 16;
+  position: absolute;
+  inset: 0;
+}
+.tunnel-card {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  aspect-ratio: 4 / 5;
+  pointer-events: none;
+  color: #fff;
+  text-decoration: none;
+  user-select: none;
+  will-change: transform, opacity;
+  display: block;
+}
+.tunnel-card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+  border-radius: 11px;
+  isolation: isolate;
+  background: linear-gradient(140deg, #393939, #131313 66%, #555);
+  border: 1px solid rgba(255,255,255,.15);
+  box-shadow: 0 25px 65px rgba(0,0,0,.5);
+  transition: box-shadow .4s ease, border-color .4s ease;
+}
+.tunnel-card-inner:hover {
+  border-color: rgba(255,255,255,.48);
+  box-shadow: 0 30px 75px rgba(0,0,0,.65);
+}
+.tunnel-card-inner img {
+  position: absolute;
+  inset: 0;
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.tunnel-card-shade {
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  background: linear-gradient(180deg, transparent 25%, rgba(0,0,0,.1) 50%, rgba(0,0,0,.84) 100%);
+}
+.tunnel-card-caption {
+  position: absolute;
+  z-index: 2;
+  inset-inline: 15px;
+  bottom: 14px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.tunnel-card-caption small {
+  font-size: 8px;
+  font-weight: 700;
+  line-height: 1.2;
+  color: rgba(255,255,255,.7);
+  letter-spacing: .16em;
+}
+.tunnel-card-caption strong {
+  font-size: 13px;
+  font-weight: 760;
+  line-height: 1.1;
+  letter-spacing: -.025em;
+}
+.tunnel-scroll-cue {
+  position: absolute;
+  z-index: 32;
+  bottom: clamp(22px, 4vw, 47px);
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 13px;
+  white-space: nowrap;
+  font-size: 9px;
+  font-weight: 700;
+  letter-spacing: .22em;
+  color: rgba(255,255,255,.6);
+}
+.tunnel-scroll-line {
+  display: block;
+  height: 27px;
+  width: 1px;
+  background: linear-gradient(#bbb, transparent);
+}
+.tunnel-index {
+  position: absolute;
+  bottom: 35px;
+  right: var(--page-gutter);
+  z-index: 20;
+  color: #55555a;
+  font-size: 10px;
+  letter-spacing: .14em;
+}
+.tunnel-section-reduced { min-height: calc(100svh - 74px); }
+.tunnel-reduced-copy {
+  position: absolute;
+  right: 30px;
+  bottom: 35px;
+  font-size: 10px;
+  letter-spacing: .15em;
+  color: #999;
+}
+@media (max-width: 767px) {
+  .tunnel-section { min-height: 185svh; }
+  .tunnel-stage { min-height: 0; }
+  .tunnel-topline { font-size: 8px; letter-spacing: .11em; }
+  .tunnel-title-wrap { max-width: 100%; }
+  .tunnel-title-wrap h1 { font-size: clamp(67px, 20vw, 145px); }
+  .tunnel-title-wrap p { max-width: 260px; font-size: 13px; }
+  .tunnel-overline { letter-spacing: .22em; font-size: 8px; }
+  .tunnel-card-inner { border-radius: 8px; }
+  .tunnel-card-caption strong { font-size: 10px; }
+  .tunnel-card-caption small { font-size: 7px; }
+  .tunnel-index { display: none; }
+}
+@media (max-width: 599px) {
+  .tunnel-section { --tunnel-nav-height: 65px; }
+  .tunnel-topline span:last-child { display: none; }
+  .tunnel-stage { height: calc(100svh - 65px); }
+  .tunnel-scroll-cue { bottom: 30px; font-size: 8px; }
+  .tunnel-section-reduced { min-height: calc(100svh - 65px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  .tunnel-title-wrap, .tunnel-card { will-change: auto; }
+  .tunnel-stage { scroll-behavior: auto; }
+}
